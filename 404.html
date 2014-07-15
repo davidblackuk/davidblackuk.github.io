@@ -1,0 +1,35 @@
+---
+layout  : main
+title   : Page Not Found!
+section : error
+---
+<h1>Page Not Found</h1>
+
+<blockquote>
+	<i>You step in the stream,<br/>
+	   But the water has moved on.<br/>
+	   This page is not here.
+	</i>
+</blockquote>
+
+<p>Sorry, I seem to have misplaced that page...</p>
+
+<p>Browse <a href="/archives/">the archives</a> or...</p>
+
+<p>You could always try searching for it.</p>
+
+<div class="sitesearch">
+  <form method="get" action="http://www.google.com/search">
+    <input type="text"   id="search" name="q" size="25" maxlength="255" value="" />
+    <input type="submit" value="Google Search" />
+    
+    <label><input type="checkbox"  name="sitesearch"
+    value="www.david-black.info.com" checked /> 	
+    search only this site.</label>
+  </form>
+</div>
+
+<script type="text/javascript">
+    document.getElementById('search').value =
+        document.location.pathname.replace(/\W/gm, ' ').replace(/^ +| +$/g, '');
+</script>

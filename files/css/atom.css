@@ -1,0 +1,11 @@
+urlset, feed {
+    display : block;
+    margin: 0 auto;
+    width: 20em;
+}
+
+url, entry {
+    display: block;
+    color: red;
+    margin: 2em 0;
+}

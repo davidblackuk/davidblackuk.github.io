@@ -1,0 +1,42 @@
+---
+layout  : default
+top     : Passing Curiosity
+section : Blog
+feed    : /atom.xml
+---
+
+<header>
+    {% include nav.html %}
+</header>
+
+<div id="page">
+  <article>
+    <h1 class="emphnext">{{ page.title }}</h1>
+
+{{ content }}
+
+  <address class="signature">
+    <a class="author" href="http://www.david-black.info/">David Black</a> 
+    <span class="date">{{ page.date | date_to_long_string }}</span>
+    <span class="location">{{ page.location }}</span>
+  </address>
+
+  <footer>
+    {% if page.tags != empty %}<p class="tags">This post has been about: 
+	{% for tag in page.tags %}
+        <a href="{{ site.tagspace }}{{ tag }}" rel="tag">{{ tag }}</a>{% if forloop.last %}.{% else %}, {% endif %}
+    {% endfor %}</p>{% endif %}
+
+
+    <p>You might like to read more about (potentially) similar subjects in:
+    </p>
+    <ul>
+	{% for post in site.related_posts limit:5 %}
+	  <li><a href="{{post.url}}">{{ post.title }}</a></li>
+	{% endfor %}
+	</ul>
+
+
+  </footer>
+  </article>
+</div><!-- End Page -->

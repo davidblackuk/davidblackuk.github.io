@@ -1,0 +1,16 @@
+---
+name        : Overtaken by events 
+tagline     : It's not all unicorns and rainbows 
+uri         : http://www.david-black.info
+tagspace    : /tag/
+email       : 
+lang        : en
+charset     : UTF-8
+destination : _site 
+server_port : 4000 
+auto        : false
+lsi         : false
+pygments    : true
+permalink   : /:year/:title/
+markdown    : rdiscount
+exclude     : [public, tmp, README.markdown, config.ru]
