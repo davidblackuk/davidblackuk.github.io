@@ -1,8 +1,8 @@
-PassingCuriosity.com
+overtakenbyevents.com
 ====================
 
 This repository contains the source for my personal site at
-<http://passingcuriosity.com/>. The design and layout is based on that
+<http://overtakenbyevents.com/>. The design and layout is based on that
 of <http://mark.reid.name/>.
 
 License
@@ -17,7 +17,7 @@ licence.
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/3.0/
 
 The content -- include all Markdown, source code offered for download,
-and all other files -- are copyright Thomas Sutton and may not be used
+and all other files -- are copyright David Black and may not be used
 without permission.
 
 Thanks
