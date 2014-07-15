@@ -24,7 +24,7 @@ The site is created using [Sublime][sub] for editing, [Jekyll][jk] as a templati
 
 The look and feel of the site is based on the template created by,[Mark Reid][mr] (with a few [customisations][pcr] by [Thomas. H. Sutton][pcr] ).
 
-The design of this site is released under the [Creative Commons Attribution Non-Commercial Share-alike 3.0 license][cc], but the content itself may not be reproduced without permission except in accordance with fair-use.
+The design of this site is released under the [Creative Commons Attribution Non-Commercial Share-alike 3.0 license][cc],. The content -- include all Markdown, images and source code offered for download, and all other files -- are copyright David Black and may not be used without permission.
 
 [cc]: http://creativecommons.org/licenses/by-nc-sa/3.0/
 [md]: http://daringfireball.net/projects/markdown/
