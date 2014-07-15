@@ -1,0 +1,610 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pr",
+				"previewDiv"
+			],
+			[
+				"ini",
+				"initializeUI"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"add",
+				"addSection"
+			],
+			[
+				"addDropDownEd",
+				"addDropDownEditor"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"get",
+				"getNextId"
+			],
+			[
+				"al",
+				"vertical-align"
+			],
+			[
+				"tit",
+				"title"
+			],
+			[
+				"ca",
+				"canvasParent"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"can",
+				"canvas"
+			],
+			[
+				"in",
+				"inZone"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"c",
+				"current"
+			],
+			[
+				"canvas",
+				"canvasParent"
+			],
+			[
+				"title",
+				"titleElement"
+			],
+			[
+				"dem",
+				"demoArea"
+			],
+			[
+				"demo",
+				"demoTitle"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"con",
+				"context"
+			],
+			[
+				"editr",
+				"editor"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"Ba",
+				"background-color"
+			],
+			[
+				"h",
+				"h2"
+			],
+			[
+				"object",
+				"objectRepo"
+			],
+			[
+				"assoc",
+				"associations"
+			],
+			[
+				"wy",
+				"wyInvariantName"
+			],
+			[
+				"fin",
+				"find"
+			],
+			[
+				"find",
+				"findItemComplete"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"html",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"encode",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"pretty",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pac in",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"snipp",
+				"Snippet: Anonymous Function"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set j",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/Internal/davidblack/Projects/Sparx/Sparx/Tile180To45.m",
+		"/Volumes/Internal/davidblack/Projects/Sparx/Sparx/Tile180.m",
+		"/Volumes/Internal/davidblack/Projects/Sparx/Sparx/PlungerTileObject.m",
+		"/Volumes/Internal/davidblack/Projects/Sparx/Sparx/TileGameObject.h",
+		"/Volumes/Internal/davidblack/Projects/Sparx/Sparx/Tile45.m",
+		"/Volumes/Internal/davidblack/Projects/Sparx/Sparx/CommonProtocols.h",
+		"/Volumes/Internal/davidblack/Desktop/Rescue work/RRP/Casewise.Financial.Presentation/d/wyvern.d.ts",
+		"/Volumes/Internal/davidblack/Desktop/Rescue work/RRP/Reportage/Controls/VisualizeNumericAsGauge.cs",
+		"/Volumes/Internal/davidblack/Desktop/Rescue work/RRP/Reportage/Controls/VisualizeNumericAsGauge.Designer.cs",
+		"/Volumes/Internal/davidblack/Desktop/Rescue work/RRP/Casewise.Financial.Presentation/build/presentation.js",
+		"/Volumes/Internal/davidblack/Desktop/temp.wsdl",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/documentation/dials.html",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/_layouts/default.html",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/js/editor.js",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/js/demos.js",
+		"/Volumes/internal/davidblack/Desktop/parallels",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/themes/themes.html",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/themes/themePark.html",
+		"/Volumes/Internal/davidblack/Projects/canvas-dash/build",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/index.html",
+		"/Volumes/Internal/davidblack/Projects/canvas-dash-doc/js/themepark.js",
+		"/Volumes/Internal/davidblack/Projects/canvas-dash-doc/js/ThemePark.ts",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/_config.yml",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/_site/documentation/dials.html",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/_layouts/sbEdit.html",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/_includes/menu.ext",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/CNAME",
+		"/Volumes/internal/davidblack/Projects/canvas-dash-doc/css/base.css",
+		"/Volumes/internal/davidblack/Downloads/incomplete/1370860390/princess charming.bmp",
+		"/Volumes/internal/davidblack/jtest/fruity/editor/editor.html",
+		"/Volumes/internal/davidblack/jtest/fruity/js/editor.js",
+		"/Volumes/internal/davidblack/jtest/fruity/js/cDash.js",
+		"/Volumes/internal/davidblack/jtest/fruity/_layouts/sbEdit.html",
+		"/Volumes/internal/davidblack/jtest/fruity/_layouts/default.html",
+		"/Volumes/internal/davidblack/jtest/fruity/_includes/menu.ext",
+		"/Volumes/internal/davidblack/jtest/fruity/index.html",
+		"/Volumes/internal/davidblack/jtest/fruity/contact.html",
+		"/Volumes/internal/davidblack/jtest/fruity/about.html",
+		"/Volumes/internal/davidblack/jtest/fruity/themes/themes.html",
+		"/Volumes/internal/davidblack/jtest/fruity/_config.yml",
+		"/Volumes/internal/davidblack/jtest/fruity/js/xregexp.js",
+		"/Volumes/internal/davidblack/jtest/fruity/license.html",
+		"/Volumes/internal/davidblack/jtest/fruity/js/purl.js",
+		"/Volumes/internal/davidblack/jtest/fruity/documentation/documentation.html",
+		"/Volumes/UNTITLED 1/2013-04-08/update.ps1",
+		"/Volumes/internal/davidblack/jtest/fruity/documentation/dials.html",
+		"/Volumes/internal/davidblack/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Volumes/internal/davidblack/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Volumes/internal/davidblack/jtest/fruity/css/prettify.css",
+		"/Volumes/internal/davidblack/jtest/fruity/css/main.css",
+		"/Volumes/internal/davidblack/jtest/fruity/css/base.css",
+		"/Volumes/internal/davidblack/jtest/fruity/_site/editor/editor.html",
+		"/Volumes/internal/davidblack/jtest/fruity/_site/contact.html",
+		"/Volumes/internal/davidblack/jtest/fruity/_site/index.html",
+		"/Volumes/internal/davidblack/jtest/fruity/documentation/index.html",
+		"/Volumes/internal/davidblack/jtest/fruity/_site/about.md",
+		"/Volumes/internal/davidblack/jtest/fruity/_layouts/about.md",
+		"/Volumes/internal/davidblack/jtest/fruity/_layouts/post.html",
+		"/Volumes/internal/davidblack/Projects/Dashboards/Html5/site/base.css",
+		"/Volumes/internal/davidblack/Projects/davidblackuk.github.com/_config.yml",
+		"/Volumes/internal/davidblack/Desktop/JsPlay/json/objectMedium",
+		"/Volumes/internal/davidblack/Desktop/JsPlay/json/objectTiny",
+		"/Volumes/internal/davidblack/Desktop/JsPlay/json/objectHuge",
+		"/Volumes/internal/davidblack/Dropbox/Bops/Wyvern/data/linkRepository.js",
+		"/Volumes/internal/davidblack/Dropbox/Bops/Wyvern/public/javascripts/objectView.js",
+		"/Volumes/internal/davidblack/Dropbox/Bops/Wyvern/data/metaRepository.js",
+		"/Volumes/internal/davidblack/Dropbox/Bops/Wyvern/routes/objects.js",
+		"/Volumes/internal/davidblack/Dropbox/Bops/Wyvern/data/objectRepository.js",
+		"/Volumes/internal/davidblack/Dropbox/Bops/Wyvern/app.js",
+		"/Volumes/internal/davidblack/Dropbox/Bops/Wyvern/data/linksRepository.js",
+		"/Volumes/internal/davidblack/Dropbox/Bops/Wyvern/data/associationsRepository.js",
+		"/Volumes/internal/davidblack/Library/Application Support/Sublime Text 2/Packages/User/sublime-jslint.sublime-settings",
+		"/Volumes/internal/davidblack/Library/Application Support/Sublime Text 2/Packages/sublime-jslint/sublime-jslint.sublime-settings",
+		"/Volumes/internal/davidblack/Dropbox/Bops/Wyvern/data/associationsRepository",
+		"/Volumes/internal/davidblack/Dropbox/Bops/Wyvern/data/metaRepository",
+		"/Volumes/internal/davidblack/WebstormProjects/Wyvern/data/objectRepository.js",
+		"/Volumes/internal/davidblack/WebstormProjects/Wyvern/public/javascripts/objectView.js",
+		"/Volumes/internal/davidblack/WebstormProjects/Wyvern/public/stylesheets/style.less",
+		"/Volumes/internal/davidblack/WebstormProjects/Wyvern/views/about.jade",
+		"/Volumes/internal/davidblack/WebstormProjects/Wyvern/views/objects/show.jade",
+		"/Volumes/internal/davidblack/WebstormProjects/Wyvern/public/javascripts/page_global.js",
+		"/Volumes/internal/davidblack/WebstormProjects/Wyvern/views/layout.jade",
+		"/Volumes/internal/davidblack/WebstormProjects/Wyvern/public/javascripts/objectFormat.js",
+		"/Volumes/internal/davidblack/WebstormProjects/Wyvern/public/stylesheets/style.css",
+		"/Volumes/internal/davidblack/WebstormProjects/Wyvern/node_modules/less/test/less/css-escapes.less",
+		"/Volumes/internal/davidblack/WebstormProjects/Wyvern/views/objects/index.jade"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"skip",
+			"0x68191002\n0x68191002",
+			"0x68181002",
+			"class",
+			"OL>",
+			"P>",
+			"{T}",
+			"LI>",
+			"{T}",
+			"&nbsp;",
+			"splutterSpark",
+			"kStateSpluttered",
+			"splutterSpark",
+			"kStateBang",
+			"bang",
+			"showExploded",
+			"tileRequestsExit",
+			"kSparkTransitTime",
+			"initalSparkPosition",
+			";\n",
+			"_sparkSprite",
+			"calculateExitHeadingBasedOnEntryHeading",
+			"requestEntry",
+			"broadcastState",
+			"PlayLayerDelegate",
+			"setRotation",
+			"NumericFormatter",
+			"Regulatoryy",
+			"IMPACTSFUNCTION",
+			"RRPREGULATORYREQUIREMENT",
+			"RRPREGULATORYREQUIREMENTHASREGULATORYREQUIREMENT",
+			"}}/",
+			".propsTable td",
+			"\n",
+			"org",
+			"Editor.initializePAge",
+			"initializePAge",
+			"tryMeButton",
+			"    <tr><td></td>\n        <td>\n        </td>\n    </tr>\n",
+			"</li>",
+			"<li>",
+			"<li>\n",
+			");\n",
+			"cDash",
+			"123",
+			"        ",
+			"\\t",
+			",",
+			", atLong",
+			" atLat",
+			"one:",
+			", 9, ",
+			", 8, ",
+			", 7, ",
+			", 6, ",
+			", 5, ",
+			", 4, ",
+			", 3, ",
+			", 2, ",
+			", 1, ",
+			", 5, ",
+			", 4, ",
+			", 3, ",
+			", 2, ",
+			", 1, ",
+			", ",
+			" 0.",
+			"-0.",
+			"51.",
+			");",
+			", ",
+			"\\t",
+			"AddStation (",
+			"cp",
+			"\" \"",
+			" \"",
+			"prin",
+			"char",
+			"\\",
+			"ing.",
+			"1",
+			"\n    ",
+			"editorDiv",
+			"window",
+			"Editor.js",
+			"editor.js",
+			"margin",
+			"main.css",
+			">",
+			"<",
+			"	<",
+			");\n",
+			"meta",
+			"objects",
+			"meta",
+			"item",
+			"callback",
+			"collection"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ol>",
+			"p>",
+			"",
+			"li>",
+			"",
+			"Regulatory",
+			"ImpactsFunction",
+			"RrpRegutoryRequirement",
+			"RrpRegutoryRequirementHasRegulatoryyRequirement",
+			"",
+			"+",
+			" ",
+			" atLong",
+			"\" atLat",
+			"one:@\"",
+			"one:@\" ",
+			"inZone:9 ",
+			"inZone:8 ",
+			"inZone:7 ",
+			"inZone:6 ",
+			"inZone:5 ",
+			"inZone:4 ",
+			"inZone:3 ",
+			"inZone:2 ",
+			"inZone:1 ",
+			"inZone:",
+			" atLongitude:-0.",
+			"atLongitude:-0.",
+			"atLatitude:51.",
+			"];",
+			" inZone:",
+			"",
+			" inZone:",
+			"",
+			"[self addStation:stations forLine:@",
+			"cat",
+			"\" >> test.avi cp \"",
+			"\" \"",
+			"\"prin",
+			"\"char",
+			"",
+			"ing.avi.",
+			"ing.avi",
+			"&gt;",
+			"&lt;"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 369.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"meta",
+				"data/metaRepository.js"
+			],
+			[
+				"lay",
+				"views/layout.jade"
+			],
+			[
+				"objectfor",
+				"public/javascripts/objectFormat.js"
+			],
+			[
+				"vi/",
+				"views/objects/show.jade"
+			],
+			[
+				"views/o/",
+				"views/objects/show.jade"
+			],
+			[
+				"pu/sty",
+				"public/stylesheets/style.less"
+			],
+			[
+				"styles",
+				"public/stylesheets/style.less"
+			],
+			[
+				"object",
+				"data/objectRepository.js"
+			],
+			[
+				"css",
+				"node_modules/less/test/less/css-escapes.less"
+			],
+			[
+				"views/ob/in",
+				"views/objects/index.jade"
+			],
+			[
+				"objects",
+				"views/objects/index.jade"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 332.0,
+	"status_bar_visible": true
+}
