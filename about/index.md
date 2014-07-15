@@ -20,7 +20,7 @@ Yes that's a Spectrum game from 1983! My hair is still black underneath, I just 
 About this site
 ===============
 
-The site is created using [Sublime][sub] for editing, [Jekyll][jk] as a templating engine and [GitHub][db] as a host and version control system.
+The site is created using [Sublime][sub] for editing, [Jekyll][jk] as a templating engine, hosted on and version controlled by [GitHub][db].
 
 The look and feel of the site is based on the template created by,[Mark Reid][mr] (with a few [customisations][pcr] by [Thomas. H. Sutton][pcr] ).
 
@@ -34,4 +34,4 @@ The design of this site is released under the [Creative Commons Attribution Non-
 [jk]: http://jekyllrb.com/
 [mr]: http://mark.reid.name/
 [sub]: http://www.sublimetext.com
-[db]: https://github.com/davidblackuk/davidblackuk.github.com
+[db]: https://github.com/davidblackuk/davidblackuk.github.io
