@@ -1,3 +1,3 @@
 #! /bin/bash
 
-jekyll serve --auto --pygments
+jekyll serve --watch 

@@ -8,17 +8,7 @@ feed    : /atom.xml
 Welcome
 =======
 
-Welcome to my site. The name is derived from a quote:
-
-	"Machines take me by surprise with great frequency."
-		-- Alan Turing
-
-If they take the great man by surprise just imaging how startled and struggling the rest of us are.
-
-Blog
-====
-
-The main purpose of this site is as a hook to hang my blog on. While no doubt the content will rarely change and my enthusiasm will wane after short a while, for now optimistically I will say
+This site is as a hook to hang my blog from. The content may rarely change, my enthusiasm could wane, or I might get overtaken by events. For now, optimistically, I'll say...
 
 Here are the recent posts:
 

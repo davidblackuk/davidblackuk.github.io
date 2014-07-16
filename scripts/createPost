@@ -1,6 +1,6 @@
 #! /bin/bash
 
-blogRoot="/Volumes/internal/davidblack/Projects/davidblackuk.github.com/"
+blogRoot="/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io"
 
 timestamp=$(exec date "+%Y-%m-%d")
 title=""

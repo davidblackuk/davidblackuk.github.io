@@ -461,3 +461,13 @@ img.maruku-png { }
 	box-shadow: 0 0 5px 5px #888;
 }
 
+
+.linearTagList  a {
+	font-variant: small-caps;
+	font-style: normal;
+	color: #77d;
+	text-decoration: none;
+}
+
+
+
