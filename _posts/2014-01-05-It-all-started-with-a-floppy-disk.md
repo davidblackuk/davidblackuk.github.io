@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  It all started with a floppy disk
-tags: [nostalgia, raytracing ]
+tags: [retro, msdos ]
 location: London, England
 excerpt: This nostalgia's not what it used to be (part 1) - Installing MSDOS 6.2.2
 ---

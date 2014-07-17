@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  It all started with a floppy disk part 2
-tags: [ nostalgia, raytracing ]
+tags: [ retro, msdos ]
 location: London, England
 excerpt: This nostalgia's not what it used to be (part 2) - Installing Turbo C++
 ---

@@ -140,61 +140,34 @@
 	"buffers":
 	[
 		{
-			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/scripts/server",
+			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_posts/2014-07-10-How-to-install-a-CDROM-driver-for-MSDOS-on-parallels.md",
 			"settings":
 			{
-				"buffer_size": 36,
+				"buffer_size": 2298,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_config.yml",
+			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_posts/2013-11-01-Displaying-tree-based-data-in-osx-using-monomac-and-c#.md",
 			"settings":
 			{
-				"buffer_size": 413,
+				"buffer_size": 6767,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "---\nlayout : nil\n---\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<?xml-stylesheet href=\"/files/css/atom.css\" type=\"text/css\" ?>\n<feed xmlns=\"http://www.w3.org/2005/Atom\">\n  <title>{{ site.name }}</title>\n  <link href=\"{{ site.uri }}/atom.xml\" rel=\"self\" />\n  <link href=\"{{ site.uri }}\" />\n  <updated>{{ site.time | date_to_xmlschema }}</updated>\n  <id>http://overtakenbyevents.com</id>\n\n  <author>\n    <name>Thomas Sutton</name>\n    <email>me@thomas-sutton.id.au</email>\n  </author>\n\n  {% for post in site.posts limit:10 %}\n  <entry>\n    <title>{{ post.title }}</title>\n    <link href=\"{{ site.uri }}{{ post.url }}\"/>\n    <updated>{{ post.date | date_to_xmlschema }}</updated>\n    <id>id:{{ post.id }}</id>\n    <content type=\"html\">\n	  {% if post.excerpt %}{{ post.excerpt | xml_escape }}\n{% else %}{{ post.content | html_truncate 50 | xml_escape }}\n    {% endif %}</content>\n  </entry>\n  {% endfor %}\n</feed>\n",
-			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/atom.xml",
-			"file_size": 905,
-			"file_write_time": 1331378174000000,
+			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_posts/2014-01-05-It-all-started-with-a-floppy-disk.md",
 			"settings":
 			{
-				"buffer_size": 906,
+				"buffer_size": 5249,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_layouts/default.html",
+			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_posts/2014-02-15-It-all-started-with-a-floppy-disk-part-2.md",
 			"settings":
 			{
-				"buffer_size": 2094,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/index.md",
-			"settings":
-			{
-				"buffer_size": 711,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/scripts/createPost",
-			"settings":
-			{
-				"buffer_size": 466,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_posts/2014-07-16-Where-is-my-SharePoint-settings-page.md",
-			"settings":
-			{
-				"buffer_size": 1115,
+				"buffer_size": 3828,
 				"line_ending": "Unix"
 			}
 		}
@@ -287,6 +260,21 @@
 	},
 	"file_history":
 	[
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_layouts/tag_index.html",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_plugins/_tag_gen.rb",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_layouts/post.html",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_layouts/suggest.html",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/files/css/screen.css",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/404.html",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_posts/2014-07-16-How-to-install-a-CDROM-driver-for-MSDOS-on-parallels.md",
+		"/Volumes/Internal/davidblack/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_posts/2014-07-16-Where-is-my-SharePoint-settings-page.md",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/scripts/createPost",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/index.md",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_layouts/default.html",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/atom.xml",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_config.yml",
+		"/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/scripts/server",
 		"/Volumes/Internal/davidblack/Projects/Sparx/Sparx/Tile180To45.m",
 		"/Volumes/Internal/davidblack/Projects/Sparx/Sparx/Tile180.m",
 		"/Volumes/Internal/davidblack/Projects/Sparx/Sparx/PlungerTileObject.m",
@@ -391,6 +379,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"proj",
+			"footer",
+			"{.{",
+			"{.%",
 			"from",
 			"skip",
 			"0x68191002\n0x68191002",
@@ -497,6 +489,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"{{",
+			"{%",
 			"ol>",
 			"p>",
 			"",
@@ -552,28 +546,29 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/scripts/server",
+					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_posts/2014-07-10-How-to-install-a-CDROM-driver-for-MSDOS-on-parallels.md",
 					"settings":
 					{
-						"buffer_size": 36,
+						"buffer_size": 2298,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								35,
-								35
+								109,
+								109
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+							"spell_check": true,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -583,23 +578,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_config.yml",
+					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_posts/2013-11-01-Displaying-tree-based-data-in-osx-using-monomac-and-c#.md",
 					"settings":
 					{
-						"buffer_size": 413,
+						"buffer_size": 6767,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								131,
-								131
+								3073,
+								3055
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -609,128 +605,44 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/atom.xml",
+					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_posts/2014-01-05-It-all-started-with-a-floppy-disk.md",
 					"settings":
 					{
-						"buffer_size": 906,
+						"buffer_size": 5249,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								373,
-								373
+								71,
+								71
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1275.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_layouts/default.html",
+					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_posts/2014-02-15-It-all-started-with-a-floppy-disk-part-2.md",
 					"settings":
 					{
-						"buffer_size": 2094,
+						"buffer_size": 3828,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1208,
-								1208
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 408.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/index.md",
-					"settings":
-					{
-						"buffer_size": 711,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								204,
-								204
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/scripts/createPost",
-					"settings":
-					{
-						"buffer_size": 466,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								87,
-								87
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/_posts/2014-07-16-Where-is-my-SharePoint-settings-page.md",
-					"settings":
-					{
-						"buffer_size": 1115,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1115,
-								1115
+								74,
+								79
 							]
 						],
 						"settings":
