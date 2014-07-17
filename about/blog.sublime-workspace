@@ -170,6 +170,25 @@
 				"buffer_size": 3828,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"contents": "---\nlayout  : main\ntitle   : Page Not Found!\nsection : error\n---\n<h1>That's four hundred and four to you, nil to me</h1>\n\n<blockquote>\n	<i> Said Hamlet to Ophelia,<br>\nI'll draw a sketch of thee,<br>\nWhat kind of pencil shall I use?<br>\n2B or not 2B? <br>\n</i>\n<small> -- Spike Milligan (1918 - 2002)</small>\n	\n</blockquote>\n\n<p>Sorry, I seem to have misplaced that page, you can browse <a href=\"/archives/\">the archive</a> of all my posts, or...</p>\n\n\n<div class=\"sitesearch\">\n  <form method=\"get\" action=\"http://www.google.com/search\">\n    <label for=\"search\"> You could always try searching for it</label><br>\n    <input type=\"text\"   id=\"search\" name=\"q\" size=\"25\" maxlength=\"255\" value=\"\" />\n    <input type=\"submit\" value=\"Google Search\" />\n    \n    <label><input type=\"checkbox\"  name=\"sitesearch\"\n    value=\"www.overtakenbyevents.com\" checked /> 	\n    search only this site.</label>\n  </form>\n</div>\n\n<script type=\"text/javascript\">\n    document.getElementById('search').value =\n        document.location.pathname.replace(/\\W/gm, ' ').replace(/^ +| +$/g, '');\n</script>\n",
+			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/404.html",
+			"file_size": 1078,
+			"file_write_time": 1405586832000000,
+			"settings":
+			{
+				"buffer_size": 1078,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/scripts/build",
+			"settings":
+			{
+				"buffer_size": 331,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "Packages/JSLint/JSLint.sublime-build",
@@ -546,7 +565,6 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
 				{
@@ -615,8 +633,8 @@
 						"selection":
 						[
 							[
-								71,
-								71
+								4239,
+								4239
 							]
 						],
 						"settings":
@@ -648,6 +666,60 @@
 						"settings":
 						{
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/404.html",
+					"settings":
+					{
+						"buffer_size": 1078,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								381,
+								381
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io/scripts/build",
+					"settings":
+					{
+						"buffer_size": 331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -766,6 +838,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 332.0,
+	"side_bar_width": 538.0,
 	"status_bar_visible": true
 }
