@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "Building...."
+
+if [ "$PWD" != '/Volumes/Internal/davidblack/GitHub/Blog/davidblackuk.github.io' ]; then 
+ echo "wrong directory"
+ exit 1
+fi
+
+echo "Remove previous site pages"
+rm -rf _site
+
+echo "Remove current tag list"
+#rm -rf tags
+
+echo "Build Jekyll"
+jekyll build
+
+echo "Copy tag files"
+cp -pr ./_site/tag .
+
+
