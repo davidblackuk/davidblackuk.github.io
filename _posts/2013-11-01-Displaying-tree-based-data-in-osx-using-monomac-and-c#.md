@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Displaying tree based data in osx using monomac and c# Part 1
+title:  Displaying tree based data in osx using monomac and c#
 location: London, England
 excerpt: How to achieve the same functionality as a windows TreeView on a mac with Monomac
 tags: [osx, monomac, mono]

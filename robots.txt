@@ -1,4 +1,0 @@
----
-layout : nil
----
-Sitemap: {{ site.uri }}/sitemap.xml
