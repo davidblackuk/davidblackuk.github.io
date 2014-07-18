@@ -35,62 +35,93 @@ It would have been beyond my wildest dreams to be able to afford a PC with that 
 
 The disk is in and whirring and clanking (Oh yeah) and we have our first install screen. All, please note younglings, in glorious text mode.
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/001.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/001.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/001.png"  />
+</a>
 
 Now for some directions and warnings. I do love the line 'If you have not backed up your files recently, you might want to do so before installing MS-DOS'. Just you might want to? Wow, now-a-days that would have a link to a page of disclaimers from Microsoft the size of a small telephone directory.
 
-
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/002.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/002.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/002.png"  />
+</a>
 
 
 But we *must*, we _need_ to continue so we hit enter.
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/003.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/003.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/003.png"  />
+</a>
 
 It's format or bust at this point so let's get on with the killin. The installer has blasted the partition table so we need a reboot.
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/004.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/004.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/004.png"  />
+</a>
 
 And now we watch the drive format. Slowly. Very slowly. Very, Very slowly. I can't remember when quick format was introduced, but I'm glad it was.
 
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/005.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/005.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/005.png"  />
+</a>
 
 Decision time, are we citizens of the US of A? Well no in this case so we:
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/006.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/006.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/006.png"  />
+</a>
 
 select the country we are in
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/007.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/007.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/007.png"  />
+</a>
 
 and the keyboard we use.
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/008.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/008.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/008.png"  />
+</a>
 
 where Microsoft should shove it
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/009.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/009.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/009.png"  />
+</a>
 
 then load disk
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/010.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/010.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/010.png"  />
+</a>
 
 after disk (well three in total)
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/011.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/011.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/011.png"  />
+</a>
+
 
 Nearly there 
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/012.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/012.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/012.png"  />
+</a>
+
 
 We remove disk three, press enter
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/013.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/013.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/013.png"  />
+</a>
+
 
 And... She lives!
 
-<img src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/014.png" alt="" class="dosShot screenShot" />
+<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/014.png" >
+	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/014.png"  />
+</a>
+
 
 Gosh HIMEM, gotta remember about that, didn't we have to optimise it or some such? It's gonna be fun remembering.
 
