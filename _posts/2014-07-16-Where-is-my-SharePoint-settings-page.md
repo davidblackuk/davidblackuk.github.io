@@ -4,6 +4,8 @@ title:  Why is my SharePoint site settings page wrong / missing?
 tags: [ sharepoint ]
 location: London, England
 excerpt: Argh... my sub site has a blank settings page or is showing the wrong content.
+comments: true
+share: true
 ---
 
 Never forget that SharePoint is not your friend, it hates you and will never change. You however like all down trodden masses must struggle on regardless (can you tell I've had a crappy day with SharePoint!)

@@ -4,6 +4,8 @@ title:  It all started with a floppy disk
 tags: [retro, msdos ]
 location: London, England
 excerpt: This nostalgia's not what it used to be (part 1) - Installing MSDOS 6.2.2
+comments: true
+share: true
 ---
 
 It's really strange that something can be in plain sight for many years and yet be invisible to you.

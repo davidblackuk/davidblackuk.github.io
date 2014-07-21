@@ -4,6 +4,8 @@ title:  How to install a CDROM driver for MSDOS on parallels
 tags: [ retro, msdos, parallels]
 location: London, England
 excerpt: In which we learn that things were much less simple in the 'Good old days', when everything 'Just worked'
+comments: true
+share: true
 ---
 
 If you have an interest in retro-computing, there are certain things you need to learn. If you're old enough to have used these systems originally then these are things that you need to remember. The first thing to bare in mind is just how primitive PCs were in the early days.

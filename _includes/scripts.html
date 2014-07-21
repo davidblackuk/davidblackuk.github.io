@@ -2,6 +2,14 @@
 <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
 <script src="{{ site.url }}/assets/js/lightbox.min.js"></script>
+
+{% if page.pageJS %}
+<script type="text/javascript" src="/assets/js/pageSpecific/{{ page.pageJS }}"></script>
+{% endif %}
+{% if page.pageJS2 %}
+<script type="text/javascript" src="/assets/js/pageSpecific/{{ page.pageJS2 }}"></script>
+{% endif %}
+
 {% if site.search %}
 <!-- Jekyll Simple Search option -->
 <script>

@@ -4,6 +4,8 @@ title:  WriteRoom?, wrong room!
 tags: [ osx, apps ]
 location: London, England
 excerpt: I recently purchased a highly distracting distraction free editor
+comments: true
+share: true
 ---
 
 Recently I bought a copy of WriteRoom the "Distraction free editor" from the app store. It cost around £6 and promised like conjunctivitis.com to be a site for sore eyes (tip of the hat to Tim Vine couldn't resist stealing it).

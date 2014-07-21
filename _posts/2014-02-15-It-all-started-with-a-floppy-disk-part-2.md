@@ -4,6 +4,8 @@ title:  It all started with a floppy disk part 2
 tags: [ retro, msdos ]
 location: London, England
 excerpt: This nostalgia's not what it used to be (part 2) - Installing Turbo C++
+comments: true
+share: true
 ---
 
 For a very long time the kings of the compiler on the MSDOS platform were Borland. Borland provided compilers for Pascal, C, C++ and even (at least I think I remember this) Prolog.
