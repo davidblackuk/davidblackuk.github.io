@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Out of disk space issues on openshift with mongodb"
+title: "Out of disk space issues on OpenShift with mongodb"
 modified: 2015-01-15 09:30:10 +0100
 tags: [openshift, mongodb, tubular]
 image:

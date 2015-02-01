@@ -2,7 +2,7 @@
 layout: post
 title: "Sending emails from  OpenShift  using MailGun"
 modified: 2015-01-15 09:30:10 +0100
-tags: [openshift, email, tubular]
+tags: [openshift, email]
 image:
   feature: 
   credit: 
