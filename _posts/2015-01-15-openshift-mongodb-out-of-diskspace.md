@@ -2,7 +2,7 @@
 layout: post
 title: "Out of disk space issues on OpenShift with mongodb"
 modified: 2015-01-15 09:30:10 +0100
-tags: [openshift, mongodb, tubular]
+tags: [openshift, mongodb, tubulate]
 image:
   feature: 
   credit: 
@@ -13,7 +13,7 @@ pageJS: cDash1.1-alpha.js
 pageJS2: thermometerAlpha.js
 ---
 
-I'm coming close to _finally_ getting my iOS app Tubular deployed to the app store. Part of that process is to create a web site to promote it and to serve as a contact point for the app store page.
+I'm coming close to _finally_ getting my iOS app Tubulate deployed to the app store. Part of that process is to create a web site to promote it and to serve as a contact point for the app store page.
 
 I decided to use a free Openshift gear to host my site and Node.js / Express to implement it. Openshift comes with  a default disk quota of 1 Gigabyte, enough I figured, for anything I could ever need for such a small site.
 
@@ -21,7 +21,7 @@ However I decided to get funky and learn more about node, express, sessions etc 
 
 So I code up the implementation of sign-in, register and sign out locally and all is golden. I push the local repository out to Openshift and all works as expected. I make a minor modification after the initial push and I redeploy. Eek! There's a warning message at the end of the deploy saying that I was at 99% of my disk quota.
 
-Time to investigate. A quick look at the quota's from the `rhc` command shows the problem (tubular is my app name)
+Time to investigate. A quick look at the quota's from the `rhc` command shows the problem (tubular is my OpenShift App name)
 
 
 	> rhc app show tubular --gears quota
