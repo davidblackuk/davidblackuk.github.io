@@ -22,5 +22,5 @@ Now I haven't done any promotion of Tubulate yet, not even among my social conne
 
 When I looked at _who_ downloaded it I got an even  bigger surprise. Two people from east Asia and one from Japan.  So there you go, three downloads of an App for the London Underground, not one from even vaguely the same continent as London. Boy! are they lost :-)
 
-Now  to start the Apple (&#63743;) Watch integration...  
+Now  I can  start the Apple (&#63743;) Watch integration...  
 
