@@ -17,7 +17,7 @@ I'm having fun programming the Apple Watch. What I like the most about the exerc
 
  Quite how little space you have to work with can be shown from the image below (these are device screen shots)
 
-<img class="dosShot screenShot"  src="../../images/2015-03-01-tululate-apple-watch-implementation-1/ss00.png"  />
+<img class="dosShot screenShot centeredImg"  src="../../images/2015-03-01-tululate-apple-watch-implementation-1/ss00.png"  />
 
 
 The main interface for the iPhone application is the home screen. For your current home station if shows you 

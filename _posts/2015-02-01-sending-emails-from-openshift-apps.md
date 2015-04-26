@@ -17,7 +17,7 @@ I'm trying to finally get my App Tubular deployed to the AppStore. As part of th
 My web site is hosted in OpenShift and is a Node.js / Express Application with a little MongoDB thrown in for good measure. The contacts page on the web site has a simple form that posts back to the server an email address and a message to send. 
 
 
-<img class="dosShot screenShot"  src="../../images/2015-02-01-sending-emails-from-openshift-apps/ss1.png"  />
+<img class="dosShot screenShot centeredImg"  src="../../images/2015-02-01-sending-emails-from-openshift-apps/ss1.png"  />
 
 
 In the route code for the post I solved the email sending problem by inserting the following line of code while I was completing the form side of the UI.
