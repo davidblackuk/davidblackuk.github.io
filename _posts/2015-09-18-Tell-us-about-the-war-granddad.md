@@ -27,7 +27,7 @@ The conventional wisdom of the time was that to make a game you had to write it 
 
 My first published game was *Fireman Fred*, named in the way of all Spectrum games, with gratuitous alliteration. It was a total Manic miner rip off, just far, far worse.
 
-<div class="dbImg centeredImg" data-src="2015-09-18/FiremanFred.gif" ></div>
+<div class="dbImg centeredImg" data-src="2015-09-18/firemanFred.gif" ></div>
 
 
 You had to climb the ladders collect the people (and cats too) and take them to the ambulance. Once all the poor wretches had been collected you got to go to the next level. 
