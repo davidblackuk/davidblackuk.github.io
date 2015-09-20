@@ -37,92 +37,67 @@ It would have been beyond my wildest dreams to be able to afford a PC with that 
 
 The disk is in and whirring and clanking (Oh yeah) and we have our first install screen. All, please note younglings, in glorious text mode.
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/001.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/001.png"  />
-</a>
+
+
+<div class="dbImg centeredImg dos" data-src="2012-07-21/001.png" ></div>
+
 
 Now for some directions and warnings. I do love the line 'If you have not backed up your files recently, you might want to do so before installing MS-DOS'. Just you might want to? Wow, now-a-days that would have a link to a page of disclaimers from Microsoft the size of a small telephone directory.
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/002.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/002.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/002.png" ></div>
 
 
 But we *must*, we _need_ to continue so we hit enter.
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/003.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/003.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/003.png" ></div>
 
 It's format or bust at this point so let's get on with the killin. The installer has blasted the partition table so we need a reboot.
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/004.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/004.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/004.png" ></div>
 
 And now we watch the drive format. Slowly. Very slowly. Very, Very slowly. I can't remember when quick format was introduced, but I'm glad it was.
 
-
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/005.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/005.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/005.png" ></div>
 
 Decision time, are we citizens of the US of A? Well no in this case so we:
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/006.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/006.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/006.png" ></div>
+
 
 select the country we are in
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/007.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/007.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/007.png" ></div>
 
 and the keyboard we use.
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/008.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/008.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/008.png" ></div>
 
 where Microsoft should shove it
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/009.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/009.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/009.png" ></div>
 
 then load disk
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/010.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/010.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/010.png" ></div>
 
 after disk (well three in total)
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/011.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/011.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/011.png" ></div>
 
 
 Nearly there 
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/012.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/012.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/012.png" ></div>
 
 
 We remove disk three, press enter
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/013.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/013.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/013.png" ></div>
 
 
 And... She lives!
 
-<a data-lightbox="install-images"  href="../../images/2012-07-21-It-all-started-with-a-floppy-disk/014.png" >
-	<img class="dosShot screenShot"  src="../../images/2012-07-21-It-all-started-with-a-floppy-disk/014.png"  />
-</a>
+<div class="dbImg centeredImg dos" data-src="2012-07-21/014.png" ></div>
 
 
 Gosh HIMEM, gotta remember about that, didn't we have to optimise it or some such? It's gonna be fun remembering.
