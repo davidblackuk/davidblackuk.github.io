@@ -37,7 +37,17 @@ I demoed Fireman Fred to the owner of a local record/games shop in Sunderland (I
 <div class="dbImg centeredImg" data-src="2015-09-18/loading-screen.gif" ></div>
 
 
-I think the deal was an advance of £1,000 on royalties of 50p a copy sold. Surprisingly Fred made money. Who'd of thunk.
+I think the deal was an advance of £1,000 on royalties of 50p a copy sold (rrp £5.50). 
+
+Tynesoft leaped into action with a massive marketing campaign:
+
+<div class="dbImg centeredImg zoom70" data-src="2015-09-18/advert.png" ></div>
+
+[Image From: Wos, text copy right Home Computing Weekly ][3]
+{: style="color:gray; font-size: 80%; text-align: center;"}
+
+Then surprisingly, Fred made money. Who'd of thunk.
+
 
 Here he is in all his box art glory (and following the rules of the day when box art had nothing to do with the game itself).
 
@@ -72,3 +82,4 @@ You tube user [zxspectrumgames64][2] did a play through of Fred and put it on yo
 
 [1]: http://en.wikipedia.org/wiki/User:Pixel8
 [2]: https://www.youtube.com/channel/UC_dvo6BqXid0v470tVDseOA
+[3]: http://wos.meulie.net
