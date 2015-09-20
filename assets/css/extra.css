@@ -8,3 +8,7 @@
 	width: 400px;
 	height: 294px;
 }
+
+.zoom50 {
+	zoom: 50%;
+}
