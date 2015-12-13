@@ -28,3 +28,11 @@
 .zoom90 {
 	zoom: 90%;
 }
+
+
+blockquote{
+	color: #444;
+	font-family: auto;
+	font-size: 1.2em!Important;
+	line-height: 1.3em !Important;
+}
