@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Spectrum development then and now
-tags: [ 8bit]
+tags: [ 8bit, spectrum, z80]
 location: London, England
 excerpt: How quick can you develop speccy app using a modern OS
 comments: true
