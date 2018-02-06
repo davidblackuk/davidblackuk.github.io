@@ -1,3 +1,2 @@
 #! /bin/bash
-
-jekyll serve --watch --drafts --config _config.yml,_home.yml
+bundle exec jekyll serve --drafts --config _config.yml,_home.yml
