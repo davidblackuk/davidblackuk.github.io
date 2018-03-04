@@ -99,6 +99,7 @@ My GTX 980 has a peak shader arithmetic rate of 5 tera flops each. According to 
 Now multiply those figures by 2.3 and you've got the prices as they would be today. Future me would have been rich back then :-)
 
 
+_Update:_ I've written a follow up to this article describing a [new pc based approach to Spectrum development in 2018][6].
 
 
 
@@ -107,3 +108,4 @@ Now multiply those figures by 2.3 and you've got the prices as they would be tod
 [3]: https://github.com/psbhlw/sublime-text-z80asm
 [4]: http://k1.spdns.de
 [5]: https://en.wikipedia.org/wiki/FLOPS
+[6]: {{ site.baseurl }}{% post_url 2018-02-04-Spectrum-development-then-and-now-part2 %}

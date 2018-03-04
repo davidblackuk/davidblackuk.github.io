@@ -36,3 +36,44 @@ blockquote{
 	font-size: 1.2em!Important;
 	line-height: 1.3em !Important;
 }
+
+table {
+	margin-left: auto;
+    margin-right: auto;
+	border-collapse: collapse;
+}
+
+table td,th {
+	border: 1px solid rgb(221, 221, 221);
+	padding: 0.5em;
+}
+
+
+.spec-color {
+	display: inline-block;
+	width: 100%;
+	height: 1em;
+	background-color: forestgreen;
+	border: 1px solid #AAA
+}
+
+.spec-color-0-n{background-color:	#000000}
+.spec-color-1-n{background-color:	#0000D7}
+.spec-color-2-n{background-color:	#D70000}
+.spec-color-3-n{background-color:	#D700D7}
+.spec-color-4-n{background-color:	#00D700}
+.spec-color-5-n{background-color:	#00D7D7}
+.spec-color-6-n{background-color:	#D7D700}
+.spec-color-7-n{background-color:	#D7D7D7}
+.spec-color-0-b{background-color:	#000000}
+.spec-color-2-b{background-color:	#0000FF}
+.spec-color-3-b{background-color:	#FF0000}
+.spec-color-4-b{background-color:	#FF00FF}
+.spec-color-5-b{background-color:	#00FF00}
+.spec-color-6-b{background-color:	#00FFFF}
+.spec-color-7-b{background-color:	#FFFF00}
+.spec-color-8-b{background-color:	#FFFFFF}
+
+.entry-tags {
+	padding-bottom: 8px
+}
