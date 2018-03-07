@@ -49,6 +49,14 @@ table td,th {
 }
 
 
+.memory-slot	 {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	color: rgb(8, 184, 37);
+	
+}
+
 .spec-color {
 	display: inline-block;
 	width: 100%;

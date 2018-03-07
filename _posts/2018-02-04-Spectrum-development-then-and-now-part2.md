@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Spectrum development then and now Part II
+title:  "Spectrum development then and now: Part II"
 tags: [ 8bit, spectrum, z80]
 location: London, England
 excerpt: Spectrum development in 2018

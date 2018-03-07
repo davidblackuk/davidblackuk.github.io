@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "The ZX-Spectrum screen layout #1"
+title:  "The ZX-Spectrum screen layout: Part I"
 tags: [ 8bit, z80, spectrum]
 location: London, England
-excerpt: Some computers have easy to understand screen layouts, the Spectrum? Not so much!
+excerpt: How colours values were specified on the Sinclair ZX Spectrum.
 comments: true
 share: true
 ---
@@ -26,13 +26,13 @@ The 48K ZX Spectrum memory map is shown below, $xxxx denotes a hexadecimal numbe
         <tr> <td> $5CC0 </td> <td> $5CCA </td> <td> 11     </td> <td> Reserved </td> </tr>
         <tr> <td> $5C00 </td> <td> $5CBF </td> <td> 192    </td> <td> System variables </td> </tr>
         <tr> <td> $5B00 </td> <td> $5BFF </td> <td> 256    </td> <td> Printer buffer </td> </tr>
-        <tr> <td> $5800 </td> <td> $5AFF </td> <td> 768    </td> <td> Attributes   </td> </tr>
+        <tr> <td> $5800 </td> <td> $5AFF </td> <td> 768    </td> <td>  <span class="memory-slot">Attributes</span>   </td> </tr>
         <tr> <td> $4000 </td> <td> $57FF </td> <td> 6,144  </td> <td> Pixel data  </td> </tr>
         <tr> <td> $0000 </td> <td> $3FFF </td> <td> 16,384 </td> <td> Basic ROM </td> </tr>
     </tbody>
 </table>
 
-The spectrum screen memory started in memory immediately after the spectrum rom, at address $4000 (16384d). Our 256x192 pixels are stored 8 pixels to the byte in 6,144 byes of memory (32 bytes by 192 rows). The colour attributes were stored immediately after the pixel data from address  $5800 (22,628) in 768 bytes (32 x 24 character of data).
+The spectrum's screen memory starts in memory immediately after the spectrum rom, at address $4000 (16384d). Our 256x192 pixels are stored 8 pixels to the byte in 6,144 byes of memory (32 bytes by 192 rows). The colour attributes were stored immediately after the pixel data from address  $5800 (22,628) in 768 bytes (32 x 24 character of data).
 
 ## Addressing attributes
 
@@ -172,7 +172,7 @@ Using the `cls_attributes` method is as simple as:
 
 which sets the whole screen to have a blue background and yellow text, both of which are bright.
 
-In part two we'll address the pixel layout of the screen and how to address that.
+In part two] we'll address the pixel layout of the screen and how to address that.
 
 ---
 
