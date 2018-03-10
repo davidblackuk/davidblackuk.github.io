@@ -1,0 +1,6 @@
+{
+    
+    "markdown.styles": [
+        "../assets/css/main.min.css"
+    ]
+}

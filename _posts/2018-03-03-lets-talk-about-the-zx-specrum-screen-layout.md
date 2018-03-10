@@ -39,6 +39,7 @@ The spectrum's screen memory starts in memory immediately after the spectrum rom
 Addressing attributes is as easy as you would expect, starting at $5800 there are 32 attributes per screen row and 24 rows.
 
 |       | 0| 1| 2| 3| 4| 5| 6| 7| 8| 9| A| B| C| D| E| F| ...|1F|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | $5800 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |  |
 | $5820 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |  |
 | $5840 |  |  |  | X|  |  |  |  |  |  |  |  |  |  |  |  | |  |
@@ -69,7 +70,7 @@ The bright attribute makes the foreground and background colours, err..., bright
 The colour value 0..7 is the index into the colour table, the colour values at those indexes and their bright equivalents are<sup>*</sup>:
 
 | Decimal | Binary | Colour | Normal | Bright |
-|---|---|---| --- |
+|---|---|---| --- |---|
 | 0 | 000 | Black   | <span class="spec-color spec-color-0-n"></span> | <span class="spec-color spec-color-0-b"></span> |
 | 1 | 001 | Blue    | <span class="spec-color spec-color-1-n"></span> | <span class="spec-color spec-color-2-b"></span> |
 | 2 | 010 | Red     | <span class="spec-color spec-color-2-n"></span> | <span class="spec-color spec-color-3-b"></span> |
