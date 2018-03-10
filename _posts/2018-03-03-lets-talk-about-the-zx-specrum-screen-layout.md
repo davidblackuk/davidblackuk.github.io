@@ -7,7 +7,6 @@ excerpt: How colours values were specified on the Sinclair ZX Spectrum.
 comments: true
 share: true
 ---
-
 # Attributes
 
 The original 48K Spectrum had a character resolution of 32 columns by 24 rows, implemented using a pixel resolution of 256 by 192 pixels. Each pixel could be individually manipulated, this was a major departure from previous ZX computers which (by default) only allowed the screen to be manipulated at the character level.
@@ -173,10 +172,10 @@ Using the `cls_attributes` method is as simple as:
 
 which sets the whole screen to have a blue background and yellow text, both of which are bright.
 
-In part two] we'll address the pixel layout of the screen and how to address that.
+In [part two][1] we'll address the pixel layout of the screen.
 
 ---
 
 <sup>*</sup>These colours are approximations based on <em>science</em>, or  a close approximation to science. Which is to say guess work :-)
 
-
+[1]: {{ site.baseurl }}{% post_url 2018-03-10-lets-talk-about-the-zx-specrum-screen-layout-part-two %}
