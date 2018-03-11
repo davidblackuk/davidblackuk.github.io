@@ -13,41 +13,41 @@ The original 48K Spectrum had a character resolution of 32 columns by 24 rows, i
 
 While visibility could be controlled on a pixel-by-pixel basis, colour was set in 8 by 8 pixel squares at the character level with all pixels in a particular character cell sharing the same foreground and background colours. The nature of the attribute level colour setting is what produces attribute clashes (which we'll cover later) and what gave many spectrum games their distinctive looks.
 
-The 48K ZX Spectrum memory map is shown below, $xxxx denotes a hexadecimal number, lengths are decimal
+The 48K ZX Spectrum memory map is shown below, #xxxx denotes a hexadecimal number, lengths are decimal
 
 <table>
     <thead>
         <tr><th>Start</th> <th>End</th> <th>Length</th> <th>Description</th></tr>
     </thead>
     <tbody>
-        <tr> <td> $FF58 </td> <td> $FFFF </td> <td> 168    </td> <td> Reserved </td> </tr>
-        <tr> <td> $5CCB </td> <td> $FF57 </td> <td> 41,612 </td> <td> Free memory </td> </tr>
-        <tr> <td> $5CC0 </td> <td> $5CCA </td> <td> 11     </td> <td> Reserved </td> </tr>
-        <tr> <td> $5C00 </td> <td> $5CBF </td> <td> 192    </td> <td> System variables </td> </tr>
-        <tr> <td> $5B00 </td> <td> $5BFF </td> <td> 256    </td> <td> Printer buffer </td> </tr>
-        <tr> <td> $5800 </td> <td> $5AFF </td> <td> 768    </td> <td>  <span class="memory-slot">Attributes</span>   </td> </tr>
-        <tr> <td> $4000 </td> <td> $57FF </td> <td> 6,144  </td> <td> Pixel data  </td> </tr>
-        <tr> <td> $0000 </td> <td> $3FFF </td> <td> 16,384 </td> <td> Basic ROM </td> </tr>
+        <tr> <td> #FF58 </td> <td> #FFFF </td> <td> 168    </td> <td> Reserved </td> </tr>
+        <tr> <td> #5CCB </td> <td> #FF57 </td> <td> 41,612 </td> <td> Free memory </td> </tr>
+        <tr> <td> #5CC0 </td> <td> #5CCA </td> <td> 11     </td> <td> Reserved </td> </tr>
+        <tr> <td> #5C00 </td> <td> #5CBF </td> <td> 192    </td> <td> System variables </td> </tr>
+        <tr> <td> #5B00 </td> <td> #5BFF </td> <td> 256    </td> <td> Printer buffer </td> </tr>
+        <tr> <td> #5800 </td> <td> #5AFF </td> <td> 768    </td> <td>  <span class="memory-slot">Attributes</span>   </td> </tr>
+        <tr> <td> #4000 </td> <td> #57FF </td> <td> 6,144  </td> <td> Pixel data  </td> </tr>
+        <tr> <td> #0000 </td> <td> #3FFF </td> <td> 16,384 </td> <td> Basic ROM </td> </tr>
     </tbody>
 </table>
 
-The spectrum's screen memory starts in memory immediately after the spectrum rom, at address $4000 (16384d). Our 256x192 pixels are stored 8 pixels to the byte in 6,144 byes of memory (32 bytes by 192 rows). The colour attributes were stored immediately after the pixel data from address  $5800 (22,628) in 768 bytes (32 x 24 character of data).
+The spectrum's screen memory starts in memory immediately after the spectrum rom, at address #4000 (16384d). Our 256x192 pixels are stored 8 pixels to the byte in 6,144 byes of memory (32 bytes by 192 rows). The colour attributes were stored immediately after the pixel data from address  #5800 (22,628) in 768 bytes (32 x 24 character of data).
 
 ## Addressing attributes
 
-Addressing attributes is as easy as you would expect, starting at $5800 there are 32 attributes per screen row and 24 rows.
+Addressing attributes is as easy as you would expect, starting at #5800 there are 32 attributes per screen row and 24 rows.
 
 |       | 0| 1| 2| 3| 4| 5| 6| 7| 8| 9| A| B| C| D| E| F| ...|1F|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| $5800 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |  |
-| $5820 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |  |
-| $5840 |  |  |  | X|  |  |  |  |  |  |  |  |  |  |  |  | |  |
-| $5860 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |  |
+| #5800 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |  |
+| #5820 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |  |
+| #5840 |  |  |  | X|  |  |  |  |  |  |  |  |  |  |  |  | |  |
+| #5860 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |  |
 | ...   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |  |
-| $5EAO |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |  |
+| #5EAO |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | |  |
 
-To set the attributes for character (3, 2) assuming (0,0) is at the top left of the screen you write to address `$5800 + ((2*32)+ 3)` or
-$5843 (and X marks the spot).
+To set the attributes for character (3, 2) assuming (0,0) is at the top left of the screen you write to address `#5800 + ((2*32)+ 3)` or
+#5843 (and X marks the spot).
 
 ## Attribute values
 
