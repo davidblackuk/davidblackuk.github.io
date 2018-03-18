@@ -20,18 +20,18 @@ The original 48K Spectrum had a character resolution of 32 columns by 24 rows, i
         <tr><th>Start</th> <th>End</th> <th>Length</th> <th>Description</th></tr>
     </thead>
     <tbody>
-        <tr> <td> $FF58 </td> <td> $FFFF </td> <td> 168    </td> <td> Reserved </td> </tr>
-        <tr> <td> $5CCB </td> <td> $FF57 </td> <td> 41,612 </td> <td> Free memory </td> </tr>
-        <tr> <td> $5CC0 </td> <td> $5CCA </td> <td> 11     </td> <td> Reserved </td> </tr>
-        <tr> <td> $5C00 </td> <td> $5CBF </td> <td> 192    </td> <td> System variables </td> </tr>
-        <tr> <td> $5B00 </td> <td> $5BFF </td> <td> 256    </td> <td> Printer buffer </td> </tr>
-        <tr> <td> $5800 </td> <td> $5AFF </td> <td> 768    </td> <td> Attributes   </td> </tr>
-        <tr> <td> $4000 </td> <td> $57FF </td> <td> 6,144  </td> <td> <span class="memory-slot">Pixel data</span>  </td> </tr>
-        <tr> <td> $0000 </td> <td> $3FFF </td> <td> 16,384 </td> <td> Basic ROM </td> </tr>
+        <tr> <td> #FF58 </td> <td> #FFFF </td> <td> 168    </td> <td> Reserved </td> </tr>
+        <tr> <td> #5CCB </td> <td> #FF57 </td> <td> 41,612 </td> <td> Free memory </td> </tr>
+        <tr> <td> #5CC0 </td> <td> #5CCA </td> <td> 11     </td> <td> Reserved </td> </tr>
+        <tr> <td> #5C00 </td> <td> #5CBF </td> <td> 192    </td> <td> System variables </td> </tr>
+        <tr> <td> #5B00 </td> <td> #5BFF </td> <td> 256    </td> <td> Printer buffer </td> </tr>
+        <tr> <td> #5800 </td> <td> #5AFF </td> <td> 768    </td> <td> Attributes   </td> </tr>
+        <tr> <td> #4000 </td> <td> #57FF </td> <td> 6,144  </td> <td> <span class="memory-slot">Pixel data</span>  </td> </tr>
+        <tr> <td> #0000 </td> <td> #3FFF </td> <td> 16,384 </td> <td> Basic ROM </td> </tr>
     </tbody>
 </table>
 
-The spectrum's screen memory started in memory immediately after the spectrum rom, at address $4000 (16384d). Our 256x192 pixels are stored 8 pixels to the byte in 6,144 byes of memory (32 bytes by 192 rows).
+The spectrum's screen memory started in memory immediately after the spectrum rom, at address #4000 (16384d). Our 256x192 pixels are stored 8 pixels to the byte in 6,144 byes of memory (32 bytes by 192 rows).
 
 Each of the 32 bytes in a row represented 8 pixels on the screen with the most significant bit (7) being the left most bit and the least significant bit (0) being the rightmost pixel. So the byte values 24, 60, 126, 219, 255, 90, 129, 68 stacked on top of one another might just give you a  space invader.
 
@@ -66,11 +66,11 @@ The next 6 groups of 32 bytes of physical memory in the screen buffer are the fi
 
 After that the next blocks of 32 bytes represent the second row of pixels for character 1. Then characters 2, 3, 4, 5, 5 ,6 ,7 and 8.
 
-We proceeded character row, by character row, until the first bank of pixels is filled. This bank of pixels is 8 * 8 * 32 bytes in length (2,048 bytes) from $4000 to $47FF.
+We proceeded character row, by character row, until the first bank of pixels is filled. This bank of pixels is 8 * 8 * 32 bytes in length (2,048 bytes) from #4000 to #47FF.
 
-The second bank of memory starts at $4800 with the first pixel row for character row 9, then the first row for character row 10 etc. This bank stretches from $4800 to 4FFF.
+The second bank of memory starts at #4800 with the first pixel row for character row 9, then the first row for character row 10 etc. This bank stretches from #4800 to 4FFF.
 
-The third and final bank representing the pixel memory for screen character rows 17 through 24 is represented by the memory in address range $5000 to $57FF.
+The third and final bank representing the pixel memory for screen character rows 17 through 24 is represented by the memory in address range #5000 to #57FF.
 
 Got that? Excellent! If you take nothing else away from this post, hopefully, you have an understanding of how unintuitive the screen was for early programmers on the spectrum. It caused a lot of head scratching (perhaps the start of my bald head).
 
@@ -88,13 +88,17 @@ The ULA however was no speed daemon. So the screen memory layout was designed to
 
 The second reason for the memory layout is, that on the whole, Spectrum BASIC is character based (I know there is a draw and plot command, but still...)
 
-If you are at the start of a character location on the screen (in any bank) and have the address in the 16 bit register HL, then the second pixel row of the character is at offset $100 from HL, the third at offset $200, then $300, $400, $500, $600 and finally $700.
+If you are at the start of a character location on the screen (in any bank) and have the address in the 16 bit register HL, then the second pixel row of the character is at offset #100 from HL, the third at offset #200, then #300, #400, #500, #600 and finally #700.
 
-Now adding $100 to HL is the same as performing `inc h` and that's a really quick way of stepping down a screen row for a character when rendering it. This only works when dealing with addresses of character cells and won't work if rendering 8 lines of character data starting anywhere on screen.
+Now adding #100 to HL is the same as performing `inc h` and that's a really quick way of stepping down a screen row for a character when rendering it. This only works when dealing with addresses of character cells and won't work if rendering 8 lines of character data starting anywhere on screen.
 
 But this implementation detail will have helped keep the size of the Spectrum ROM down.
 
-In part three of this post we'll start examining the assembly language to address the screen in a sane manner.
+In [part three][2] of this post we'll start examining the assembly language to address the screen in a sane manner.
 
 
 [1]: {{ site.baseurl }}{% post_url 2018-03-03-lets-talk-about-the-zx-specrum-screen-layout %}
+
+[2]: {{ site.baseurl }}{% post_url 2018-03-18-lets-talk-about-the-zx-specrum-screen-layout-part-three %}
+
+

@@ -85,3 +85,23 @@ table td,th {
 .entry-tags {
 	padding-bottom: 8px
 }
+
+
+.t-state td {
+	padding-top: 0;
+	padding-bottom: 0;
+	
+}
+
+.t-instr {
+	color:indigo;	
+}
+
+
+table .t-comment {
+	color: green;
+}
+
+.t-total {
+	font-weight: bold;
+}
