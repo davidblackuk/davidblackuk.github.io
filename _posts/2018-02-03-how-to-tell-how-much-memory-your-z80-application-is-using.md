@@ -4,6 +4,7 @@ title:  How much memory is my z80 program using?
 tags: [ 8bit, z80, spectrum]
 location: London, England
 excerpt: Some assemblers make finding how much memory you are using easy, some not so much...
+description: How to tell how much memory your ZX Spectrum game is using. 
 comments: true
 share: true
 ---

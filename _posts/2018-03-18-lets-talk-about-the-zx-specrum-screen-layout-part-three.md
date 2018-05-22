@@ -4,6 +4,7 @@ title:  "The ZX-Spectrum screen layout: Part III"
 tags: [ 8bit, z80, spectrum]
 location: London, England
 excerpt: Addressing the Spectrum screen programmatically
+description: The Spectrum screen layout is complex, let's talk pixel address calculation...
 comments: true
 share: true
 date: 2018-03-11

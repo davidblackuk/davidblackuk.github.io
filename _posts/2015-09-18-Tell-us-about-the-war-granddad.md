@@ -5,6 +5,7 @@ tags: [8bit, spectrum]
 modified: 2015-07-15 09:30:10 +0100
 location: London, England
 excerpt: “I started out as a games developer in the 1980s and this is about that.”
+description: How I got started in 8-bit game development and wrote the worst game ever.
 comments: true
 share: true
 ---

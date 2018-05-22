@@ -3,10 +3,6 @@ layout: post
 title: "Tabulate UI on <i class='fa fa-apple'> </i>  WATCH #2"
 modified: 2015-03-21 19:30:10 +0100
 tags: [appleWatch]
-image:
-  feature: 
-  credit: 
-  creditlink: 
 comments: true
 share: true
 

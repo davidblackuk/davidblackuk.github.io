@@ -5,6 +5,7 @@ tags: [appleWatch]
 modified: 2015-07-15 09:30:10 +0100
 location: London, England
 excerpt: “I’ve lost my phone&#58; Apple watch to the rescue.”
+description: “I’ve lost my phone&#58; Apple watch to the rescue.”
 comments: true
 share: true
 ---

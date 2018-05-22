@@ -4,6 +4,7 @@ title:  "The ZX-Spectrum screen layout: Part I"
 tags: [ 8bit, z80, spectrum]
 location: London, England
 excerpt: How colours values were specified on the Sinclair ZX Spectrum.
+description: The Spectrum screen layout is complex, let's talk about the attribute map and colors
 comments: true
 share: true
 ---

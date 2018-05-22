@@ -4,6 +4,7 @@ title:  "The ZX-Spectrum screen layout: Part II"
 tags: [ 8bit, z80, spectrum]
 location: London, England
 excerpt: Some computers have easy to understand screen layouts, the Spectrum? Not so much!
+description: The Spectrum screen layout is complex, let's talk about the pixel layout and memory map
 comments: true
 share: true
 date: 2018-03-10
