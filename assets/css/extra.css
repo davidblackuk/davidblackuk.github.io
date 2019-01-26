@@ -111,3 +111,35 @@ table .t-comment {
 .t-total {
 	font-weight: bold;
 }
+
+.omni-dip td {
+	height: 1rem;
+	padding: 4px;
+}
+
+.omni-dip .h {
+	background-color: rgb(188, 181, 250);
+}
+
+.omni-dip .d {
+	background-color: rgb(158, 220, 248);
+}
+
+.omni-dip .r {
+	background-color: rgb(158, 248, 181);
+}
+
+
+.omni-dip .i {
+	background-color: black;
+	border: 1px solid black;
+	width: 1.0rem;
+	height: 1rem;
+}
+
+.omni-dip .o {
+	background-color: transparent;
+	border: 1px solid transparent;
+	width: 1.0rem;
+	height: 1rem;
+}
