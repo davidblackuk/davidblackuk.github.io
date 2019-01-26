@@ -9,6 +9,12 @@
 	height: 294px;
 }
 
+.dbCaption {
+	text-align: center;
+	color: #8a8989;
+	font-size: 70%;
+	margin-top: .33rem;
+}
 .zoom50 {
 	zoom: 50%;
 }

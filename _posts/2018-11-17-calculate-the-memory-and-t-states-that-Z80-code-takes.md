@@ -18,6 +18,7 @@ I talked a little about space/time trade-offs in an [earlier post on calculating
 When I was writing [production Z80 code][1] my old assembler (OCP's Full screen editor assembler) used to be able to output the information that I needed as part of the assembly process.  A quick look at my current tooling shows it doesn't give me the functionality I need.
 
 ## Of course then ...
+
 I went to work and wrote an [online z80 t-state analyser][2].
 
 I have included as many of the undocumented Z80 instructions that I am aware of and have run it against several large online code bases (manic miner etc) and it handles them without issues.
@@ -31,5 +32,3 @@ I'm looking to extend the app to produce syntax highlighted code with t-states f
 [1]: {{ site.baseurl }}{% post_url 2015-10-15-Spectrum-development-then-and-now %}
 [2]: ../tstates
 [3]: {{ site.baseurl }}{% post_url 2018-03-18-lets-talk-about-the-zx-specrum-screen-layout-part-three %}
-
-
