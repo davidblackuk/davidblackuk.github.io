@@ -112,6 +112,9 @@ table .t-comment {
 	font-weight: bold;
 }
 
+.omni-dip {
+	border-collapse: collapse;
+}
 .omni-dip td {
 	height: 1rem;
 	padding: 4px;
@@ -139,7 +142,7 @@ table .t-comment {
 
 .omni-dip .o {
 	background-color: transparent;
-	border: 1px solid transparent;
+	border: 1px solid gray;
 	width: 1.0rem;
 	height: 1rem;
 }
