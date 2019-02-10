@@ -291,3 +291,5 @@ So i'll have: divMMC, hold the firmware update, Kempston joystick, heavy on the 
 [2]: https://github.com/brendanalford/zx-diagnostics/wiki
 [3]: https://www.facebook.com/groups/519934131721262/files/
 [4]: {{ site.baseurl }}{% post_url 2019-01-26-onmi-128hq-part1-overview %}
+
+

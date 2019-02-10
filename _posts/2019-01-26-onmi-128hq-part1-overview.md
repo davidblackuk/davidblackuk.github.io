@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Omni 128HQ #1 - Overview"
+title:  "Omni 128HQ Desktop #1 - Overview"
 tags: [ 8bit,  spectrum, hardware, omni]
 location: London, England
 excerpt: I've bought a modern hardware implementation of the ZX Spectrum, the OMNI 128HQ from retro radionics
