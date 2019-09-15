@@ -39,7 +39,6 @@ If you opt not to send crash reports and usage information, Tubulate will contin
 
 To reiterate, Tubulate only uses personal information in the app itself, no evil, we just want you to enjoy it.
 
-David Black
+**Love and Hugs**
 
-
-
+_David Black_
