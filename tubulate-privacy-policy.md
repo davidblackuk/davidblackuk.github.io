@@ -10,18 +10,18 @@ tags:
 
 Hi Everyone
 
-Tubulate is a free app. It is not ad-supported and so we require very little information about you and all of it is optional.
+Tubulate is a free app. It is not ad-supported and so requires very little information about you and all of it is optional.
 
 ## Location
 
 When the Tubulate starts it will ask you for permission to access your location. You have three choices:
 
-+ Deny access to your location
-  + Tubulate will function, but with reduced capabilities (no finding your closest stations etc)
-+ Allow once
-  + All functionality works as well as possible for this application launch, you will be presented with the three choices the next time you launch the app
 + Always
-  + Every time you use Tubulate it will be able to access your location.
+  + Every time you use Tubulate it will be able to access your location and all functionality will available.
++ Allow once
+  + All functionality is available for this application launch, you will be presented with these choices again, next time you launch Tubulate
++ Deny access to your location
+  + Tubulate will still function, but with reduced capabilities (no finding your closest stations or home station)
 
 In all cases if you give Tubulate access to your location it will not store or send that location to an external service.
 
