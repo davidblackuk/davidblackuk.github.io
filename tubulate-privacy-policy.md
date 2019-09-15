@@ -35,6 +35,8 @@ If you opt to send crash reports and usage you will be helping the development o
 
 If you opt not to send crash reports and usage information, Tubulate will continue to work as normal.
 
+### Finally
+
 To reiterate, Tubulate only uses personal information in the app itself, no evil, we just want you to enjoy it.
 
 David Black
