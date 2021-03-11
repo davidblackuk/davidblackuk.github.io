@@ -1,0 +1,133 @@
+I".@<p>Like most programmers I’m a hierarchical sort of a chap. When it comes to ordering data often the most logical pattern most data falls into is a tree layout.</p>
+
+<p>One of the first items I looked for in x-code was a tree view and of course there is wasn’t, it was hidden in plain sight. For the uninitiated (i.e. me) the relevant control is the <code class="language-plaintext highlighter-rouge">NSOutlineView</code>. That’s the view that you see on the left hand side of iTunes.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">NSOutlineView</code> is based on the <code class="language-plaintext highlighter-rouge">NSTableView</code> and has a wealth of  options that control the layout and appearance of the view. In this first post let’s keep things simple and build a very basic tree of text nodes.</p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>We will create a fresh monomac project and work in that. In our sample solution it’s called 01SimpleTreeContent.</p>
+
+<p><img src="../../images/2012-03-03-Displaying-tree-based-data-in-osx-using-monomac-and-csharp-Part-1/001.png" alt="monodevelop" class="screenShot" /></p>
+
+<p>Over first port of call is Xcode so double click MainWindow.xib and wait for the designer to open. In the object library search for the string outline and drag an NSOutlineView control onto your window.</p>
+
+<p><img src="../../../images/2012-03-03-Displaying-tree-based-data-in-osx-using-monomac-and-csharp-Part-1/002.png" alt="Xcode UI" class="screenShot" /></p>
+
+<p>Select your <code class="language-plaintext highlighter-rouge">NSOutlinView</code> and make the following changes</p>
+
+<ul>
+  <li>Set number of columns = 1</li>
+  <li>Content mode = “Cell Based”</li>
+</ul>
+
+<p><img src="../../images/2012-03-03-Displaying-tree-based-data-in-osx-using-monomac-and-csharp-Part-1/003.png" alt="Settings in XConde" class="screenShot" /></p>
+
+<p>Select the <code class="language-plaintext highlighter-rouge">NSOutlineView</code> and then create an outlet for it in the <code class="language-plaintext highlighter-rouge">MainWindowController.h</code> file by control-dragging from the outline view to the .h file.</p>
+
+<p><img src="../../images/2012-03-03-Displaying-tree-based-data-in-osx-using-monomac-and-csharp-Part-1/004.png" alt="Creating the outlet" class="screenShot" /></p>
+
+<p>Close Xcode and then go back to mono-develop.</p>
+
+<h2 id="creating-a-data-source">Creating a data source</h2>
+
+<p>In this example we are going to bind our data to the <code class="language-plaintext highlighter-rouge">NSOutlineView</code> by setting its <code class="language-plaintext highlighter-rouge">DataSource</code> property to a class that implements the <code class="language-plaintext highlighter-rouge">NSOutlineViewDataSource</code> protocol from Cocoa. The data source is responsible for managing the data (d’uh) and supplying it to the view on demand. In a future post we will look at automating this  process further using an <code class="language-plaintext highlighter-rouge">NSTreeController</code> and key value bindings. But for now we will keep it simple.</p>
+
+<p>Let’s define a class to store our domain data, the important thing to note here is that it has to derive from NSObject:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">Node</span> <span class="p">:</span> <span class="n">NSObject</span>
+<span class="p">{</span>
+	<span class="k">public</span> <span class="nf">Node</span> <span class="p">()</span>
+	<span class="p">{</span>
+		<span class="n">Children</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Node</span><span class="p">&gt;();</span>
+	<span class="p">}</span>
+		
+	<span class="k">public</span> <span class="nf">Node</span> <span class="p">(</span><span class="kt">string</span> <span class="n">name</span><span class="p">)</span> <span class="p">:</span> <span class="k">this</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="n">Name</span> <span class="p">=</span> <span class="n">name</span><span class="p">;</span>
+	<span class="p">}</span>
+		
+	<span class="k">public</span> <span class="kt">bool</span> <span class="n">IsRoot</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+	<span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+	<span class="k">public</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Node</span><span class="p">&gt;</span> <span class="n">Children</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>	
+<span class="p">}</span></code></pre></figure>
+
+<p>To implement our simple data source we need to derive a class from <code class="language-plaintext highlighter-rouge">NSOutlineViewDataSource</code> and implement 4 methods these are:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">override</span> <span class="kt">int</span> <span class="nf">GetChildrenCount</span> <span class="p">(</span><span class="n">NSOutlineView</span> <span class="n">outlineView</span><span class="p">,</span> <span class="n">NSObject</span> <span class="n">item</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">Node</span> <span class="n">node</span> <span class="p">=</span>  <span class="n">item</span> <span class="k">as</span> <span class="n">Node</span><span class="p">;</span>
+	<span class="k">return</span> <span class="n">item</span> <span class="p">==</span> <span class="k">null</span> <span class="p">?</span> <span class="m">1</span> <span class="p">:</span> <span class="n">node</span><span class="p">.</span><span class="n">Children</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>The passed in object is either null for the top level node (in which case we return a fixed value of 1 for this simple example), or an <code class="language-plaintext highlighter-rouge">NSObject</code> that we can cast to our Node class and return the child count.</p>
+
+<p>As the <code class="language-plaintext highlighter-rouge">NSOutlineView</code> is populated the view calls the data source to get node data via the <code class="language-plaintext highlighter-rouge">GetChild</code> method:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">override</span> <span class="n">NSObject</span> <span class="nf">GetChild</span> <span class="p">(</span><span class="n">NSOutlineView</span> <span class="n">outlineView</span><span class="p">,</span> <span class="kt">int</span> <span class="n">childIndex</span><span class="p">,</span> <span class="n">NSObject</span> <span class="n">ofItem</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">Node</span> <span class="n">node</span> <span class="p">=</span> <span class="n">ofItem</span> <span class="k">as</span> <span class="n">Node</span><span class="p">;</span>
+	<span class="k">return</span> <span class="n">ofItem</span> <span class="p">==</span> <span class="k">null</span> <span class="p">?</span> <span class="n">RootNode</span> <span class="p">:</span> <span class="n">node</span><span class="p">.</span><span class="n">Children</span><span class="p">[</span><span class="n">childIndex</span><span class="p">];</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>The <code class="language-plaintext highlighter-rouge">ofItem</code> parameter is passed as null in the first case to signal that the tree is after the root node(s), otherwise we return the child count of our <code class="language-plaintext highlighter-rouge">Node</code> object.</p>
+
+<p>Two final methods round out the data source. When rendering each item the view need to know if the current node has children so it can render the disclosure triangle. To ask that question the view calls the following data source method:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">override</span> <span class="kt">bool</span> <span class="nf">ItemExpandable</span> <span class="p">(</span><span class="n">NSOutlineView</span> <span class="n">outlineView</span><span class="p">,</span> <span class="n">NSObject</span> <span class="n">item</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="n">Node</span> <span class="n">f</span> <span class="p">=</span> <span class="n">item</span> <span class="k">as</span> <span class="n">Node</span><span class="p">;</span>
+	<span class="k">return</span> <span class="n">item</span> <span class="p">==</span> <span class="k">null</span> <span class="p">?</span> <span class="k">true</span> <span class="p">:</span> <span class="n">f</span><span class="p">.</span><span class="n">Children</span><span class="p">.</span><span class="n">Count</span> <span class="p">&gt;</span><span class="m">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Which as in the previous examples returns true always for the root node (when item is null) otherwise it checks the child count of the node and returns true/false as appropriate.</p>
+
+<p>The last method we implement handles the ‘minor’ matter of telling the view what data we actually want to display (at last you say). In our example we only have one column in the view so we ignore the <code class="language-plaintext highlighter-rouge">forTableColumn</code> argument. If you need to support multiple columns just switch on the column and return the corresponding column value.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">override</span> <span class="n">NSObject</span> <span class="nf">GetObjectValue</span> <span class="p">(</span><span class="n">NSOutlineView</span> <span class="n">outlineView</span><span class="p">,</span> <span class="n">NSTableColumn</span> <span class="n">forTableColumn</span><span class="p">,</span> <span class="n">NSObject</span> <span class="n">byItem</span><span class="p">)</span>
+<span class="p">{</span>
+		<span class="n">Node</span> <span class="n">f</span> <span class="p">=</span> <span class="n">byItem</span> <span class="k">as</span> <span class="n">Node</span><span class="p">;</span>	
+		<span class="k">return</span> <span class="k">new</span> <span class="nf">NSString</span><span class="p">(</span><span class="n">f</span><span class="p">.</span><span class="n">Name</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>In the constructor of the datasource we create some dummy data and assign that to the RootNode property of our class.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">private</span> <span class="n">Node</span> <span class="n">RootNode</span> <span class="p">{</span><span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;}</span>
+<span class="k">public</span> <span class="nf">SimpleDataSource</span> <span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">RootNode</span> <span class="p">=</span> <span class="n">RootNode</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Node</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="n">Name</span> <span class="p">=</span> <span class="s">"The root node"</span><span class="p">,</span>
+		<span class="n">Children</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">Node</span><span class="p">&gt;(),</span>
+		<span class="n">IsRoot</span> <span class="p">=</span> <span class="k">true</span>
+	<span class="p">};</span>
+	
+	<span class="n">Node</span> <span class="n">paper</span><span class="p">;</span>
+	<span class="n">RootNode</span><span class="p">.</span><span class="n">Children</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="nf">Node</span><span class="p">(</span><span class="s">"Rock"</span><span class="p">));</span>
+	<span class="n">RootNode</span><span class="p">.</span><span class="n">Children</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="n">paper</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Node</span><span class="p">(</span><span class="s">"Paper"</span><span class="p">));</span>
+	<span class="n">RootNode</span><span class="p">.</span><span class="n">Children</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="nf">Node</span><span class="p">(</span><span class="s">"Scissors"</span><span class="p">));</span>
+	<span class="n">RootNode</span><span class="p">.</span><span class="n">Children</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="nf">Node</span><span class="p">(</span><span class="s">"Lizard"</span><span class="p">));</span>
+	<span class="n">RootNode</span><span class="p">.</span><span class="n">Children</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="nf">Node</span><span class="p">(</span><span class="s">"Spock"</span><span class="p">));</span>
+	
+	<span class="n">paper</span><span class="p">.</span><span class="n">Children</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="nf">Node</span><span class="p">(</span><span class="s">"Telegraph"</span><span class="p">));</span>
+	<span class="n">paper</span><span class="p">.</span><span class="n">Children</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="nf">Node</span><span class="p">(</span><span class="s">"Times"</span><span class="p">));</span>
+	<span class="n">paper</span><span class="p">.</span><span class="n">Children</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="nf">Node</span><span class="p">(</span><span class="s">"Sun"</span><span class="p">));</span>	
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="wiring-it-all-up">Wiring it all up</h2>
+
+<p>In MainWindowController.cs we need to bind our <code class="language-plaintext highlighter-rouge">NSOutLineView</code> to a new <code class="language-plaintext highlighter-rouge">SimpleDataSource</code> instance. Here we use the <code class="language-plaintext highlighter-rouge">WindowDidLoad</code> override from the <code class="language-plaintext highlighter-rouge">NSWindowController</code> base class:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">override</span> <span class="k">void</span> <span class="nf">WindowDidLoad</span> <span class="p">()</span>
+<span class="p">{</span>
+	<span class="k">base</span><span class="p">.</span><span class="nf">WindowDidLoad</span> <span class="p">();</span>
+	<span class="n">OutlineView</span><span class="p">.</span><span class="n">DataSource</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">SimpleDataSource</span><span class="p">();</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Now run the app and we should get:</p>
+
+<p><img src="../../images/2012-03-03-Displaying-tree-based-data-in-osx-using-monomac-and-csharp-Part-1/005.png" alt="Final outcome a working tree" class="screenShot" /></p>
+
+<p>Yeah!, or Meh, your millage may vary. In a later post we’ll pretty this up with custom cells, badges etc.  <em><a href="/files/data/Sample001.zip">Download the source code.</a></em></p>
+
+:ET

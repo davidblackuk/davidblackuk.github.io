@@ -1,0 +1,72 @@
+I"�<p>Programing z80 applications is an exercise in minimalism. Maintaining a tight control on the amount of memory you use and more importantly knowing how much memory is left, is vital. Some assemblers make this process easy, others, less so.</p>
+
+<p>There is a pseudo-symbol <code class="language-plaintext highlighter-rouge">$</code> supported on most if not all assemblers. <code class="language-plaintext highlighter-rouge">$</code> evaluates to the current memory location of the instruction being output. You can assign the value of <code class="language-plaintext highlighter-rouge">$</code> to a symbol at any point.</p>
+
+<p>Here’s a cut down version of Fred’s main file, with a very much truncated list of includes!</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="p">.</span><span class="n">org</span> <span class="err">#</span><span class="m">8000</span>
+
+<span class="n">start</span><span class="p">:</span>
+    <span class="n">ld</span> <span class="n">hl</span><span class="p">,</span> <span class="m">0</span>                <span class="p">;</span> <span class="n">start</span> <span class="n">level</span> <span class="k">is</span> <span class="m">0</span>
+    <span class="n">call</span> <span class="n">start_game</span>         <span class="p">;</span> <span class="n">run</span> <span class="n">the</span> <span class="n">game</span> <span class="n">loop</span>
+    <span class="p">;</span> <span class="p">...</span>
+<span class="err">#</span><span class="n">include</span> <span class="s">"./src/constants.z80asm"</span>
+<span class="p">;</span> <span class="n">lots</span> <span class="n">of</span> <span class="n">other</span> <span class="n">includes</span><span class="p">...</span>
+<span class="err">#</span><span class="n">include</span> <span class="s">"./src/back_buffer.z80asm"</span>
+
+<span class="n">z_total_bytes</span><span class="p">:</span> <span class="p">.</span><span class="n">equ</span> <span class="err">$</span><span class="p">-</span><span class="n">start</span></code></pre></figure>
+
+<p>The last line assigns the difference between the current code gen location and the start of the application to the symbl <code class="language-plaintext highlighter-rouge">z_total_bytes</code>.</p>
+
+<p>Now, if you assembler supports the output of the symbol file at the end of the process (and it should,) then when you look at the symbol table, you will see
+the total number of bytes used.</p>
+
+<p>In my case</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>VALUE</th>
+      <th style="text-align: left">SYMBOL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0007</td>
+      <td style="text-align: left">WHITE</td>
+    </tr>
+    <tr>
+      <td>A0BD</td>
+      <td style="text-align: left">XLOOP</td>
+    </tr>
+    <tr>
+      <td>0006</td>
+      <td style="text-align: left">YELLOW</td>
+    </tr>
+    <tr>
+      <td>A0BA</td>
+      <td style="text-align: left">YLOOP</td>
+    </tr>
+    <tr>
+      <td>41F8</td>
+      <td style="text-align: left">Z_TOTAL_BYTES</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>And showing me that I’m using <code class="language-plaintext highlighter-rouge">41f8</code> bytes of data or 16888 in decimal money. So with all my game graphics loaded and may be a tenth of the logic implemented I have a hair under half the available memory left. Which puts me in a pretty good position. I have not even started cheating yet and stuffing data into the screen buffer :-)</p>
+
+<h3 id="modern-tooling">Modern tooling</h3>
+
+<p>If like myself you are a user of the Visual Studio ZX Spectrum IDE by Istvan Novak (<a href="https://github.com/Dotneteer/spectnetide">Git Hub</a> repo) , then this process is made <em>much</em> easier. In visual studio navigate to
+the menu item</p>
+
+<p><code class="language-plaintext highlighter-rouge">ZX Spectrum IDE &gt; Z80 Assembler output</code></p>
+
+<p>This will pop open a window within the IDE, that in addition to the symbols list, has a summary tab that shows the total amount of memory used.</p>
+
+<div class="dbImg zoom80 centeredImg" data-src="z80/how-to-tell-how-much-memory-your-z80-application-is-using.png" title="SpecNet IDE Assembler output window"></div>
+
+<p>As usual SpecNet IDE is proving to be my IDE of choice for spectrum development. Which you can read about here.</p>
+
+:ET

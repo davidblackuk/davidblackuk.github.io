@@ -1,0 +1,40 @@
+I"�<p>Bit of a quick one this. So you have an OpenShift project and a domain name that you want to access it through, how do you proceed?</p>
+
+<p>There is a small amount of work to be done both at the domain hosting end and the OpenShift application end. In my case I have the brand new domain:</p>
+
+<p><a href="https://www.designedincroxleygreen.com" title="Go to the site via the new address">https://www.designedincroxleygreen.com</a></p>
+
+<p>and I want it to point to the existing OpenShift application:</p>
+
+<p><a href="http://tubular-davidblack.rhcloud.com" title="Access the site via the OpenShift hosted name">http://tubular-davidblack.rhcloud.com</a></p>
+
+<h1 id="first-step-configure-dns">First step: Configure DNS</h1>
+
+<p>At a minimum we need a <code class="language-plaintext highlighter-rouge">CNAME</code> DNS record to allow us to forward the <code class="language-plaintext highlighter-rouge">www.designedincroxleygreen.com</code> address to OpenShift. If we wanted to do this at the base level and have <code class="language-plaintext highlighter-rouge">designedincroxleygreen.com</code> resolve to our app we’d need an A record and more effort.</p>
+
+<p>While you domain registrars page will probably appear different to mine the approach is the same, go to the control panel and find the ‘advanced’ DNS settings page and add a new CNAME record pointing to your app. The DNS entry is for the pattern <code class="language-plaintext highlighter-rouge">www</code> and the remote item  is your OpenShift application URL.</p>
+
+<p><img class="dosShot screenShot" src="../../images/2015-01-21-pointing-a-domain-name-to-your-openshift-app/ss1.png" /></p>
+
+<h1 id="second-step-configure-openshift">Second step: Configure OpenShift</h1>
+
+<p>Now we’ve told the DNS servers where to route the domain to, we have to tell OpenShift to serve the application for that name. We do this using <code class="language-plaintext highlighter-rouge">rhc</code> tubular is the name of my application</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; rhc alias add tubular www.designedincroxleygreen.com
+</code></pre></div></div>
+
+<p>This will create a vhost in apache to route the requests for that domain to our app. To confirm the creation of the alias we can list out all aliases</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; rhc alias list tubular
+Alias                          Has Certificate? Certificate Added
+------------------------------ ---------------- -----------------
+www.designedincroxleygreen.com no               -
+</code></pre></div></div>
+
+<h1 id="finally-be-patient">Finally: Be patient</h1>
+
+<p>My domain registrar says it can take up to 48 hours for changes to propagate. My bindings started working after about 28 hours. Your mileage may vary.</p>
+
+<p><img class="dosShot screenShot" src="../../images/2015-01-21-pointing-a-domain-name-to-your-openshift-app/ss2.png" /></p>
+
+:ET

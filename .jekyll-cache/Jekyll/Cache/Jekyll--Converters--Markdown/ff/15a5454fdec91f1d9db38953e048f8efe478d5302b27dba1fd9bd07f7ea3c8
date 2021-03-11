@@ -1,0 +1,35 @@
+I"<p>Yosemite may still be in Beta and as it seems every time that Apple updates OS X they change the mechanism for flushing the DNS cache. Well guess what, they changed it again, Harrumph! (and at my age your allowed to harrumph loudly and as often as you like).</p>
+
+<p>So the new way of doing it in 10.10 Yosemite is</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; sudo discoveryutil mdnsflushcache; sudo discoveryutil udnsflushcaches
+</code></pre></div></div>
+
+<p>For those stuck in the past…</p>
+
+<p>OSX 10.9</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+</code></pre></div></div>
+
+<p>OSX 10.7  and  10.8</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; sudo killall -HUP mDNSResponder
+</code></pre></div></div>
+
+<p>OSX 10.6</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; sudo dscacheutil -flushcache ; sudo arp -d -a
+</code></pre></div></div>
+
+<p>OSX 10.5</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; sudo dscacheutil -flushcache
+</code></pre></div></div>
+
+<p>OSX 10.0, 10.1, 10.2, 10.3 and 10.4</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; lookupd -flushcache
+</code></pre></div></div>
+
+:ET

@@ -1,0 +1,433 @@
+I"�L<h1 id="attributes">Attributes</h1>
+
+<p>The original 48K Spectrum had a character resolution of 32 columns by 24 rows, implemented using a pixel resolution of 256 by 192 pixels. Each pixel could be individually manipulated, this was a major departure from previous ZX computers which (by default) only allowed the screen to be manipulated at the character level.</p>
+
+<p>While visibility could be controlled on a pixel-by-pixel basis, colour was set in 8 by 8 pixel squares at the character level with all pixels in a particular character cell sharing the same foreground and background colours. The nature of the attribute level colour setting is what produces attribute clashes (which we’ll cover later) and what gave many spectrum games their distinctive looks.</p>
+
+<p>The 48K ZX Spectrum memory map is shown below, #xxxx denotes a hexadecimal number, lengths are decimal</p>
+
+<table>
+    <thead>
+        <tr><th>Start</th> <th>End</th> <th>Length</th> <th>Description</th></tr>
+    </thead>
+    <tbody>
+        <tr> <td> #FF58 </td> <td> #FFFF </td> <td> 168    </td> <td> Reserved </td> </tr>
+        <tr> <td> #5CCB </td> <td> #FF57 </td> <td> 41,612 </td> <td> Free memory </td> </tr>
+        <tr> <td> #5CC0 </td> <td> #5CCA </td> <td> 11     </td> <td> Reserved </td> </tr>
+        <tr> <td> #5C00 </td> <td> #5CBF </td> <td> 192    </td> <td> System variables </td> </tr>
+        <tr> <td> #5B00 </td> <td> #5BFF </td> <td> 256    </td> <td> Printer buffer </td> </tr>
+        <tr> <td> #5800 </td> <td> #5AFF </td> <td> 768    </td> <td>  <span class="memory-slot">Attributes</span>   </td> </tr>
+        <tr> <td> #4000 </td> <td> #57FF </td> <td> 6,144  </td> <td> Pixel data  </td> </tr>
+        <tr> <td> #0000 </td> <td> #3FFF </td> <td> 16,384 </td> <td> Basic ROM </td> </tr>
+    </tbody>
+</table>
+
+<p>The spectrum’s screen memory starts in memory immediately after the spectrum rom, at address #4000 (16384d). Our 256x192 pixels are stored 8 pixels to the byte in 6,144 byes of memory (32 bytes by 192 rows). The colour attributes were stored immediately after the pixel data from address  #5800 (22,628) in 768 bytes (32 x 24 character of data).</p>
+
+<h2 id="addressing-attributes">Addressing attributes</h2>
+
+<p>Addressing attributes is as easy as you would expect, starting at #5800 there are 32 attributes per screen row and 24 rows.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+      <th>F</th>
+      <th>…</th>
+      <th>1F</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>#5800</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>#5820</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>#5840</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>X</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>#5860</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>#5EAO</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>To set the attributes for character (3, 2) assuming (0,0) is at the top left of the screen you write to address <code class="language-plaintext highlighter-rouge">#5800 + ((2*32)+ 3)</code> or
+#5843 (and X marks the spot).</p>
+
+<h2 id="attribute-values">Attribute values</h2>
+
+<p>Each block of 8x8 pixels has a single byte of attribute data packed as follows</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>7</th>
+      <th>6</th>
+      <th>5</th>
+      <th>4</th>
+      <th>3</th>
+      <th>2</th>
+      <th>1</th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F</td>
+      <td>B</td>
+      <td>P<sub>2</sub></td>
+      <td>P<sub>2</sub></td>
+      <td>P<sub>1</sub></td>
+      <td>I<sub>0</sub></td>
+      <td>I<sub>1</sub></td>
+      <td>I<sub>0</sub></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Bit 7 if set indicates the colour flashes between the fore and back colours.</li>
+  <li>Bit 6 if set indicates the  colours are rendered bright.</li>
+  <li>Bits 5 to 3 contain the paper (background) colour 0..7</li>
+  <li>Bits 2 to 0 contain the ink (foreground) colour 0..7</li>
+</ul>
+
+<p>The flash attribute alternates a cell between its foreground and background colours on a timer, it is of limited use in games.</p>
+
+<p>The bright attribute makes the foreground and background colours, err…, brighter. The bright attribute nearly doubles the effective number of colours the spectrum could display. I say nearly because bright black is still black.</p>
+
+<p>The colour value 0..7 is the index into the colour table, the colour values at those indexes and their bright equivalents are<sup>*</sup>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Decimal</th>
+      <th>Binary</th>
+      <th>Colour</th>
+      <th>Normal</th>
+      <th>Bright</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>000</td>
+      <td>Black</td>
+      <td><span class="spec-color spec-color-0-n"></span></td>
+      <td><span class="spec-color spec-color-0-b"></span></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>001</td>
+      <td>Blue</td>
+      <td><span class="spec-color spec-color-1-n"></span></td>
+      <td><span class="spec-color spec-color-2-b"></span></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>010</td>
+      <td>Red</td>
+      <td><span class="spec-color spec-color-2-n"></span></td>
+      <td><span class="spec-color spec-color-3-b"></span></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>011</td>
+      <td>Magenta</td>
+      <td><span class="spec-color spec-color-3-n"></span></td>
+      <td><span class="spec-color spec-color-4-b"></span></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>100</td>
+      <td>Green</td>
+      <td><span class="spec-color spec-color-4-n"></span></td>
+      <td><span class="spec-color spec-color-5-b"></span></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>101</td>
+      <td>Cyan</td>
+      <td><span class="spec-color spec-color-5-n"></span></td>
+      <td><span class="spec-color spec-color-6-b"></span></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>110</td>
+      <td>Yellow</td>
+      <td><span class="spec-color spec-color-6-n"></span></td>
+      <td><span class="spec-color spec-color-7-b"></span></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>111</td>
+      <td>White</td>
+      <td><span class="spec-color spec-color-7-n"></span></td>
+      <td><span class="spec-color spec-color-8-b"></span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="putting-it-all-together">Putting it all together</h3>
+
+<p>Here is an example to how attributes work. I know we’re assembly language gurus here, but well do this with a little speccy basic.</p>
+
+<p>I want to demonstrate attribute values, bright and normal colours and  blacks stubborn refusal to change no matter what. We are going to set the background colour of four characters to green, the foreground of the first two to black and the second pair to red. Finally alternate between normal and bright colours between each cell.</p>
+
+<p>This gives us the following four values, note since the paper is bits 5 to 3 we take the value 4 for green (100b) and shift it left 3 places to get 32 (100000b) and set those bits.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Flash</td>
+      <td>Bright</td>
+      <td>Paper</td>
+      <td>Ink</td>
+      <td>Value</td>
+      <td>Decimal</td>
+      <td>Description</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>100</td>
+      <td>000</td>
+      <td>01100000</td>
+      <td>96</td>
+      <td>Bright - black on green</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>100</td>
+      <td>000</td>
+      <td>00100000</td>
+      <td>32</td>
+      <td>Normal - black on green</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>100</td>
+      <td>010</td>
+      <td>01100010</td>
+      <td>98</td>
+      <td>Bright - red on green</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>100</td>
+      <td>010</td>
+      <td>00100010</td>
+      <td>34</td>
+      <td>Normal - red on green</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We print a word at the top left of the screen and then colour it by setting the attributes directly (address of the top left attribute is 22528.)</p>
+
+<div class="dbImg zoom80 centeredImg" data-src="2018-03-03-lets-talk-about-the-zx-specrum-screen-layout/listing01.png" title="Sinclair basic program listing in the emulator."></div>
+
+<p>Which give us:</p>
+
+<div class="dbImg zoom80 centeredImg" data-src="2018-03-03-lets-talk-about-the-zx-specrum-screen-layout/result01.png" title="The word poke on the spectrum screen with the attributes set as described previouslu"></div>
+
+<p>An a pretty clear demonstration of how attributes work, you can see the green background vary in colour when bright and also that while the black colour remains the same the red foreground colour does change intensity when marked as bright.</p>
+
+<p>Which means there are thirty one possible colours on a spectrum screen fifteen colours that can be normal or bright and black.</p>
+
+<h3 id="some-assembly-language-constants-and-code-for-attributes">Some assembly language constants and code for attributes</h3>
+
+<p>The shift operator <code class="language-plaintext highlighter-rouge">&lt;&lt;</code> is used to move a value like red (010) to its paper equivalent pRed (010000). The rest of the constants values should be apparent from the rest of this post.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="n">screen_width_pixels</span><span class="p">:</span>    <span class="p">.</span><span class="n">equ</span> <span class="m">256</span>
+<span class="n">screen_height_pixels</span><span class="p">:</span>   <span class="p">.</span><span class="n">equ</span> <span class="m">192</span>
+<span class="n">screen_width_chars</span><span class="p">:</span>     <span class="p">.</span><span class="n">equ</span> <span class="m">32</span>
+<span class="n">screen_height_chars</span><span class="p">:</span>    <span class="p">.</span><span class="n">equ</span> <span class="m">24</span>
+
+<span class="n">screen_start</span><span class="p">:</span>           <span class="p">.</span><span class="n">equ</span> <span class="err">#</span><span class="m">4000</span>
+<span class="n">screen_size</span><span class="p">:</span>            <span class="p">.</span><span class="n">equ</span> <span class="n">screen_width_chars</span> <span class="p">*</span> <span class="n">screen_height_pixels</span>
+<span class="n">attr_start</span><span class="p">:</span>             <span class="p">.</span><span class="n">equ</span> <span class="err">#</span><span class="m">5800</span>
+<span class="n">attributes_length</span><span class="p">:</span>      <span class="p">.</span><span class="n">equ</span> <span class="n">screen_width_chars</span> <span class="p">*</span> <span class="n">screen_height_chars</span>
+
+<span class="n">black</span><span class="p">:</span>                  <span class="p">.</span><span class="n">equ</span> <span class="p">%</span><span class="m">000000</span>
+<span class="n">blue</span><span class="p">:</span>                   <span class="p">.</span><span class="n">equ</span> <span class="p">%</span><span class="m">000001</span>
+<span class="n">red</span><span class="p">:</span>                    <span class="p">.</span><span class="n">equ</span> <span class="p">%</span><span class="m">000010</span>
+<span class="n">magenta</span><span class="p">:</span>                <span class="p">.</span><span class="n">equ</span> <span class="p">%</span><span class="m">000011</span>
+<span class="n">green</span><span class="p">:</span>                  <span class="p">.</span><span class="n">equ</span> <span class="p">%</span><span class="m">000100</span>
+<span class="n">cyan</span><span class="p">:</span>                   <span class="p">.</span><span class="n">equ</span> <span class="p">%</span><span class="m">000101</span>
+<span class="n">yellow</span><span class="p">:</span>                 <span class="p">.</span><span class="n">equ</span> <span class="p">%</span><span class="m">000110</span>
+<span class="n">white</span><span class="p">:</span>                  <span class="p">.</span><span class="n">equ</span> <span class="p">%</span><span class="m">000111</span>
+
+<span class="n">pBlack</span><span class="p">:</span>                 <span class="p">.</span><span class="n">equ</span> <span class="n">black</span> <span class="p">&lt;&lt;</span> <span class="m">3</span>
+<span class="n">pBlue</span><span class="p">:</span>                  <span class="p">.</span><span class="n">equ</span> <span class="n">blue</span>  <span class="p">&lt;&lt;</span> <span class="m">3</span>
+<span class="n">pRed</span><span class="p">:</span>                   <span class="p">.</span><span class="n">equ</span> <span class="n">red</span>  <span class="p">&lt;&lt;</span> <span class="m">3</span>
+<span class="n">pMagenta</span><span class="p">:</span>               <span class="p">.</span><span class="n">equ</span> <span class="n">magenta</span>  <span class="p">&lt;&lt;</span> <span class="m">3</span>
+<span class="n">pGreen</span><span class="p">:</span>                 <span class="p">.</span><span class="n">equ</span> <span class="n">green</span>  <span class="p">&lt;&lt;</span> <span class="m">3</span>
+<span class="n">pCyan</span><span class="p">:</span>                  <span class="p">.</span><span class="n">equ</span> <span class="n">cyan</span>  <span class="p">&lt;&lt;</span> <span class="m">3</span>
+<span class="n">pYellow</span><span class="p">:</span>                <span class="p">.</span><span class="n">equ</span> <span class="n">yellow</span>  <span class="p">&lt;&lt;</span> <span class="m">3</span>
+<span class="n">pWhite</span><span class="p">:</span>                 <span class="p">.</span><span class="n">equ</span> <span class="n">white</span>  <span class="p">&lt;&lt;</span> <span class="m">3</span>
+            
+<span class="n">bright</span><span class="p">:</span>                 <span class="p">.</span><span class="n">equ</span> <span class="p">%</span><span class="m">1000000</span></code></pre></figure>
+
+<p>The <code class="language-plaintext highlighter-rouge">cls_attributes</code> sub-routine is used to set all attributes for the screen to the same value</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="p">;</span> 
+<span class="p">;</span> <span class="n">IN</span>  <span class="p">-</span> <span class="n">A</span> <span class="n">contains</span> <span class="n">the</span> <span class="n">attribute</span> <span class="k">value</span> <span class="n">to</span> <span class="n">initialize</span> <span class="n">the</span> <span class="n">screen</span> <span class="n">to</span>
+<span class="p">;</span> <span class="n">OUT</span> <span class="p">-</span> <span class="n">Trashes</span> <span class="n">HL</span><span class="p">,</span> <span class="n">DE</span><span class="p">,</span> <span class="n">BC</span>
+<span class="p">;</span>
+ <span class="n">cls_attributes</span><span class="p">:</span>        
+        <span class="n">ld</span> <span class="n">hl</span><span class="p">,</span> <span class="n">attr_start</span>               <span class="p">;</span> <span class="n">start</span> <span class="n">at</span> <span class="n">attribute</span> <span class="n">start</span>
+        <span class="n">ld</span> <span class="n">de</span><span class="p">,</span> <span class="n">attr_start</span> <span class="p">+</span> <span class="m">1</span>           <span class="p">;</span> <span class="n">copy</span> <span class="n">to</span> <span class="n">next</span> <span class="n">address</span> <span class="k">in</span> <span class="n">attributes</span>
+        <span class="n">ld</span> <span class="n">bc</span><span class="p">,</span> <span class="n">attributes_length</span> <span class="p">-</span> <span class="m">1</span>    <span class="p">;</span> <span class="err">'</span><span class="n">loop</span><span class="err">'</span> <span class="n">attribute</span> <span class="n">size</span> <span class="n">minus</span> <span class="m">1</span> <span class="n">times</span>
+        <span class="nf">ld</span> <span class="p">(</span><span class="n">hl</span><span class="p">),</span> <span class="n">a</span>                      <span class="p">;</span> <span class="n">initialize</span> <span class="n">the</span> <span class="n">first</span> <span class="n">attribute</span>
+        <span class="n">ldir</span>                            <span class="p">;</span> <span class="n">fill</span> <span class="n">the</span> <span class="n">attributes</span>
+        <span class="n">ret</span></code></pre></figure>
+
+<p>Using the <code class="language-plaintext highlighter-rouge">cls_attributes</code> method is as simple as:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp">        <span class="n">ld</span> <span class="n">a</span><span class="p">,</span> <span class="n">pBlue</span> <span class="p">|</span> <span class="n">yellow</span> <span class="p">|</span> <span class="n">bright</span>
+        <span class="n">call</span> <span class="n">cls_attributes</span></code></pre></figure>
+
+<p>which sets the whole screen to have a blue background and yellow text, both of which are bright.</p>
+
+<p>In <a href="/lets-talk-about-the-zx-specrum-screen-layout-part-two/">part two</a> we’ll address the pixel layout of the screen.</p>
+
+<hr />
+
+<p><sup>*</sup>These colours are approximations based on <em>science</em>, or  a close approximation to science. Which is to say guess work :-)</p>
+
+:ET

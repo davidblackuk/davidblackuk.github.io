@@ -1,0 +1,116 @@
+I"]0<p>I’m trying to finally get my App Tubular deployed to the AppStore. As part of this process I need a web site and as part of that saga I want to be able to send emails from my app, to myself.</p>
+
+<p>My web site is hosted in OpenShift and is a Node.js / Express Application with a little MongoDB thrown in for good measure. The contacts page on the web site has a simple form that posts back to the server an email address and a message to send.</p>
+
+<p><img class="dosShot screenShot centeredImg" src="../../images/2015-02-01-sending-emails-from-openshift-apps/ss1.png" /></p>
+
+<p>In the route code for the post I solved the email sending problem by inserting the following line of code while I was completing the form side of the UI.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">mailMe</span><span class="p">(</span><span class="k">from</span><span class="p">,</span> <span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// TODO: Send am email</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>I looked around and decided that the <a href="https://github.com/andris9/Nodemailer" title="NodeMailer on github">NodeMailer</a> package was the ideal solution to my problem.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install nodemailer --save
+</code></pre></div></div>
+
+<p>I looked on git hub and reproduced the TL;DR version of the code and tried it. <em>Please read on after the listing and don’t use the content!</em></p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">nodemailer</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">nodemailer</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="c1">// create reusable transporter object using SMTP transport</span>
+<span class="kd">var</span> <span class="nx">transporter</span> <span class="o">=</span> <span class="nx">nodemailer</span><span class="p">.</span><span class="nx">createTransport</span><span class="p">({</span>
+    <span class="na">service</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Gmail</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">auth</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">user</span><span class="p">:</span> <span class="dl">'</span><span class="s1">gmail.user@gmail.com</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">pass</span><span class="p">:</span> <span class="dl">'</span><span class="s1">userpass</span><span class="dl">'</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// setup e-mail data with unicode symbols</span>
+<span class="kd">var</span> <span class="nx">mailOptions</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">from</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Fred Foo ✔ &lt;foo@blurdybloop.com&gt;</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// sender address</span>
+    <span class="na">to</span><span class="p">:</span> <span class="dl">'</span><span class="s1">bar@blurdybloop.com, baz@blurdybloop.com</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// list of receivers</span>
+    <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Hello ✔</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// Subject line</span>
+    <span class="na">text</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Hello world ✔</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// plaintext body</span>
+    <span class="na">html</span><span class="p">:</span> <span class="dl">'</span><span class="s1">&lt;b&gt;Hello world ✔&lt;/b&gt;</span><span class="dl">'</span> <span class="c1">// html body</span>
+<span class="p">};</span>
+
+<span class="c1">// send mail with defined transport object</span>
+<span class="nx">transporter</span><span class="p">.</span><span class="nx">sendMail</span><span class="p">(</span><span class="nx">mailOptions</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">info</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">error</span><span class="p">){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Message sent: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">info</span><span class="p">.</span><span class="nx">response</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></figure>
+
+<p>And it worked!, on my machine, until I deployed it to OpenShift, where it didn’t. Boo! It turns out that GMail refuses to deal with inbound send requests for mail access from public clouds. OpenShift is of course hosted on Amazons EC3 cloud and so Google won’t play nice.</p>
+
+<p>There are several workarounds to the problem including the use of oAuth, however I decided to go another route and try a new provider. <a href="https://mailgun.com" title="MailGun home page">MailGun</a> is a service that provides email, mailing lists and so much more. More importantly to me it:</p>
+
+<ul>
+  <li>Allows you to send up to 10,00 emails a month for free</li>
+  <li>Does not requite a credit card to set up</li>
+  <li>Is fairly simple to set up and use if you
+    <ul>
+      <li>Have a domain</li>
+      <li>Are comfortable editing your DNS records</li>
+      <li>Or are happy to be limited to 10 emails a day.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>I created a MailGun account without a domain to start with and generated a sandbox API Key (sandbox accounts are limited to 10 messages a day, you need a domain registered to proceed beyond that limit). A little searching found that there were two other <code class="language-plaintext highlighter-rouge">npm</code> packages that I needed to install:</p>
+
+<p>First there is <a href="https://github.com/1lobby/mailgun-js" title="Mailgun-js github page">mailgun-js</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install mailgun-js --save
+</code></pre></div></div>
+
+<p>and also the <a href="https://github.com/orliesaurus/nodemailer-mailgun-transport" title="Node mail transport for mailgun on github">node mailer transport for mailgun-js</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install git+https://github.com/orliesaurus/nodemailer-mailgun-transport.git --save
+</code></pre></div></div>
+
+<p>Now we are in a position to send some emails. In my module I require two packages</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">nodemailer</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">nodemailer</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">mg</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">nodemailer-mailgun-transport</span><span class="dl">'</span><span class="p">);</span></code></pre></figure>
+
+<p>The third <code class="language-plaintext highlighter-rouge">npm</code> package we installed is a dependancy of <code class="language-plaintext highlighter-rouge">nodemailer-mailgun-transport</code> and not directly used. So now we can code up the message send.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">mailMe</span><span class="p">(</span><span class="k">from</span><span class="p">,</span> <span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">auth</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">auth</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">api_key</span><span class="p">:</span> <span class="dl">'</span><span class="s1">key-a3456ac123436971c8739f4d6392926</span><span class="dl">'</span><span class="p">,</span>
+          <span class="na">domain</span><span class="p">:</span> <span class="dl">'</span><span class="s1">my.domain</span><span class="dl">'</span>
+      <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="kd">var</span> <span class="nx">transporter</span> <span class="o">=</span> <span class="nx">nodemailer</span><span class="p">.</span><span class="nx">createTransport</span><span class="p">(</span><span class="nx">mg</span><span class="p">(</span><span class="nx">auth</span><span class="p">));</span>
+
+    <span class="kd">var</span> <span class="nx">mailOptions</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="na">from</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Tubular support &lt;fred@gmail.com&gt;</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">to</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Tubular support &lt;fred@gmail.com&gt;</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">subject</span><span class="p">:</span> <span class="dl">'</span><span class="s1">The subject</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">text</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Message in plain text</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// plaintext body</span>
+        <span class="na">html</span><span class="p">:</span> <span class="dl">'</span><span class="s1">&lt;b&gt;Hello&lt;/b&gt;</span><span class="dl">'</span> <span class="c1">// html body</span>
+    <span class="p">};</span>
+
+    <span class="c1">// send mail with defined transport object</span>
+    <span class="nx">transporter</span><span class="p">.</span><span class="nx">sendMail</span><span class="p">(</span><span class="nx">mailOptions</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">info</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">error</span><span class="p">){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Message sent: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">info</span><span class="p">.</span><span class="nx">response</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>That worked!, you will need to substitute your own api key and domain for the fake values used above.  If you get a 404 error on the message send from the MailGun server,  you have not specified the correct domain. The auth options require either the sandbox domain or the domain you registered with MailGun to be specified.</p>
+
+<p>A fun bit of work and yet another nice open and free to get going PaaS.</p>
+
+:ET

@@ -1,0 +1,34 @@
+I"x<p>‘RestKit’ comes with great support for asynchronous invocations that complete in a block. My recent experience with Node.js lead to me adopting a pattern, that Swift with its modern clean syntax, makes a snip to use.</p>
+
+<p>The chain of actions that I need to perform to get the status for the users home location is:</p>
+
+<ul>
+  <li>Find their current location</li>
+  <li>Find the Home station (closest of their favorite stations</li>
+  <li>Get the status of all lines</li>
+  <li>Process the status and return the data to the watch</li>
+</ul>
+
+<p>Let’s use an action in the chain  to demonstrate the pattern. If we look at the <code class="language-plaintext highlighter-rouge">HomeStaionFinder</code> class:</p>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"> <span class="kd">func</span> <span class="nf">find</span><span class="p">(</span><span class="nv">#andThen</span><span class="p">:</span> <span class="p">(</span><span class="kt">TBStation</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="kt">TBLInes</span><span class="o">.</span><span class="nf">sharedInstance</span><span class="p">()</span><span class="o">.</span><span class="nf">updateDistances</span><span class="p">(</span><span class="n">location</span><span class="p">)</span>
+        <span class="nf">andThen</span><span class="p">(</span><span class="kt">TBLInes</span><span class="o">.</span><span class="nf">sharedInstance</span><span class="p">()</span><span class="o">.</span><span class="nf">stationsOrderedByDistance</span><span class="p">()</span><span class="o">.</span><span class="n">first</span><span class="p">);</span>
+    <span class="p">}</span></code></pre></figure>
+
+<p>This code is elided but should show the gist of it. What makes the whole thing really pleasant to use and easy to read is the continuation method <code class="language-plaintext highlighter-rouge">andThen:</code>  passed in as a parameter. When these classes are chained together we get:</p>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"> <span class="kd">func</span> <span class="nf">collect</span><span class="p">(</span> <span class="nv">finally</span><span class="p">:</span> <span class="p">(</span><span class="kt">HomePageData</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="kt">LocationFinder</span><span class="p">(</span><span class="nv">waitFor</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span> <span class="nv">andThen</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">location</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()</span> <span class="k">in</span>
+        <span class="kt">HomeStationFinder</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span><span class="n">location</span><span class="p">)</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="nv">andThen</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">home</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()</span> <span class="k">in</span>
+            <span class="kt">StatusFinder</span><span class="p">()</span><span class="o">.</span><span class="nf">find</span><span class="p">(</span><span class="nv">andThen</span><span class="p">:</span> <span class="p">{</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">()</span> <span class="k">in</span>
+                <span class="nf">finally</span><span class="p">(</span><span class="k">self</span><span class="o">.</span><span class="n">collectedData</span><span class="p">);</span>
+            <span class="p">})</span>
+        <span class="p">})</span>
+    <span class="p">})</span>
+<span class="p">}</span>
+    </code></pre></figure>
+
+<p>I think I’m going to like Swift.</p>
+
+:ET

@@ -1,0 +1,85 @@
+I"h<p>The other month I wrote about Fireman Fred a ZX-Spectrum game I wrote in 1984. This got me to thinking about the development workflow back then. I also started wondering just how much better it might be today.</p>
+
+<p>I definitely wasn’t thinking about rewriting Fred. Definitely not. No.</p>
+
+<h2 id="development-environment-then">Development environment then</h2>
+<p>In 1984 the ultimate development environment for a Sinclair ZX Spectrum was a Tandy TRS-80 model 3 and a custom hardware bridge that allowed binaries assembled on the trash 80 to be loaded into the spectrum memory. Reputedly this is how Mathew Smith wrote manic miner and Jet Set Willy, it had floppy disks and everything!</p>
+
+<div class="dbImg zoom60 centeredImg" data-src="2015-10-05/trs-80-III.jpg" title="Image Copyright: Bilby - Own work. Licensed under CC BY 3.0 via Commons"></div>
+
+<p style="color:gray; font-size: 80%; text-align: center;"><a href="https://commons.wikimedia.org/wiki/File:TRS-80_Model_3_01.jpg#/media/File:TRS-80_Model_3_01.jpg">Image Copyright: Bilby - Own work. Licensed under CC BY 3.0 via Commons</a></p>
+
+<p>Anybody like myself who had to save up for two years to buy a Spectrum wasn’t going to be able to go that route. So we went with using the spectrum to assemble, cassette tapes to store code and a 15 inch portable tv as a monitor.</p>
+
+<div class="dbImg speccy centeredImg" data-src="2015-10-05/spec-with-cassette.jpg" title="Image of spectrum"></div>
+
+<p>The tv was black and white too. I had to go downstairs after everyone else was asleep and test it on the colour TV in the living room.</p>
+
+<h3 id="ide">IDE</h3>
+<p>Don’t laugh :-) There was an IDE of sorts. It was  <em>Oxford Computer Publishing’s</em>, Full Screen Editor Assembler.</p>
+
+<div class="dbImg zoom80 centeredImg" data-src="2015-10-05/ocp.jpg" title="Box art for OCP Assembler"></div>
+
+<p style="color:gray; font-size: 80%; text-align: center;"><a href="http://www.worldofspectrum.org/infoseekid.cgi?id=0008187">Image Source: World of spectrum</a></p>
+
+<p>There was an integrated editor and assembler. Memory was tight on the spectrum so that influenced the workflow.</p>
+
+<h3 id="workflow">Workflow</h3>
+<p>The program was written in modules, each module was saved to its own C15 Cassette tape. So one module might be the sprite library, another the level data etc. There were in total about 7 tapes IIRC.</p>
+
+<p>Editing assembly modules consisted of loading the tape into the assembler , editing and then saving back (always remembering to rewind).</p>
+
+<p>To build the program you put the dev environment into assemble mode, then you loaded the tapes in order one after another. Get the order wrong and start again.</p>
+
+<p>Once the last tape was loaded you inserted the output tape and wrote the game to that. Then you rewound the output tape, reset the specie and loaded the game. Then you tested it, reset the spectrum, loaded the assembler and off you went round the loop again.</p>
+
+<p>Apart of course when you make a disastrous mistake: like rewinding the last module tape, forgetting to eject it overwriting your entire last module with the game. Loosing potentially weeks of work (did that, the scars still linger).</p>
+
+<p>Backups were made of course at the backup of last resort was a printout from my old trusty Epson RX80FT. It got used a lot.</p>
+
+<p>The entire assembly process from start to execution of the game could easily be 10 to 15 minutes. I really did measure twice back then.</p>
+
+<h2 id="development-environment-now">Development environment now</h2>
+
+<p>My current development machine is a quad core i7 4790K Hackintosh with 32GB RAM and an NVIDIA GTX980 (well alright 2 of em) and of course three monitors. Thinking about it, the chair I’m sitting on cost more than my Spectrum did.</p>
+
+<h3 id="ide-1">IDE</h3>
+
+<p>I had a lot of fun sorting out a development environment for Spectrum gaming on OS X. Obviously an integrated development environment was going to be a bit of a stretch, but by combining  a few different packages I was able to achieve it.</p>
+
+<p>First we start with the editor, for this I chose Sublime Text. When looking for a Syntax highlighting package for Z80 assembly language and Sublime, I found the <a href="https://github.com/psbhlw/sublime-text-z80asm">Z80 Asm plugin for Sublime Text 2</a> project on GitHub. In addition to syntax highlighting the plug in offers tons of features like snippets and goto symbol etc.</p>
+
+<p>The Z80 Asm plugin recommends the use of other supporting sofware, however I went with my own tooling. Günter Woigk works on the <a href="http://k1.spdns.de">Zasm Z80 Assembler</a> and the <a href="http://k1.spdns.de">zxsp Spectrum emulator</a>. These tools are awesome.</p>
+
+<p>To glue the whole thing together I create a make file in the root of my project:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zasm = ~/Downloads/zasm-4.0.12-osx10.9/zasm
+
+main:	
+	$(zasm) -u fred.asm
+	open fred.tap
+</code></pre></div></div>
+
+<p>Now when I press <code class="language-plaintext highlighter-rouge">command-b</code> in sublime it builds and runs the app.</p>
+
+<div class="dbImg zoom60 centeredImg" data-src="2015-10-05/sublime.png" title="Speccy IDE"></div>
+
+<h3 id="workflow-1">Workflow</h3>
+
+<p>This is the modern digital workflow. Edit in Sublime, hit command-b test in <code class="language-plaintext highlighter-rouge">zxsp.</code> The interesting thing is the time it takes: End-to-end from starting to assemble, to Fred loaded and running, is less than a second! Zxsp has a debugger where you can create break points, inspect registers and single step. Where was this in 1984?</p>
+
+<h2 id="silly-stats-and-why-it-wasnt-there-in-84">Silly stats and why it wasn’t there in ‘84</h2>
+
+<p>OK, this is just a bit of fun but:</p>
+
+<p>In 1984 a cheap 32K Ram pack for the spectrum cost $60.80, so my 32GB of ram would have cost me: $63,761,699 and I didn’t have that much money at hand (and that’s 1984 money).</p>
+
+<div class="dbImg zoom80 centeredImg" data-src="2015-10-05/cheetah.jpg" title="Advert for RAM"></div>
+
+<p>My GTX 980 has a peak shader arithmetic rate of 5 tera flops each. According to <a href="https://en.wikipedia.org/wiki/FLOPS">Wikipedia</a> In 1984 a giga flop cost $18,750,000 so my 5 tera flops come in at the low, low price of  $93,750,000,000 and I have two of em.</p>
+
+<p>Now multiply those figures by 2.3 and you’ve got the prices as they would be today. Future me would have been rich back then :-)</p>
+
+<p><em>Update:</em> I’ve written a follow up to this article describing a <a href="/Spectrum-development-then-and-now-part2/">new pc based approach to Spectrum development in 2018</a>.</p>
+
+:ET

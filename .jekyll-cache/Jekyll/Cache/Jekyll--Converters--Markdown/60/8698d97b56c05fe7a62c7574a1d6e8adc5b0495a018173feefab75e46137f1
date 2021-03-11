@@ -1,0 +1,64 @@
+I"�<p>When I started using Swift I decided to unit test all the code that I wrote, the intent was that coding test-first would allow me to concentrate on the language more efficiently. To aid unit testing I have started to put together a bast test class with common helper methods. The criteria for the helpers are that they</p>
+
+<ul>
+  <li>Are reusable across many tests (obviously)</li>
+  <li>Help me learn the intricacies of Swift<sup>1</sup></li>
+  <li>Help me, help myself and stop me from repeating past mistakes</li>
+</ul>
+
+<p>In programming for the apple watch I’ve been passing data back to to the watch in an <code class="language-plaintext highlighter-rouge">NSData</code> serialized representation using <code class="language-plaintext highlighter-rouge">NSKeyedArchivers</code>. Unit testing these is usually a snip, I serialize a class with a known value, deserialize a copy and compare the values with the expected value from the original.</p>
+
+<p>To test this code I originally place a helper method into the test class to do the archive/unarchive step. As I started the second class using the same technique it mandated the code be moved into the base class and generalized.</p>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">class</span> <span class="kt">TKUnitTest</span><span class="p">:</span> <span class="kt">XCTestCase</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">cloneViaCoding</span><span class="p">(</span><span class="nv">root</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span>
+        <span class="k">var</span> <span class="nv">data</span> <span class="o">=</span> <span class="kt">NSKeyedArchiver</span><span class="o">.</span><span class="nf">archivedDataWithRootObject</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+        <span class="k">var</span> <span class="nv">res</span> <span class="o">=</span> <span class="kt">NSKeyedUnarchiver</span><span class="o">.</span><span class="nf">unarchiveObjectWithData</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="k">as</span> <span class="kt">T</span>
+        <span class="k">return</span> <span class="n">res</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>By using a generic method we can provide a nice clean type safe clone method and our unit test is</p>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"> <span class="kd">func</span> <span class="nf">testCloneSetNameCorrectly</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">o</span> <span class="o">=</span> <span class="kt">TKMiniLineStatus</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"name"</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="s">""</span><span class="p">)</span>
+        <span class="k">let</span> <span class="nv">res</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="nf">cloneViaCoding</span><span class="p">(</span><span class="n">o</span><span class="p">)</span>
+        <span class="kt">XCTAssertEqual</span><span class="p">(</span><span class="s">"name"</span><span class="p">,</span> <span class="n">res</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="p">}</span></code></pre></figure>
+
+<p>As usual I test only one thing per test case so there will be another method to test status etc.</p>
+
+<p>That’s all good. Next I wrote another class with archiving, however, on that class all of my tests failed! It took me a few minutes to spot the error, I’d forgot to  extend <code class="language-plaintext highlighter-rouge">NSCoding</code> (which is easy to do with optional protocols). This got me to thinking about how to avoid making this mistake again (point 3 above).</p>
+
+<p>A quick flick through the <em>Swift Programming Language</em> manual from Apple lead to the section on <em>Type Constraint Syntax</em>. So I extended the unit test to mandate that the type <code class="language-plaintext highlighter-rouge">T</code> being cloned must implement the <code class="language-plaintext highlighter-rouge">NSCoding</code> protocol.</p>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">class</span> <span class="kt">TKUnitTest</span><span class="p">:</span> <span class="kt">XCTestCase</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="n">cloneViaCoding</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">NSCoding</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">root</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span> <span class="p">{</span>
+        <span class="k">var</span> <span class="nv">data</span> <span class="o">=</span> <span class="kt">NSKeyedArchiver</span><span class="o">.</span><span class="nf">archivedDataWithRootObject</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+        <span class="k">var</span> <span class="nv">res</span> <span class="o">=</span> <span class="kt">NSKeyedUnarchiver</span><span class="o">.</span><span class="nf">unarchiveObjectWithData</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="k">as</span> <span class="kt">T</span>
+        <span class="k">return</span> <span class="n">res</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Now instead of the clone name test failing, leaving me head scratching as to why, I get a nice clear build error, for eaxmple this test</p>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift">    <span class="kd">func</span> <span class="nf">testCompileTimeSupport</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">tmp</span> <span class="o">=</span> <span class="kt">ColorTool</span><span class="p">();</span>
+        <span class="k">let</span> <span class="nv">res</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="nf">cloneViaCoding</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
+    <span class="p">}</span></code></pre></figure>
+
+<p>gets this build error</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Type 'ColorTool' does not conform to protocol 'NSCoding'
+</code></pre></div></div>
+
+<p>Sweet :-)</p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<p><sup>1</sup> Yes it’s a bad idea to drive class design through language features but this is a learning project</p>
+:ET

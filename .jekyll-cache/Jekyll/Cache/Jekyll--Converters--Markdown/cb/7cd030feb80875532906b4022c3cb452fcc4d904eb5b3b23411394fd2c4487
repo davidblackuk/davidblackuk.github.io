@@ -1,0 +1,27 @@
+I"e<p>One of the new dials scheduled for cDash 1.1 is the thermometer. This new gauge is in the Slider family of gauges, and here it is:</p>
+
+<canvas style="display:block;margin-left:auto;margin-right:auto" id="demo" width="90" height="200">  </canvas>
+
+<p>At the time of writing there is still much to do. The control is only available in the vertical or North/South orientation. There are also choices to be made. Currently my thoughts are:</p>
+
+<ul>
+  <li>North and South should have the same appearance
+    <ul>
+      <li>Or should the ‘tube’ stay in the same orientation and the value appear either below (north) or above (south)</li>
+    </ul>
+  </li>
+  <li>East and west should have the same appearance
+    <ul>
+      <li>Or should East / West have the value below / above too?</li>
+    </ul>
+  </li>
+  <li>The scale values should be suppressed
+    <ul>
+      <li>Or the width would need to be significantly enlarged</li>
+      <li>Or only display the scale and values on one side? (two looks better to me though)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>I’d be interested to here your thoughts in the comments section</p>
+:ET

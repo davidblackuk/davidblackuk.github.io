@@ -1,0 +1,47 @@
+I"�<p>So the soon to be ending saga of  putting my App Tubulate up for approval on the AppStore is coming to a close. So far I have</p>
+
+<ul>
+  <li>Designed and built the App (feels like the smallest part now!)</li>
+  <li>Created a marketing and support site written in Node.js</li>
+  <li>Created the App in iTunes connect and uploaded a metric crap load of images, descriptive test etc.</li>
+  <li>Generated all of the certificates, profiles etc. to allow me to submit.</li>
+  <li>Built and archived my application into an IPA</li>
+  <li>Verified my archive through the xCode Organizer</li>
+  <li>Submitted it to the App Store</li>
+  <li>Pressed the button to trigger a review, Yeah!</li>
+</ul>
+
+<p>Hold on, not so fast there sonny. Time for an obscure error message.</p>
+
+<p>The iTunes connect page started nagging me, saying that an application that provides routing information needs to have a Routing App coverage file uploaded. Tubulate uses maps, it doesn’t  however actually provide routing information so I was a little perplexed that I was being hounded for it.</p>
+
+<p>If you don’t believe me look at a screen shot</p>
+
+<p><img class="dosShot screenShot" src="../../images/2015-02-08-app-store-submission-missing-routing-app-coverage-file/ss01.png" /></p>
+
+<p>I make no claim to supply any routes. So why has the App Store got it in for me? (Infamy, Infamy, they’ve all got it in for me; as Kennith Williams was won’t to say).</p>
+
+<p>The short and sweet answer is that the applications info.plist file contained two key value pairs that were causing an issue the first is the <code class="language-plaintext highlighter-rouge">MKDirectionsApplicationSupportedModes</code> key and value, this needs removing.</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml">	<span class="nt">&lt;key&gt;</span>MKDirectionsApplicationSupportedModes<span class="nt">&lt;/key&gt;</span>
+	<span class="nt">&lt;array/&gt;</span></code></pre></figure>
+
+<p>The second entry is the <code class="language-plaintext highlighter-rouge">CFBundleDocumentTypes</code> key value entry. I suspect this is the actual culprit but since I removed both entries and the submission succeeded I guess I’ll never know (till next time). When removing this entry be a little careful as you might have other Doc types you want to keep, if not remove the entire key value pair.</p>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml">	<span class="nt">&lt;key&gt;</span>CFBundleDocumentTypes<span class="nt">&lt;/key&gt;</span>
+	<span class="nt">&lt;array&gt;</span>
+		<span class="nt">&lt;dict&gt;</span>
+			<span class="nt">&lt;key&gt;</span>CFBundleTypeName<span class="nt">&lt;/key&gt;</span>
+			<span class="nt">&lt;string&gt;</span>MKDirectionsRequest<span class="nt">&lt;/string&gt;</span>
+			<span class="nt">&lt;key&gt;</span>LSItemContentTypes<span class="nt">&lt;/key&gt;</span>
+			<span class="nt">&lt;array&gt;</span>
+				<span class="nt">&lt;string&gt;</span>com.apple.maps.directionsrequest<span class="nt">&lt;/string&gt;</span>
+			<span class="nt">&lt;/array&gt;</span>
+		<span class="nt">&lt;/dict&gt;</span>
+	<span class="nt">&lt;/array&gt;</span></code></pre></figure>
+
+<p>But from context it looks like the entry says we accept the <code class="language-plaintext highlighter-rouge">com.apple.maps.directionsrequest</code> document type and so iTunes connect reasonably expects the routing app coverage file to be present.</p>
+
+<p>Tubulate is submitted for review. Now I wait.</p>
+
+:ET

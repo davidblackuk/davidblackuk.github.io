@@ -1,0 +1,48 @@
+I"é<h1 id="privacy-policy">Privacy Policy</h1>
+
+<p>Hi Everyone</p>
+
+<p>Tubulate is a free app. It is not ad-supported and so requires very little information about you and all of it is optional.</p>
+
+<h2 id="location">Location</h2>
+
+<p>When the Tubulate starts it will ask you for permission to access your location. You have three choices:</p>
+
+<ul>
+  <li>Always
+    <ul>
+      <li>Every time you use Tubulate it will be able to access your location and all functionality will available.</li>
+    </ul>
+  </li>
+  <li>Allow once
+    <ul>
+      <li>All functionality is available for this application launch, you will be presented with these choices again, next time you launch Tubulate</li>
+    </ul>
+  </li>
+  <li>Deny access to your location
+    <ul>
+      <li>Tubulate will still function, but with reduced capabilities (no finding your closest stations or home station)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>In all cases if you give Tubulate access to your location it will not store or send that location to an external service.</p>
+
+<p>Tubulate does not access your location in the background.</p>
+
+<h2 id="application-insights--analytics">Application insights / analytics</h2>
+
+<p>When Tubulate is installed from the app-store you will be asked if you want to send usage and crash reports to Apple.</p>
+
+<p>If you opt to send crash reports and usage you will be helping the development of the app by allowing me to find and fix defects.</p>
+
+<p>If you opt not to send crash reports and usage information, Tubulate will continue to work as normal.</p>
+
+<h3 id="finally">Finally</h3>
+
+<p>To reiterate, Tubulate only uses personal information in the app itself, no evil, we just want you to enjoy it.</p>
+
+<p><strong>Love and Hugs</strong></p>
+
+<p><em>David Black</em></p>
+:ET
