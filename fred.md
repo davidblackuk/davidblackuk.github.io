@@ -9,9 +9,15 @@ tags: [z80]
 Fireman fred implemented in Godot
 ====
 
+  <style>
+
+
+
+  </style>
+
   <iframe style="border:none"
-    title="T-State calculator"
-    width="100%"
-    height="768px"
+   width="1024"
+   height="768"
+    title="Son of fred"
     src="../fred-godot-dist/index.html">
   </iframe>
