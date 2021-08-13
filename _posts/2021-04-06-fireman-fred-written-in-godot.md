@@ -19,7 +19,7 @@ I chose the Godot game engine for my rewrite, some pretty strict limitations for
 
 <video class="centeredImg" src="../images/fireman-fred-written-in-godot/fred-demo1.mp4" poster="../images/fireman-fred-written-in-godot/demo-poster.png" width="512" height="384" controls preload></video>
 
-About a week of effort, and of course, you can [play it online][2].
+About a week of effort, and of course, you can **_>>_** [play it online][2] **_<<_**.
 
 
 Hope you enjoy playing this, check back for future updates.

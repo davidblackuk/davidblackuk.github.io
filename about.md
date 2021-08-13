@@ -26,7 +26,7 @@ About this site
 
 The site is created using [Sublime][sub] for editing, [Jekyll][jk] as a templating engine, hosted on and version controlled by [GitHub][db], the rendering template is based on the [So Simple Theme][sos]
 
-[sos]: http://mademistakes.com/articles/so-simple-jekyll-theme/
-[jk]: http://jekyllrb.com/
-[sub]: http://www.sublimetext.com
+[sos]: https://mademistakes.com/articles/so-simple-jekyll-theme/
+[jk]: https://jekyllrb.com/
+[sub]: https://www.sublimetext.com
 [db]: https://github.com/davidblackuk/davidblackuk.github.io

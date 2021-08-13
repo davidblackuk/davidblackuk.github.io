@@ -1,4 +1,4 @@
-I"°<p>I wrote before about my first published game <a href="/Tell-us-about-the-war-granddad/">Fireman Fred</a>, how bad it was, and how fond of it I am.</p>
+I"ê<p>I wrote before about my first published game <a href="/Tell-us-about-the-war-granddad/">Fireman Fred</a>, how bad it was, and how fond of it I am.</p>
 
 <p>I started and mostly completed a re-write of Fred in Z80 assembly language for the spectrum, but progress was realy, really slow. Recently
 I got thinking about how easy it might be to try re-writing Fred using a modern game engine, and progress has been really, really, rapid.</p>
@@ -7,7 +7,7 @@ I got thinking about how easy it might be to try re-writing Fred using a modern 
 
 <video class="centeredImg" src="../images/fireman-fred-written-in-godot/fred-demo1.mp4" poster="../images/fireman-fred-written-in-godot/demo-poster.png" width="512" height="384" controls="" preload=""></video>
 
-<p>About a week of effort, and of course, you can <a href="../fred">play it online</a>.</p>
+<p>About a week of effort, and of course, you can <strong><em>Â»</em></strong> <a href="../fred">play it online</a> <strong><em>Â«</em></strong>.</p>
 
 <p>Hope you enjoy playing this, check back for future updates.</p>
 
