@@ -6,7 +6,7 @@ description: "Check the number of execution cycles and memory usage of your code
 tags: [z80]
 ---
 
-Z80 T-State calculator
+Dave's Z80 T-State calculator
 ====
 
 Paste your z80 assembly code into the text box below to calculate the t-states and bytes of memory it will consume.
