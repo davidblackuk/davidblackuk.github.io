@@ -1,4 +1,4 @@
-I"�?<h1 id="getting-around-to-it">Getting around to it</h1>
+I"�@<h1 id="getting-around-to-it">Getting around to it</h1>
 
 <p>I pulled an old CPC 618 out of the loft recently, by recently I mean during lock down 1, over a year ago. So having had it sit on the shelf in my home-office for a year, I decided to start playing with it, after a re-cap and of course the inevitable disk drive belt replacement.</p>
 
@@ -296,7 +296,7 @@ Erasing files on drive A while drive B is selected. Rad!
 User 0 is the default user
 </div>
 
-<p>If perform a directory listing on drive A as user 0, then swap to user 10 and do the same, we see no files. The disk free space is still that same of course as there is no magic disc space pixie.</p>
+<p>If we perform a directory listing on drive A as user 0, then swap to user 10 and do the same, then we will see no files. The disk free space is still that same of course as there is no magic disc space pixie.</p>
 
 <div class="dbImg zoom200 centeredImg" data-src="cpc/user-10.png" alt="User 10 has no files"></div>
 
@@ -324,6 +324,11 @@ User 10 taking a sneak peek at user 0's files
 <p>¦REN</p>
 
 <h3 id="you-wont-believe-this-one-trick-they-didnt-want-you-to-know">You won’t believe this one trick they didn’t want you to know!</h3>
+
+<p>Ah clickbate, don’t ya just hate it?. There is a ‘hidden’ feature of the AMSDOS/CPM filesystem that can be really useful to recover from a
+mistakenly erased file. Erasing a file does not actually delete it immediately but changes the assigned user</p>
+
+<p>Undeleting a file</p>
 
 <h3 id="a-word-on-filenames">A word on filenames</h3>
 

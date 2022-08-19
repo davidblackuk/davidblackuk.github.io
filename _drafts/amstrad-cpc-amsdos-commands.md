@@ -211,7 +211,7 @@ You may have noticed this when listing files, if you look at the preceding scree
 User 0 is the default user
 </div>
 
-If perform a directory listing on drive A as user 0, then swap to user 10 and do the same, we see no files. The disk free space is still that same of course as there is no magic disc space pixie.
+If we perform a directory listing on drive A as user 0, then swap to user 10 and do the same, then we will see no files. The disk free space is still that same of course as there is no magic disc space pixie.
 
 <div class="dbImg zoom200 centeredImg" data-src="cpc/user-10.png" alt="User 10 has no files" ></div>
 
@@ -251,6 +251,15 @@ What can't do however combine a drive letter and a user as far as I can tell. If
 
 ### You won't believe this one trick they didn't want you to know!
 
+Sorry couldn't resist the title...
+
+There is a 'hidden' feature of the AMSDOS/CPM filesystem that can be really useful to recover from a
+mistakenly erased file. 
+
+Erasing a file does not actually delete it immediately but changes the assigned user 229 (hex `E5`)
+
+
+poke &a701,229:|ren,"0:hello.bas","hello.bas":poke &a701,0:cat
 
 
 
