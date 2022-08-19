@@ -241,7 +241,7 @@ The final bank of  three switches (green) configure what ROM is being used for t
                 <tr><td class="r">6</td><td class="r">7</td><td class="r">8</td></tr>
             </table>
         </td>
-        <td> 110 - Emulates the classic 48k Spectrum basic from 1882. The best mode for compatibility with <em>ahem...</em> your saved games. </td>
+        <td> 110 - Emulates the classic 48k Spectrum basic from 1982. The best mode for compatibility with <em>ahem...</em> your saved games. </td>
     </tr>
     <tr>
         <td>

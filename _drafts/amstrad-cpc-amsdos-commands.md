@@ -238,36 +238,50 @@ Similarly you can specify the specify the user number for run save and load comm
 
 What can't do however combine a drive letter and a user as far as I can tell. If you are user 10 on drive A, then you are user 10 on drive B. If you want to see user 0's files on another drive, swap to it.
 
-
-
-
-
-
-
-
 ### Renaming files
-¦REN  
+
+The rename command changes file names, it is also used to assign files to different users.
+
+to rename a file use the `|ren` command and specify the new name, then the original name
+
+    |REN,"NEWNAME.BAS","ORIGINAL.BAS"
+
+which will result in the file having the new name.
+
+<div class="dbImg zoom200 centeredImg" data-src="cpc/rename.png" alt="Renaming a file" ></div>
 
 
-### You won't believe this one trick they didn't want you to know!
+`|ERA` can also be used to move files between numbered users on the disc.
 
-Sorry couldn't resist the title...
-
-There is a 'hidden' feature of the AMSDOS/CPM filesystem that can be really useful to recover from a
-mistakenly erased file. 
-
-Erasing a file does not actually delete it immediately but changes the assigned user 229 (hex `E5`)
+    |REN,"0:NEWNAME.BAS","10:ORIGINAL.BAS"
 
 
-poke &a701,229:|ren,"0:hello.bas","hello.bas":poke &a701,0:cat
+The file `original.bas` owned by user `10`, is being renamed to `newname.bas` owned by user `0`. I'm showing it this way to highlight the name can change as well as the user, in practice the name  stays the same.
 
+So to move `hello.bas` from user 10 to user 0, we do:
 
+<div class="dbImg zoom200 centeredImg" data-src="cpc/rename-change-user.png" alt="moving a file between users" ></div>
+
+if you omit the user number for the destination file name it defaults to the current user. So in our previous example I logged in as user 0, the following two commands are identical
+
+    |REN,"0:NEWNAME.BAS","10:ORIGINAL.BAS"
+    |REN,"NEWNAME.BAS","10:ORIGINAL.BAS"
 
 ### A word on filenames
+
+
 
 ### The CP/M command
 
 With a CP/M boot disc in drive A, running the `¦CPM` command clears memory and boots in to CP/M. The CPC-464 came with CP/M version 2.2, the CPC-6128 came with both version 2.2 and the newer CP/M Plus edition.
+
+## Wrap up
+
+This concludes my quick run through the capabilities of AMSDOS and how to manipulate files. Hope it's been of help. 
+
+This isn't youtube so there's no like, comment or subscribe speil (well comments are on for disqus, but it seems pretty rubbish at telling me people have commented)
+
+If you do want updates for future content, follow me on twitter, links are included in the banner
 
 <div class="dbImg zoom200 centeredImg" data-src="cpc/cpm-plus.png" alt="Screen shot CP/M plus." ></div>
 

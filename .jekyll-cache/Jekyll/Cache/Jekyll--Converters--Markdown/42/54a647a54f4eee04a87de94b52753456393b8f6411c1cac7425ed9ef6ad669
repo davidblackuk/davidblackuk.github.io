@@ -1,4 +1,4 @@
-I"�@<h1 id="getting-around-to-it">Getting around to it</h1>
+I"�G<h1 id="getting-around-to-it">Getting around to it</h1>
 
 <p>I pulled an old CPC 618 out of the loft recently, by recently I mean during lock down 1, over a year ago. So having had it sit on the shelf in my home-office for a year, I decided to start playing with it, after a re-cap and of course the inevitable disk drive belt replacement.</p>
 
@@ -321,14 +321,46 @@ User 10 taking a sneak peek at user 0's files
 <p>What can’t do however combine a drive letter and a user as far as I can tell. If you are user 10 on drive A, then you are user 10 on drive B. If you want to see user 0’s files on another drive, swap to it.</p>
 
 <h3 id="renaming-files">Renaming files</h3>
-<p>¦REN</p>
+
+<p>The rename command changes file names, it is also used to assign files to different users.</p>
+
+<p>to rename a file use the <code class="language-plaintext highlighter-rouge">|ren</code> command and specify the new name, then the original name</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|REN,"NEWNAME.BAS","ORIGINAL.BAS"
+</code></pre></div></div>
+
+<p>which will result in the file having the new name.</p>
+
+<div class="dbImg zoom200 centeredImg" data-src="cpc/rename.png" alt="Renaming a file"></div>
+
+<p><code class="language-plaintext highlighter-rouge">|ERA</code> can also be used to move files between numbered users on the disc.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|REN,"0:NEWNAME.BAS","10:ORIGINAL.BAS"
+</code></pre></div></div>
+
+<p>The file <code class="language-plaintext highlighter-rouge">original.bas</code> owned by user <code class="language-plaintext highlighter-rouge">10</code>, is being renamed to <code class="language-plaintext highlighter-rouge">newname.bas</code> owned by user <code class="language-plaintext highlighter-rouge">0</code>. I’m showing it this way to highlight the name can change as well as the user, in practice the name  stays the same.</p>
+
+<p>So to move <code class="language-plaintext highlighter-rouge">hello.bas</code> from user 10 to user 0, we do:</p>
+
+<div class="dbImg zoom200 centeredImg" data-src="cpc/rename-change-user.png" alt="moving a file between users"></div>
 
 <h3 id="you-wont-believe-this-one-trick-they-didnt-want-you-to-know">You won’t believe this one trick they didn’t want you to know!</h3>
 
-<p>Ah clickbate, don’t ya just hate it?. There is a ‘hidden’ feature of the AMSDOS/CPM filesystem that can be really useful to recover from a
-mistakenly erased file. Erasing a file does not actually delete it immediately but changes the assigned user</p>
+<p>Sorry couldn’t resist the title…</p>
 
-<p>Undeleting a file</p>
+<p>There is a ‘hidden’ feature of the AMSDOS/CPM filesystem that can be really useful to recover from a
+mistakenly erased file.</p>
+
+<p>Erasing a file does not actually delete it immediately but changes the assigned user to 229 (hex <code class="language-plaintext highlighter-rouge">E5</code>)</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>poke &amp;a701,229:</td>
+      <td>ren,”0:hello.bas”,”hello.bas”:poke &amp;a701,0:cat</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="a-word-on-filenames">A word on filenames</h3>
 
