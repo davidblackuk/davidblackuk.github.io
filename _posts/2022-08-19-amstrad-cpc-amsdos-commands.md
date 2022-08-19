@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Amstrad CPC: AMSDOS, disk commands"
+title:  "Amstrad CPC: Roms, AMSDOS, disk commands"
 tags: [ 8bit,  amstrad, cpc, amsdos, cpm]
 location: London, England
 excerpt: "I have recently been playing around with an Amstrad CPC 6128 and had forgotten all i knew about AMSDOS"
 description: "I have recently been playing around with an Amstrad CPC 6128 and had forgotten all i knew about AMSDOS" 
 comments: true
 share: true
-date: 2022-05-18
+date: 2022-08-19
 ---
 
 # Getting around to it
@@ -275,17 +275,19 @@ if you omit the user number for the destination file name it defaults to the cur
 
 With a CP/M boot disc in drive A, running the `¦CPM` command clears memory and boots in to CP/M. The CPC-464 came with CP/M version 2.2, the CPC-6128 came with both version 2.2 and the newer CP/M Plus edition.
 
-## Wrap up
-
-This concludes my quick run through the capabilities of AMSDOS and how to manipulate files. Hope it's been of help. 
-
-This isn't youtube so there's no like, comment or subscribe speil (well comments are on for disqus, but it seems pretty rubbish at telling me people have commented)
-
-If you do want updates for future content, follow me on twitter, links are included in the banner
-
 <div class="dbImg zoom200 centeredImg" data-src="cpc/cpm-plus.png" alt="Screen shot CP/M plus." ></div>
 
 <div class="dbCaption">
 CPC booted into CP/M plus
 </div>
+
+
+
+## Wrap up
+
+This concludes my quick run through the capabilities of AMSDOS and how to manipulate files. Hope it's been of help. 
+
+This isn't youtube so there's no like, comment or subscribe spiel (well comments are on for disqus, but it seems pretty rubbish at telling me people have commented)
+
+If you do want updates for future content, or to chat, follow me on twitter. Links are included in the banner.
 

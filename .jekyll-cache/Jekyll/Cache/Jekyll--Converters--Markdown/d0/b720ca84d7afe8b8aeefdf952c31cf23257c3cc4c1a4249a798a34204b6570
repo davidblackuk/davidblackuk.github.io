@@ -1,4 +1,4 @@
-I"�H<h1 id="getting-around-to-it">Getting around to it</h1>
+I"�H<h1 id="getting-around-to-it">Getting around to it</h1>
 
 <p>I pulled an old CPC 618 out of the loft recently, by recently I mean during lock down 1, over a year ago. So having had it sit on the shelf in my home-office for a year, I decided to start playing with it, after a re-cap and of course the inevitable disk drive belt replacement.</p>
 
@@ -356,18 +356,18 @@ User 10 taking a sneak peek at user 0's files
 
 <p>With a CP/M boot disc in drive A, running the <code class="language-plaintext highlighter-rouge">¦CPM</code> command clears memory and boots in to CP/M. The CPC-464 came with CP/M version 2.2, the CPC-6128 came with both version 2.2 and the newer CP/M Plus edition.</p>
 
-<h2 id="wrap-up">Wrap up</h2>
-
-<p>This concludes my quick run through the capabilities of AMSDOS and how to manipulate files. Hope it’s been of help.</p>
-
-<p>This isn’t youtube so there’s no like, comment or subscribe speil (well comments are on for disqus, but it seems pretty rubbish at telling me people have commented)</p>
-
-<p>If you do want updates for future content, follow me on twitter, links are included in the banner</p>
-
 <div class="dbImg zoom200 centeredImg" data-src="cpc/cpm-plus.png" alt="Screen shot CP/M plus."></div>
 
 <div class="dbCaption">
 CPC booted into CP/M plus
 </div>
+
+<h2 id="wrap-up">Wrap up</h2>
+
+<p>This concludes my quick run through the capabilities of AMSDOS and how to manipulate files. Hope it’s been of help.</p>
+
+<p>This isn’t youtube so there’s no like, comment or subscribe spiel (well comments are on for disqus, but it seems pretty rubbish at telling me people have commented)</p>
+
+<p>If you do want updates for future content, or to chat, follow me on twitter. Links are included in the banner.</p>
 
 :ET
