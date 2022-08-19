@@ -269,10 +269,6 @@ if you omit the user number for the destination file name it defaults to the cur
     |REN,"0:NEWNAME.BAS","10:ORIGINAL.BAS"
     |REN,"NEWNAME.BAS","10:ORIGINAL.BAS"
 
-### A word on filenames
-
-
-
 ### The CP/M command
 
 With a CP/M boot disc in drive A, running the `¦CPM` command clears memory and boots in to CP/M. The CPC-464 came with CP/M version 2.2, the CPC-6128 came with both version 2.2 and the newer CP/M Plus edition.
