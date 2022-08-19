@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Amstrad CPC: Roms, AMSDOS, disk commands"
-tags: [ 8bit,  amstrad, cpc, amsdos, cpm]
+tags: [ 8bit, ROMs, amstrad, cpc, amsdos, cpm]
 location: London, England
 excerpt: "I have recently been playing around with an Amstrad CPC 6128 and had forgotten all i knew about AMSDOS"
 description: "I have recently been playing around with an Amstrad CPC 6128 and had forgotten all i knew about AMSDOS" 
@@ -286,8 +286,4 @@ CPC booted into CP/M plus
 ## Wrap up
 
 This concludes my quick run through the capabilities of AMSDOS and how to manipulate files. Hope it's been of help. 
-
-This isn't youtube so there's no like, comment or subscribe spiel (well comments are on for disqus, but it seems pretty rubbish at telling me people have commented)
-
-If you do want updates for future content, or to chat, follow me on twitter. Links are included in the banner.
 
