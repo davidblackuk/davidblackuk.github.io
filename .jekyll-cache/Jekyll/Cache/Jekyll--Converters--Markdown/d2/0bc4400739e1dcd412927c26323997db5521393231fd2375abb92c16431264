@@ -1,6 +1,6 @@
-I"�8<h1 id="intro">Intro</h1>
+I"N6<h1 id="intro">Intro</h1>
 
-<p>In [part one of this series][4] I outlined the functionality of the Omni 128HQ Desktop from [retro-radionics][1], In this post I’m going to discuss how to configure the Omni via DIP switches.</p>
+<p>In <a href="/onmi-128hq-part1-overview/">part one of this series</a> I outlined the functionality of the Omni 128HQ Desktop from <a href="https://retroradionics.co.uk/">retro-radionics</a>, In this post I’m going to discuss how to configure the Omni via DIP switches.</p>
 
 <p>The DIP (Dual Inline Package, should you care) switches are located on the right hand side of the Omni. The defaults that came with my Omni are shown below.</p>
 
@@ -48,7 +48,7 @@ A £1 investment will get you a lifetime supply of DIP switch manipulation tools
 
 <h2 id="official-documentation">Official documentation</h2>
 
-<p>The official FAQ for the Omni is available on the [ZX omni Facebook page][3] (You’ll have to apply for membership, I don’t think it’ll be refused!)</p>
+<p>The official FAQ for the Omni is available on the <a href="https://www.facebook.com/groups/519934131721262/files/">ZX omni Facebook page</a> (You’ll have to apply for membership, I don’t think it’ll be refused!)</p>
 
 <p>The DIP Switch settings outlined there formed the basis of this text, but I found that the implementation of the Omni differs from the description posted there.</p>
 
@@ -146,8 +146,7 @@ A £1 investment will get you a lifetime supply of DIP switch manipulation tools
         </td>
         <td> 10 - Enable  esxDOS 0.8.6 support. This is one area where my switches a flat out different to the ones mentioned in the FAQ, the FAQ has the two divMMC switch settings the wrong way round for my setup.. </td>
     </tr>
-
-<tr>
+    <tr>
         <td>
             <table class="omni-dip">
                 <tr>
@@ -164,15 +163,15 @@ A £1 investment will get you a lifetime supply of DIP switch manipulation tools
                 </tr>
             </table>
         </td>
-        <td> 11 - Enable  esxDOS 0.8.5 support see above
+        <td> 11 - Enable  esxDOS 0.8.5 support see above</td>
+    </tr>
+</table>
 
-&lt;/table&gt;
+<p>I expect the meanings of these switches to change over time as different versions of firmware are released.</p>
 
-I expect the meanings of these switches to change over time as different versions of firmware are released.
+<h2 id="rom-selection-switches">ROM selection switches</h2>
 
-## ROM selection switches
-
-The final bank of  three switches (green) configure what ROM is being used for the emulation. Three switches give us 8 combinations, all of which are used.
+<p>The final bank of  three switches (green) configure what ROM is being used for the emulation. Three switches give us 8 combinations, all of which are used.</p>
 
 <table>
     <tr>
@@ -219,17 +218,8 @@ The final bank of  three switches (green) configure what ROM is being used for t
         </td>
         <td> 011 - Boots the 1985 128K basic ROM<sup>1</sup>.</td>
     </tr>
-    <tr>
-        <td>
-            <table class="omni-dip">
-                <tr><td class="r"><div class="i"></div></td><td class="r"><div class="o"></div></td><td class="r"><div class="o"></div></td></tr>
-                <tr><td class="r"><div class="o"></div></td><td class="r"><div class="i"></div></td><td class="r"><div class="i"></div></td></tr>
-                <tr><td class="r">6</td><td class="r">7</td><td class="r">8</td></tr>
-            </table>
-        </td>
-        <td> 100 - Runs the  SE Basic 3.2 ROM by Nine tiles networks ltd. This mode supports ULA Plus mode for 260 colours! Documentation available at: <a href="http://www.worldofspectrum.org/infoseekid.cgi?id=0027510">World of Spectrum</a> .
-        </td>
-    </tr>
+   
+   
     <tr>
         <td>
             <table class="omni-dip">
@@ -263,20 +253,22 @@ The final bank of  three switches (green) configure what ROM is being used for t
     </tr>
 </table>
 
-<sup>1</sup> divMMC support must be disabled to support these modes.
+<p><sup>1</sup> divMMC support must be disabled to support these modes.</p>
 
-## Wrapping it up
+<h2 id="wrapping-it-up">Wrapping it up</h2>
 
-There is a lot of flexibility in the design of the Omni, accessible via the configuration switches.
+<p>There is a lot of flexibility in the design of the Omni, accessible via the configuration switches.</p>
 
-The derby BASIC ROM lets me experience functionality that was  unavailable to me during my time using the Spectrum as a daily driver. The divMMC support allows me to try games I never had a chance to play. Finally the AY-3-8912 sound chip support brings a whole experience to gaming.
+<p>The derby BASIC ROM lets me experience functionality that was  unavailable to me during my time using the Spectrum as a daily driver. The divMMC support allows me to try games I never had a chance to play. Finally the AY-3-8912 sound chip support brings a whole experience to gaming.</p>
 
-In the near term the Omni is here to serve two purposes for me:
+<p>In the near term the Omni is here to serve two purposes for me:</p>
 
-+ To test my own code, created on a PC, accessed via divMMC
-+ To let me experience Spectrum games once again on hardware that feels real.
+<ul>
+  <li>To test my own code, created on a PC, accessed via divMMC</li>
+  <li>To let me experience Spectrum games once again on hardware that feels real.</li>
+</ul>
 
-So my DIP switch settings for the near future are going to be:
+<p>So my DIP switch settings for the near future are going to be:</p>
 
 <table class="omni-dip">
     <tr>
@@ -292,13 +284,6 @@ So my DIP switch settings for the near future are going to be:
     </tr>
 </table>
 
-So i'll have: divMMC, hold the firmware update, Kempston joystick, heavy on the divMMC 8.6 support and a vanilla 48K Spectrum for dessert.
+<p>So i’ll have: divMMC, hold the firmware update, Kempston joystick, heavy on the divMMC 8.6 support and a vanilla 48K Spectrum for dessert.</p>
 
-[1]: https://retroradionics.co.uk/
-[2]: https://github.com/brendanalford/zx-diagnostics/wiki
-[3]: https://www.facebook.com/groups/519934131721262/files/
-[4]: /onmi-128hq-part1-overview/
-
-
-</td></tr></table>
 :ET

@@ -139,8 +139,7 @@ The second (cyan) bank of switches specify the of firmware supported by divMMC. 
         </td>
         <td> 10 - Enable  esxDOS 0.8.6 support. This is one area where my switches a flat out different to the ones mentioned in the FAQ, the FAQ has the two divMMC switch settings the wrong way round for my setup.. </td>
     </tr>
-
-<tr>
+    <tr>
         <td>
             <table class="omni-dip">
                 <tr>
@@ -157,11 +156,16 @@ The second (cyan) bank of switches specify the of firmware supported by divMMC. 
                 </tr>
             </table>
         </td>
-        <td> 11 - Enable  esxDOS 0.8.5 support see above
-
+        <td> 11 - Enable  esxDOS 0.8.5 support see above</td>
+    </tr>
 </table>
 
 I expect the meanings of these switches to change over time as different versions of firmware are released.
+
+
+
+
+
 
 ## ROM selection switches
 
@@ -212,17 +216,8 @@ The final bank of  three switches (green) configure what ROM is being used for t
         </td>
         <td> 011 - Boots the 1985 128K basic ROM<sup>1</sup>.</td>
     </tr>
-    <tr>
-        <td>
-            <table class="omni-dip">
-                <tr><td class="r"><div class="i"></div></td><td class="r"><div class="o"></div></td><td class="r"><div class="o"></div></td></tr>
-                <tr><td class="r"><div class="o"></div></td><td class="r"><div class="i"></div></td><td class="r"><div class="i"></div></td></tr>
-                <tr><td class="r">6</td><td class="r">7</td><td class="r">8</td></tr>
-            </table>
-        </td>
-        <td> 100 - Runs the  SE Basic 3.2 ROM by Nine tiles networks ltd. This mode supports ULA Plus mode for 260 colours! Documentation available at: <a href="http://www.worldofspectrum.org/infoseekid.cgi?id=0027510">World of Spectrum</a> .
-        </td>
-    </tr>
+   
+   
     <tr>
         <td>
             <table class="omni-dip">
@@ -243,17 +238,7 @@ The final bank of  three switches (green) configure what ROM is being used for t
         </td>
         <td> 110 - Emulates the classic 48k Spectrum basic from 1982. The best mode for compatibility with <em>ahem...</em> your saved games. </td>
     </tr>
-    <tr>
-        <td>
-            <table class="omni-dip">
-                <tr><td class="r"><div class="i"></div></td><td class="r"><div class="i"></div></td><td class="r"><div class="i"></div></td></tr>
-                <tr><td class="r"><div class="o"></div></td><td class="r"><div class="o"></div></td><td class="r"><div class="o"></div></td></tr>
-                <tr><td class="r">6</td><td class="r">7</td><td class="r">8</td></tr>
-            </table>
-        </td>
-        <td> 111 -  This mode runs the 1986, 128K spectrum ROM<sup>1</sup> with ULA plus mode. The boot menu gives access to the 128K basic, 48K basic, a tape test and calculator.
-        </td>
-    </tr>
+    
 </table>
 
 <sup>1</sup> divMMC support must be disabled to support these modes.
