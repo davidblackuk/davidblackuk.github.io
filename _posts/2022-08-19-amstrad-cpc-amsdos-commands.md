@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Amstrad CPC: Roms, AMSDOS, disk commands"
+title:  "Amstrad CPC: AMSDOS, disk commands"
 tags: [ 8bit, ROMs, amstrad, cpc, amsdos, cpm]
 location: London, England
 excerpt: "I have recently been playing around with an Amstrad CPC 6128 and had forgotten all i knew about AMSDOS"
@@ -12,7 +12,7 @@ date: 2022-08-19
 
 # Getting around to it
 
-I pulled an old CPC 618 out of the loft recently, by recently I mean during lock down 1, over a year ago. So having had it sit on the shelf in my home-office for a year, I decided to start playing with it, after a re-cap and of course the inevitable disk drive belt replacement.
+I pulled an old CPC 6128 out of the loft recently, by recently I mean during lock down 1, over a year ago. So having had it sit on the shelf in my home-office for a year, I decided to start playing with it, after a re-cap and of course the inevitable disc drive belt replacement.
 
 <div class="dbImg zoom50 centeredImg" data-src="cpc/cpc-128-replacement-belt.png" alt="Picture of a replacement belt in a bag." ></div>
 
@@ -27,10 +27,10 @@ When I first had a plugged in and working system, via a hodgepodge of adaptors, 
 <div class="dbImg zoom200 centeredImg" data-src="cpc/cpc-custard-pie-factory.png" alt="Picture of a replacement belt in a bag." ></div>
 
 <div class="dbCaption">
-Ahh, my first (worst) CPC game published by Tynesoft.
+Ahh, my first CPC game published by Tynesoft.
 </div>
 
-However I pretty quickly realized I couldn't remember any of the other disc commands. This post is the culmination of my head scratching around this and, I hope, might save you time if you're getting back into the CPC.
+However I pretty quickly realized I couldn't remember any of the other disc commands. This post is the culmination of my head scratching around this which, I hope, might save you time if you're getting back into the CPC.
 
 The CPC had two distinct ways of accessing a floppy disc, AMSDOS: which was the native CPC disc access method, used to run CPC programs; and CPM, used to run business apps and Zork. CPM is beyond the scope of this article but I will cover it in a later post.
 
@@ -40,7 +40,9 @@ The Amstrad CPC 464, the original Amstrad Color Personal Computer didn't come wi
 
 The tape oriented nature of the original CPC means that AMSDOS has a number of commands that deal with backwards and forwards compatibility. You can, for example disable the disc system completely and revert to all I/O being performed to tape again. On later CPCs with built in disc drives, tape based games and apps became rarer and for me at least, these commands were less frequently used.
 
-The commands that you use to access and control discs are a mixture of built in BASIC commands and external commands in the ROM. Internal basic commands e.g. `cat` are typed as is:
+The commands that you use to access and control discs are a mixture of built in BASIC commands and external commands in the ROM. 
+
+Internal basic commands e.g. `cat` are typed as is:
 
     cat
 
