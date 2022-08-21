@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spectrum development then and now: Part I"
-tags: [ 8bit, spectrum, z80]
+tags: [ 8bit, spectrum, z80, retro]
 location: London, England
 excerpt: How quick can you develop speccy app using a modern OS
 description: How ZX Spectrum games were developed originally versus now.

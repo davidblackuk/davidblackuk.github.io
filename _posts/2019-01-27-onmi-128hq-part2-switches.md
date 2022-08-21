@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Omni 128HQ Desktop #2 - Configuration"
-tags: [ 8bit,  spectrum, hardware, omni]
+tags: [ 8bit,  spectrum, hardware, omni, retro]
 location: London, England
 excerpt: In this post I'm going to discuss how to configure the Omni 128HQ Desktop via DIP switches.
 description: The Omni 128HQ from Retro-Radionics allows you to emulate 48K, 128K Spectrums, ZX81 and other formats. The Omni is configured via DIP switches, in this article we discuss the available options. 

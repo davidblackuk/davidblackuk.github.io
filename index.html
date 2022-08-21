@@ -8,13 +8,17 @@ tags: [Jekyll, theme, themes, responsive, blog, minimalism]
 
 <ul class="post-list">
 {% for post in site.posts limit:100 %} 
-  <li>
-      <article>
-        <a href="{{ site.url }}{{ post.url }}">{{ post.title }} 
-        </a>
-      </article>
-    </li>
+  {% if post.tags contains 'retro' %}
+    <li>
+        <article>
+          <a href="{{ site.url }}{{ post.url }}">{{ post.title }} 
+          </a>
+        </article>
+      </li>
+    {% endif %}
+
 {% endfor %}
+
 </ul>
 
 <!--

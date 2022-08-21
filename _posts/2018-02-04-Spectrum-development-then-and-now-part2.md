@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spectrum development then and now: Part II"
-tags: [ 8bit, spectrum, z80]
+tags: [ 8bit, spectrum, z80, retro]
 location: London, England
 excerpt: Spectrum development in 2018
 description: Developing ZX Spectrum applications on a modern PC is not just easy but fun. When you have the right tools.

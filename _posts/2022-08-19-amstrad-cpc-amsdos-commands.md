@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Amstrad CPC: AMSDOS, disk commands"
-tags: [ 8bit, ROMs, amstrad, cpc, amsdos, cpm]
+tags: [ 8bit, ROMs, amstrad, cpc, amsdos, cpm, retro]
 location: London, England
 excerpt: "I have recently been playing around with an Amstrad CPC 6128 and had forgotten all i knew about AMSDOS"
 description: "I have recently been playing around with an Amstrad CPC 6128 and had forgotten all i knew about AMSDOS" 
@@ -283,5 +283,10 @@ CPC booted into CP/M plus
 
 ## Wrap up
 
-This concludes my quick run through the capabilities of AMSDOS and how to manipulate files. Hope it's been of help. 
+Looking at AMSDOS in retrospect, it's a quirky beast, however that's looking through a lens  that's nearly 30 years wide. Across DOS and Unix, we've become used to directories and modern command syntax. However, working as a jobbing games programmer on the CPC series of computers for several years, AMSDOS just felt modern and dare I say it: cool?
+
+I've really enjoyed playing around with AMSDOS and re-learning forgotten skills, its helped me reengage with the CPC and kick started a minor collecting mania for ROMS that extend it (more of which in a later post).
+
+
+This concludes my quick (or long and rambling) run through the capabilities of AMSDOS and how to manipulate files. Hope it's been of help. 
 

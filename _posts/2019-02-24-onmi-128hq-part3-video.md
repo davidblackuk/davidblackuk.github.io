@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Omni 128HQ Desktop #3 - Video"
-tags: [ 8bit,  spectrum, hardware, omni]
+tags: [ 8bit,  spectrum, hardware, omni, retro]
 location: London, England
 excerpt: "First of all let me address the elephant in the room: HDMI. While there is a port on the Omni for HDMI, currently it is inoperative. I bought the Omni because of HDMI and was very unhappy to discover that it wasn't implemented."
 description: "In this post we head off into the unchartered waters of video output for the Omni 128HQ Desktop. Which is, surprisingly tricky." 
