@@ -8,7 +8,7 @@ description: "My CPC ROM box, what it is and what it does."
 comments: true
 share: true
 thumbnail: "rom-box.png"
-date: 2022-08-28
+date: 2022-08-31
 ---
 
 # ROMs to the left of me, ROMs to the right, here I am
