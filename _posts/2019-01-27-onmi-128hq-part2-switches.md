@@ -7,6 +7,7 @@ excerpt: In this post I'm going to discuss how to configure the Omni 128HQ Deskt
 description: The Omni 128HQ from Retro-Radionics allows you to emulate 48K, 128K Spectrums, ZX81 and other formats. The Omni is configured via DIP switches, in this article we discuss the available options. 
 comments: true
 share: true
+thumbnail: "omni-2.png"
 date: 2019-01-27
 ---
 # Intro

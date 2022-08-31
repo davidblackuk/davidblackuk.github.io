@@ -7,6 +7,7 @@ excerpt: I've bought a modern hardware implementation of the ZX Spectrum, the OM
 description: I've created a tool to calculate the memory usage and t-states used by z80 code. You might want to use it.
 comments: true
 share: true
+thumbnail: "omni-1.png"
 date: 2019-01-19
 ---
 # Intro

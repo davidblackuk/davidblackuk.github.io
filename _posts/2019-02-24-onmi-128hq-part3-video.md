@@ -7,6 +7,7 @@ excerpt: "First of all let me address the elephant in the room: HDMI. While ther
 description: "In this post we head off into the unchartered waters of video output for the Omni 128HQ Desktop. Which is, surprisingly tricky." 
 comments: true
 share: true
+thumbnail: "omni-3.png"
 date: 2019-02-24
 ---
 # Intro
