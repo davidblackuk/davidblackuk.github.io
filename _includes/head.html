@@ -26,8 +26,10 @@
 
 {% if page.thumbnail %}
 <meta property="og:image" content="{{ site.url }}/thumbs/{{ page.thumbnail }}" />
+<meta name="twitter:image" content="{{ site.url }}/thumbs/{{ page.thumbnail }}" >
 {% else %}    
 <meta property="og:image" content="{{ site.url }}/thumbs/default.png" />
+<meta name="twitter:image" content="{{ site.url }}/thumbs/default.png">
 {% endif %}
 
 
