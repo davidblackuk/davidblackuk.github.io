@@ -22,6 +22,15 @@
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 
+<!-- Open Graph preview thumbnails -->
+
+{% if page.thumbnail %}
+<meta property="og:image" content="{{ site.url }}/thumbs/{{ page.thumbnail }}" />
+{% else %}    
+<meta property="og:image" content="{{ site.url }}/thumbs/default.png" />
+{% endif %}
+
+
 {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
 {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
@@ -46,9 +55,8 @@
 {% endif %}
 
 <!-- Webfonts -->
-<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
-
 <meta http-equiv="cleartype" content="on">
+
 
 <!-- Load Modernizr -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>

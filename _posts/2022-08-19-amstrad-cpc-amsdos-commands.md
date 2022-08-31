@@ -7,6 +7,7 @@ excerpt: "I have recently been playing around with an Amstrad CPC 6128 and had f
 description: "I have recently been playing around with an Amstrad CPC 6128 and had forgotten all i knew about AMSDOS" 
 comments: true
 share: true
+thumbnail: "amsdos.png"
 date: 2022-08-19
 ---
 
