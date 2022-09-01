@@ -4,16 +4,8 @@
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
 
 {% if site.owner.twitter %}<!-- Twitter Cards -->
-{% if page.image.feature %}
 
 <meta name="twitter:card" content="summary_large_image">
-
-{% else %}
-
-<meta name="twitter:card" content="summary">
-
-
-{% endif %}
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:site" content="@{{ site.owner.twitter }}">
@@ -34,10 +26,10 @@ take out twitter image completely
 
 {% if page.thumbnail %}
 <meta property="og:image" content="{{ site.url }}/thumbs/{{ page.thumbnail }}" />
-
+<meta name="twitter:image" content="{{ site.url }}/thumbs/{{ page.thumbnail }}" >
 {% else %}    
 <meta property="og:image" content="{{ site.url }}/thumbs/default.png" />
-
+<meta name="twitter:image" content="{{ site.url }}/thumbs/default.png">
 {% endif %}
 
 
