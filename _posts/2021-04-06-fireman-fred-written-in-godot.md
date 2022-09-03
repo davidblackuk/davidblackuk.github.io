@@ -7,6 +7,7 @@ excerpt: "I decided to see how easy it would be to rewrite Fireman Fred, using a
 description: "I decided to see how easy it would be to rewrite Fireman Fred, using a modern game engine" 
 comments: true
 share: true
+thumbnail: "son-of-fred.png"
 date: 2021-04-02
 ---
 

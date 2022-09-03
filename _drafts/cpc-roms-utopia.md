@@ -4,7 +4,7 @@ title:  "Amstrad CPC: Utopia ROM - Arnor"
 tags: [ 8bit,  amstrad, cpc, ROMs, retro]
 location: London, England
 excerpt: "ROM-box, now there's a term you don't hear much anymore."
-description: "My CPC ROM box, what it is and what it does." 
+description: What is the Utopia ROM and what does it give us.
 comments: true
 share: true
 date: 2022-08-28

@@ -7,6 +7,7 @@ excerpt: Some computers have easy to understand screen layouts, the Spectrum? No
 description: The Spectrum screen layout is complex, let's talk about the pixel layout and memory map
 comments: true
 share: true
+thumbnail: "zx-screen-2.png"
 date: 2018-03-10
 ---
 # Pixel layout

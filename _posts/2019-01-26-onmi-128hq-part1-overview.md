@@ -4,7 +4,7 @@ title:  "Omni 128HQ Desktop #1 - Overview"
 tags: [ 8bit,  spectrum, hardware, omni, retro]
 location: London, England
 excerpt: I've bought a modern hardware implementation of the ZX Spectrum, the OMNI 128HQ from retro radionics
-description: I've created a tool to calculate the memory usage and t-states used by z80 code. You might want to use it.
+description: I bought an  OMNI 128HQ from Retro Radionics. Here's an overview of what you get, what it is and why you might want one.
 comments: true
 share: true
 thumbnail: "omni-1.png"

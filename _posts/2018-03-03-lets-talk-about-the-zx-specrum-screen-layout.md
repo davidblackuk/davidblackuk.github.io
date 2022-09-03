@@ -7,6 +7,7 @@ excerpt: How colours values were specified on the Sinclair ZX Spectrum.
 description: The Spectrum screen layout is complex, let's talk about the attribute map and colors
 comments: true
 share: true
+thumbnail: "zx-screen-1.png"
 ---
 # Attributes
 

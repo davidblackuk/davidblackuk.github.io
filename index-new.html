@@ -1,0 +1,44 @@
+---
+layout: page
+title: Latest Posts
+description: "A simple and clean responsive Jekyll theme for words and photos."
+tags: [Jekyll, theme, themes, responsive, blog, minimalism]
+
+---
+
+<ul class="post-list">
+{% for post in site.posts limit:100 %} 
+  {% if post.tags contains 'retro' %}
+    <li>
+        <article>
+          <a href="{{ site.url }}{{ post.url }}"> 
+
+            {% if post.thumbnail %}
+            <img class= "homeImage" src="/thumbs/{{ post.thumbnail }}" />
+            {% else %}    
+            <img class= "homeImage" src="/thumbs/default.png" />
+            {% endif %}
+
+            <div class="homeText">
+              <div class="homeTitle">
+                {{ post.title }}
+              </div>
+              <div class="homeDescription">
+                {{ post.description }}
+              </div> 
+            </div>
+          </a>
+        </article>
+      </li>
+    {% endif %}
+
+{% endfor %}
+
+</ul>
+
+<!--
+<span class="entry-date">
+  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+</span>
+-->
+

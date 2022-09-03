@@ -7,6 +7,7 @@ excerpt: Addressing the Spectrum screen programmatically
 description: The Spectrum screen layout is complex, let's talk pixel address calculation...
 comments: true
 share: true
+thumbnail: "zx-screen-3.png"
 date: 2018-03-11
 ---
 # The code

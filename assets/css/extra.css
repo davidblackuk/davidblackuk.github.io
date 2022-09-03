@@ -1,3 +1,23 @@
+
+.homeImage {
+	width: calc(1280px/8);
+	height: calc(720px/8);
+	border-radius: 5px;
+	vertical-align: top;
+}
+
+.homeText {
+	display:inline-block;
+	width:72%;
+}
+
+
+.homeDescription{
+	padding-top: 0.5em;
+	font-style: oblique;
+	font-size: smaller;
+}
+
 .centeredImg {
 	display: block;
 	margin-left: auto;
