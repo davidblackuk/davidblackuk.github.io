@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CPC Telera, setting breakpoints in code"
+title:  "CPC Telera: Setting breakpoints in code"
 tags: [ 8bit,  amstrad, cpc, programming, retro, cpctelera]
 location: London, England
 excerpt: "He then ran the app via the WinApe emulator and it switched to the debugger at the point where the `WinwApe_Brk` command was. What magic is this? I thought."
