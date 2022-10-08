@@ -4,7 +4,7 @@ title:  "Calculate the memory and t-states that Z80 code takes"
 tags: [ 8bit, z80, spectrum, retro]
 location: London, England
 excerpt: I've been writing quite a bit of code of late (and certainly no blog posts). I've been focusing on getting my display update code as efficient as I can. As part of this process I wanted to examine my code as see what the space / time trade off is in terms of memory consumption and  number of processor cycles used.
-description: I've created a tool to calculate the memory usage and t-states used by z80 code. You might want to use it.
+description: I've created a tool to calculate the memory size and t-states used by z80 code. You might want to use it.
 comments: true
 share: true
 date: 2018-11-17

@@ -35,6 +35,26 @@ For general use in  BASIC  `|LIST` is a useful feature but from within MAXAM, th
 
 The MAXAM editor, edits one file at a time, `|LIST` prevents you from needing to save the current file and open multiple files to find where a sub-routine is defined. BASIC programmers didn't work with multiple files often, Assembly programmers did.
 
+### The commands
+
+My categorization of the commands available in the UTOPIA ROM is:
+
+|-----|----|
+|Category|Description|
+|-----|----|
+|BASIC| Utilities and  extensions for BASIC programmers|
+|Disc| utilities that operate at the disc level|
+|File| commands that manipulate files and file content|
+|ROM| extensions that control ROMS |
+|Stream| commands that echo screen output to the printer or file |
+|-----|----|
+
+Commands in Utopia can be invoked in the 'traditional' manner, e.g. `|command,parameter,parameter` or just as `|command`. If the parameters are omitted Utopia will prompt for them one at a time. To add a layer of consistency with existing AMSDOS commands, some of the Utopia equivalents just offer the  ability to prompt for parameters, before invoking the AMSDOS ROM call and passing in the parameters.
+
+## Printer commands
+
+
+
 
 <!--
 <div class="dbImg  centeredImg" data-src="cpc/boot-with-roms.png" alt="A boot screen with ROMS." ></div>
