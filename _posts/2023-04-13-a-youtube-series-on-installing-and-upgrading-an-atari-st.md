@@ -31,6 +31,13 @@ Then I moved on to quality of life improvements and adding a CLI to our system.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-PMGnu_MPJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+Running different ST configurations requires a boot manager. Here I install and configure XBoot.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bIsZyks0kPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
 Thats all for now but more episodes incoming.
 
 
