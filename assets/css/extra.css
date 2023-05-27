@@ -24,6 +24,26 @@
 	margin-right: auto;
 }
 
+.downloadButton {
+	text-align: center;
+}
+
+.downloadLink {
+	text-transform: uppercase;
+	background-color: black;
+	color: white;
+	padding: 2px;	
+}
+
+.downloadLink:visited {
+	color: white;
+}
+
+.downloadLink:hover {
+	color: lightgoldenrodyellow;
+}
+
+
 .speccy {
 	width: 400px;
 	height: 294px;

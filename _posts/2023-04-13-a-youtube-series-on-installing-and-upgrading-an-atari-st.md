@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Atari ST: Installation and configuration series"
-tags: [Atari, ST, retro]
+tags: [ 16bit,  Atari, ST, retro]
 location: London, England
 excerpt: "In a recent youtube video I put out a call for help, to locate a copy of the manual for the Atari ST app, NeoDesc CLI."
 description: A manual for the NeoDesk CLI
@@ -35,6 +35,22 @@ Running different ST configurations requires a boot manager. Here I install and 
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bIsZyks0kPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+We need to decompress files in a variety of formats, here how to install and configure PAC Shell
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/skrYTKl8EyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+It's no good having software without knowing how to use it. In this episode I install ST-Guide a hyper text help system for the atari ST
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xrkXTFx5hGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+There are a couple of Quality of life improvements next, a Font Selector and an AV Server, just to make life better. Finally I add
+more bling to the ST by adding custom Icons into the mix
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8_05R2MSBd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Atari ST: The manual for NeoDesk CLI"
-tags: [ 8bit,  amstrad, cpc, programming, retro, cpctelera]
+tags: [ 16bit,  Atari, ST, retro]
 location: London, England
 excerpt: "In a recent youtube video I put out a call for help, to locate a copy of the manual for the Atari ST app, NeoDesc CLI."
 description: A manual for the NeoDesk CLI
