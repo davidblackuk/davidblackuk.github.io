@@ -30,7 +30,7 @@ for recording purposes, it boots fine in EmuTos. It almost certainly won't boot 
 
 ## Episode 19 - The knowledge of all fonts
 
-This is the HDD image from the end of this video with oine addition. I set an icon for the font directories to make them look better.
+This is the HDD image from the end of this video with one addition. I set an icon for the font directories to make them look better.
 
 ![Thumbnail for the episode](../thumbs/ep-019-fonts.png)
 
