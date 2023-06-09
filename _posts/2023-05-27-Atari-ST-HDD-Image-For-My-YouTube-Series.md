@@ -28,6 +28,17 @@ These are zip files containing a single file called `512.img` which is a 512 MB 
 for recording purposes, it boots fine in EmuTos. It almost certainly won't boot into real TOS because no HD drivers are installed.
 
 
+## Episode 19 - The knowledge of all fonts
+
+This is the HDD image from the end of this video with oine addition. I set an icon for the font directories to make them look better.
+
+![Thumbnail for the episode](../thumbs/ep-019-fonts.png)
+
+<div class="downloadButton">
+    <a href="{{ site.baseurl }}/hdd/ep_019_hdd_img.zip" class="downloadLink" >Download DISK Image </a>
+</div>
+
+
 ## Episode 17 - You're So Pretty
 
 ![Thumbnail for the episode](../thumbs/ep-017-pretty.png)
@@ -45,14 +56,6 @@ for recording purposes, it boots fine in EmuTos. It almost certainly won't boot 
     <a href="{{ site.baseurl }}/hdd/ep_016_hdd_img.zip" class="downloadLink" >Download DISK Image </a>
 </div>
 
-
-## Episode 15 - Raiders of the lost ARC
-
-![Thumbnail for the episode](../thumbs/ep-015-raiders.png)
-
-<div class="downloadButton">
-    <a href="{{ site.baseurl }}/hdd/ep_015_hdd_img.zip" class="downloadLink" >Download DISK Image </a>
-</div>
 
 
 ---
