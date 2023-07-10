@@ -17,15 +17,36 @@ date: 2023-05-27
 
 # The  HDD image for my ST From Zero to Hero Series
 
-I've been presenting a series on YouTube called from from Zero to Hero where I take a base line ATARI ST-FM and
-configure it into a power house of a productivity machine.
+I've been presenting two series on YouTube around installing configuring and extending an Atari ST and an Atari Falcon.
 
-While recording this series I've been asked if I could make the hard drive images available. This page is where I am going to host those images, or at least the last couple.
+While recording these series I've been asked if I could make the hard drive images available. This page is where I am going to host those images, or at least the last couple.
 
 I'll try to keep this page up to date with the series, but updates might be some what asynchronous, unless I can easily automate it.
 
 These are zip files containing a single file called `512.img` which is a 512 MB Atari ST Hard drive suitable for using in emulators. I use Hatari
 for recording purposes, it boots fine in EmuTos. It almost certainly won't boot into real TOS because no HD drivers are installed.
+
+The video describing how to use these images is available [here](https://youtu.be/WRRTCyj7Xfs)
+
+The images for the falcon series require a slightly tweaked process, outlined with the videos.
+
+## Episode 23 - How to install and configure MiNT in 2023 
+
+This HDD image contains my initial MiNT install. If you are going to watch the video on [how to install and use this image](https://youtu.be/WRRTCyj7Xfs)
+be aware that there are some changes you will need to make to get this to work:
+
+- The system needs to be an Atari Falcon
+- The CPU needs to be 68030 at 16 MHz (or 32 if you wish) and a 68882 FPU
+- Memory I used 14 MB of ST RAM and 128 of TT/Fast RAM
+- Most importantly the HDD image needs to be mounted as an IDE drive (I think SCSI works to and is faster , but at the moment I use IDE)
+
+Also as I noted in the video, GEMDOS drives are not available in MiNT
+
+![Thumbnail for the episode](../thumbs/ep-023-mint-install.png)
+
+<div class="downloadButton">
+    <a href="{{ site.baseurl }}/hdd/ep_023_hdd_img.zip" class="downloadLink" >Download DISK Image </a>
+</div>
 
 
 ## Episode 19 - The knowledge of all fonts
