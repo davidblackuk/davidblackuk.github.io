@@ -30,6 +30,37 @@ The video describing how to use these images is available [here](https://youtu.b
 
 The images for the falcon series require a slightly tweaked process, outlined with the videos.
 
+
+## Episode 24 - Atari Falcon,Hatari and Videl graphics 
+
+This HDD image extends my base MiNT install and add true colour hi-res videl graphics. I've
+tweaked the system a bit and increased the true color resolution from 912x688, to 992x752.
+
+There's also a folder on the root of the c drive that contains the two desktop images I used in this
+episode, the Joker (in the video) and Harly Quinn from the thumbnail (and in use on this image).
+
+You can swap between them by dragging the desk.png image in to the u:\c\gemsys\myaes\skins\default
+folder. Remember to do this in the EmuTOS desktop, not the mint one.
+
+If you are going 
+to watch the video on [how to install and use this image](https://youtu.be/WRRTCyj7Xfs)
+be aware that there are some changes you will need to make to get this to work:
+
+- The system needs to be an Atari Falcon
+- The CPU needs to be 68040 at 32 MHz (or 32 if you wish) and a 68882 FPU
+- Memory I used 14 MB of ST RAM and 128 of TT/Fast RAM
+- Most importantly the HDD image needs to be mounted as an IDE drive (I think SCSI works to and is faster , but at the moment I use IDE)
+
+Also as I noted in the video, GEMDOS drives are not available in MiNT
+
+![Thumbnail for the episode](../thumbs/ep-024-videl.png)
+
+<div class="downloadButton">
+    <a href="{{ site.baseurl }}/hdd/ep_024_hdd_img.zip" class="downloadLink" >Download DISK Image </a>
+</div>
+
+
+
 ## Episode 23 - How to install and configure MiNT in 2023 
 
 This HDD image contains my initial MiNT install. If you are going to watch the video on [how to install and use this image](https://youtu.be/WRRTCyj7Xfs)
