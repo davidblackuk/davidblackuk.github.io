@@ -32,9 +32,35 @@ The images for the falcon series require a slightly tweaked process, outlined wi
 
 
 
+
+## Episode 26 - Battle of the desktops: Thing Desktop 1.27
+
+This HDD image extends the previous one and adds a third desktop: Thing 1.27, plus new XBoot sets to
+boot directly into it and the others.
+
+
+If you are going 
+to watch the video on [how to install and use this image](https://youtu.be/WRRTCyj7Xfs)
+be aware that there are some changes you will need to make to get this to work:
+
+- The system needs to be an Atari Falcon
+- The CPU needs to be 68040 at 32 MHz (or 32 if you wish) and a 68882 FPU
+- Memory I used 14 MB of ST RAM and 128 of TT/Fast RAM
+- Most importantly the HDD image needs to be mounted as an IDE drive (I think SCSI works to and is faster , but at the moment I use IDE)
+
+Also as I noted in the video, GEMDOS drives are not available in MiNT
+
+![Thumbnail for the episode](../thumbs/ep-026-thing-desktop.png)
+
+<div class="downloadButton">
+    <a href="{{ site.baseurl }}/hdd/ep_026_hdd_img.zip" class="downloadLink" >Download DISK Image </a>
+</div>
+
+
+
 ## Episode 25 - Battle of the desktops: Ease V5
 
-This HDD image extends the previous one and add a second desktop: Ease V5, plus new XBoot sets to
+This HDD image extends the previous one and adds a second desktop: Ease V5, plus new XBoot sets to
 boot directly into either Ease or TeraDesk.
 
 
