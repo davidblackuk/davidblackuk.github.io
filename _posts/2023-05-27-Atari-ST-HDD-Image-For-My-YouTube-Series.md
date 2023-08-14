@@ -31,6 +31,29 @@ The video describing how to use these images is available [here](https://youtu.b
 The images for the falcon series require a slightly tweaked process, outlined with the videos.
 
 
+
+## Episode 28 - Polishing MiNT #1 - Unix Tools, usability and NeoDesk
+
+
+If you are going 
+to watch the video on [how to install and use this image](https://youtu.be/WRRTCyj7Xfs)
+be aware that there are some changes you will need to make to get this to work:
+
+- The system needs to be an Atari Falcon
+- The CPU needs to be 68040 at 32 MHz (or 32 if you wish) and a 68882 FPU
+- Memory I used 14 MB of ST RAM and 128 of TT/Fast RAM
+- Most importantly the HDD image needs to be mounted as an IDE drive (I think SCSI works to and is faster , but at the moment I use IDE)
+
+Also as I noted in the video, GEMDOS drives are not available in MiNT
+
+![Thumbnail for the episode](../thumbs/ep-028-mint-cli-1.png)
+
+<div class="downloadButton">
+    <a href="{{ site.baseurl }}/hdd/ep_028_hdd_img.zip" class="downloadLink" >Download DISK Image </a>
+</div>
+
+
+
 ## Episode 27 - Battle of the desktops: Jinnee Desktop 
 
 This HDD image extends the previous one and adds a Fourth desktop: Jinnee, plus new XBoot sets to
