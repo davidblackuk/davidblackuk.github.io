@@ -42,6 +42,9 @@ be aware that there are some changes you will need to make to get this to work:
 - There are now two hard drive images that need to be used.
     - The file drive-0.img should be mounted as SCSI device 0 
     - and drive-1.img as SCSI device 1
+- finally the drives are now packed as bzip2 compressed tar files, use
+    - tar xvjf file.tar.bz2 _On MAC and Linux_
+    - 7zip _on windows_ or the above command on _WSL_
 
 Also as I noted in the video, GEMDOS drives are not available in MiNT
 
