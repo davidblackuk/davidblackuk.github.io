@@ -27,30 +27,28 @@ I'll try to keep this page up to date with the series, but updates might be some
 
 This is a zip file containing a single file called `512.img` which is a 512 MB Atari ST Hard drive suitable for using in emulators. I use Hatari for recording purposes, it boots fine in EmuTos. It almost certainly won't boot into real TOS because no HD drivers are installed.
 
-The video describing how to use these images is available [here](https://youtu.be/WRRTCyj7Xfs)
-
-The images for the falcon series require a slightly tweaked process, outlined with the videos.
+The video describing how to use these images is available [here](https://youtu.be/WRRTCyj7Xfs) though it's getting very out of date. See below for updates to instructions
 
 
+## Episode 29 - Polishing Mint #2: Adding an Ext2 file system to MiNT
 
-## Episode 28 - Polishing MiNT #1 - Unix Tools, usability and NeoDesk
 
-
-If you are going 
-to watch the video on [how to install and use this image](https://youtu.be/WRRTCyj7Xfs)
+If you are going to watch the video on [how to install and use this image](https://youtu.be/WRRTCyj7Xfs)
 be aware that there are some changes you will need to make to get this to work:
 
 - The system needs to be an Atari Falcon
 - The CPU needs to be 68040 at 32 MHz (or 32 if you wish) and a 68882 FPU
 - Memory I used 14 MB of ST RAM and 128 of TT/Fast RAM
-- Most importantly the HDD image needs to be mounted as an IDE drive (I think SCSI works to and is faster , but at the moment I use IDE)
+- There are now two hard drive images that need to be used.
+    - The file drive-0.img should be mounted as SCSI device 0 
+    - and drive-1.img as SCSI device 1
 
 Also as I noted in the video, GEMDOS drives are not available in MiNT
 
-![Thumbnail for the episode](../thumbs/ep-028-mint-cli-1.png)
+![Thumbnail for the episode](../thumbs/ep-029-ext2.png)
 
 <div class="downloadButton">
-    <a href="https://www.dropbox.com/scl/fi/ga2fj38bhs94w404swyd8/ep_028_hdd_img.zip?rlkey=xcdc65otzzejy0skwm1ag8891&dl=1" class="downloadLink" >Download DISK Image </a>
+    <a href="https://www.dropbox.com/scl/fi/s8rx9e8pc2qk5hdvsq2cc/ep-029-hdd-images.tar.bz2?rlkey=bm1m141q4l8x1zb87tzpfhyaf&dl=1" class="downloadLink" >Download DISK Image </a>
 </div>
 
 
