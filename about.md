@@ -7,7 +7,7 @@ modified: 2014-07-07
 image:
   feature: featureImages/canalBoat.png
   credit: David Black
-  creditlink: http://www.overtakenbyevents.com
+  creditlink: https://www.overtakenbyevents.com
 ---
 
 I'm a programmer / architect / UI designer / compulsive code monkey. My day-to-day work is carried out in a mix of C#, HTML and Javascript under ASP.NET. When I'm coding at home I add objective-c and swift to the mix because...
