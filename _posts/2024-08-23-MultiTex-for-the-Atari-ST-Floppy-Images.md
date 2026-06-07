@@ -4,7 +4,7 @@ title:  "MultiTex for the Atari ST, floppy images"
 tags: [ 16bit,  Atari, ST, retro]
 location: London, England
 excerpt: "In a recent youtube video I put out a call for help, to locate a copy of the manual for the Atari ST app, NeoDesc CLI."
-description: The installation floppies from my video "Latex then and now. How LaTeX worked in 1992 and now"
+description: "The installation floppies from my video Latex then and now. How LaTeX worked in 1992 and now"
 comments: true
 share: true
 thumbnail: "latest.png"
