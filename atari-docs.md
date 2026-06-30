@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Atari Scanned Documents
-published: false
+published: true
 ---
 
 <p class="lead">OCR'd scans of Atari manuals and books, published via DocuMentor.</p>
+
+
 
 {% assign docs = site.posts | where_exp: "p", "p.tags contains 'atari-scanned-doc'" %}
 {% if docs.size == 0 %}
