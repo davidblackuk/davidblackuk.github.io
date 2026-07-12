@@ -1584,7 +1584,7 @@ The following BASIC program asks you to guess a number, and prints an appropriat
 
 ``` basic
 10 INPUT X% 
-20 ' 
+20 REM 
 30 IF X%=13 THEN PRINT "CORRECT!" : PRINT "THAT WAS THE ANSWER!" 
 40 END  
 ```
@@ -1628,7 +1628,7 @@ Most versions of BASIC allow `IF-THEN-ELSE` control structures. If we were to ad
 
 ``` basic
 10 INPUT X% 
-20 ' 
+20 REM 
 30 IF X%=13 THEN PRINT "VICTORY!" : 
    PRINT "THAT WAS THE ANSWER!" 
    ELSE PRINT "TOO BAD! WRONG GUESS!" 
@@ -1794,7 +1794,7 @@ For practice, here is a short program that uses the `getchar()` function to read
 30 A="" 
 40 GET A 
 50 IF A= "" THEN 40 
-60 '
+60 REM
 70 I=I+1 
 80 T (I)=A 
 90 IF A<>CHR(13) AND I<50 THEN GOTO 30 
@@ -2403,7 +2403,7 @@ The BASIC program:
 ``` basic
 10 A=6 
 20 B=88 
-30 '
+30 REM
 40 PRINT A/B  
 ```
 
@@ -2590,7 +2590,7 @@ Now we will combine two different variable types in our output. Again we start w
 ``` basic
 10 A%=12345 
 20 B$="THE NUMBER IS...>" 
-30 '
+30 REM
 40 PRINT B$;A%
 ```
 ---
@@ -2944,7 +2944,7 @@ Version with `INKEY$`:
 ```basic
 10 A$=INKEY$ 
 20 IF A$="" THEN GOTO 10 
-30 ' 
+30 REM 
 40 PRINT A$
 ```
 Version with GET: 
@@ -2952,7 +2952,7 @@ Version with GET:
 ```basic
 10 GET A$ 
 20 IF A$="" THEN GOTO 10 
-30 ' 
+30 REM 
 40 PRINT A$
 ```
 become the following program in C: 
@@ -4091,11 +4091,13 @@ Don't forget that again you must assign a value to each element before use. With
 
 
 
+{% raw %}
 ```c
 static int field[3][5] = {{1,2,3,4,5} ,
                           {2,3,4,5,6} ,
                           {4,5,6,7,8} } ;
 ```
+{% endraw %}
   
 
 
