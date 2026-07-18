@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Atari ST - Basic to C"
-tags: [atari, atari-scanned-doc]
+tags: [atari, atari-scanned-doc, retro]
 description: "Scanned and OCR'd: Atari ST - Basic to C"
-date: 2026-07-12
+date: 2026-07-18
 ---
 
 <a id="page-1"></a>
@@ -222,266 +222,19 @@ Copyright © 1986
 <!-- page 5 -->
 
 
-3.1 Program structure 41  3.2 Comments 42  3.3 Screen output 42  3.4 Variables and constants 43  3.5 Loops 44  3.6 Data input 44  3.7 Arithmetic in C 45  3.8 The if- else control structure 45  
-
-
-## Chapter 4 Screen Input/Output Operations 47  
-
-
-4.1 Outputting text on the screen 49  4.2 Printing numerical values 50  4.3 Format instructions 52  4.3.1 Conversion elements 52  4.3.1.1 Numerical output 52  4.3.1.2 Character output 53  4.3.2 Format specifiers 53  4.3.3 Examples of numeric output 54  4.3.4 Text formatting 56  4.3.5 More uses for conversions and formats 56  4.4 Printing string variables on the screen 58  4.4.1 Printing a single character 60  4.4.2 More screen output 61  4.4.3 Additional output possibilities 62  4.5 Data input functions 65  4.5.1 The getchar() function 66  4.5.2 Input with gets() 67  4.5.3 The scanf input function 68  4.5.3.1 scanf for character and string input 69  4.5.3.2 Arrays in place of pointers 70  4.5.3.3 Entering numbers via scanf 71  4.5.3.4 Entering multiple data 72  4.5.4 The GETS/INKEY\$ function in C 73  4.5.5 Implementing putchar(), getchar() and getch() on Alcyon C for the Atari ST 74
-
 <!-- page 6 -->
 
 
-5.1 Variable names 79  
-
-
-5.2 Constants 81  
-
-
-5.3 Data types 83  
-
-
-5.4 Converting data types 84  
-
-
-5.4.1 Character/integer conversion 84  
-
-
-5.4.2 Converting between numeric types 87  
-
-
-5.5 Variable declarations 88  
-
-
-5.6 Global/local variables 90  
-
-
-5.7 Arrays 91  
-
-
-5.7.1 Multi- dimensional arrays 94  
-
-
-5.7.2 Strings 94  
-
-
-## Chapter 6 C Pointers 97  
-
-
-6.1 Pointer fundamentals 99  
-
-
-6.2 Using pointers 102  
-
-
-6.3 Pointers and arrays 102  
-
-
-6.4 Numeric arrays 103  
-
-
-6.5 Strings and arrays 106  
-
-
-## Chapter 7 Arithmetic Operators and Expressions 109  
-
-
-7.1 What are operators? 111  
-
-
-7.2 Value assignments 112  
-
-
-7.3 The modulo operator 114  
-
-
-7.4 The increment and decrement operators 115  
-
-
-7.5 Comparison operators 117  
-
-
-7.6 Logical combinations 119  
-
-
-7.7 The negation operator 120  
-
-
-7.8 Multiple assignments 122  
-
-
-7.9 The bit operators 123  
-
-
-## Chapter 8 Control Structures in C 125  
-
-
-8.1 Control structures in BASIC 127  
-
-
-8.2 The if statement 128  
-
-
-8.2.1 The exit() statement 132
 
 <!-- page 7 -->
 
 
-8.2.3 Combining if- else statements 134  
-
-
-8.2.4 else- if chains 135  
-
-
-8.3 for loops 136  
-
-
-8.3.1 Review and summary 137  
-
-
-8.3.2 Infinite loops 138  
-
-
-8.3.3 The comma operator 140  
-
-
-8.3.4 Nested for loops 141  
-
-
-8.4 while loops 145  
-
-
-8.4.1 Combinations of for and while loops 147  
-
-
-8.4.2 Nested while loops 148  
-
-
-8.4.3 The do- while loop 149  
-
-
-8.5 break for leaving loops 150  
-
-
-8.6 The continue statement 152  
-
-
-8.7 The goto jump 154  
-
-
-8.7.1 The goto syntax 154  
-
-
-8.7.2 Avoiding gotos 156  
-
-
-8.7.3 Applications for goto 156  
-
-
-8.8 Conditional execution with switch 157  
-
-
-8.8.1 Example 157  
-
-
-8.8.2 The switch syntax 158  
-
-
-## Chapter 9 Common Mistakes of BASIC Programmers 163  
-
-
-9.1 Error # 1 165  
-
-
-9.2 Error # 2 166  
-
-
-9.3 Error # 3 167  
-
-
-9.4 Error # 4 168  
-
-
-9.5 Error # 5 168  
-
-
-9.6 Error # 6 169  
-
-
-9.7 Error # 7 170  
-
-
-9.8 Error # 8 171  
-
-
-9.9 Error # 9 172  
-
-
-9.10 Error #10 172  
-
-
-9.11 Error #11 173  
-
-
-9.12 Error #12 174  
-
-
-9.13 Error #13 174  
-
-
-9.14 Error #14 175
 
 <!-- page 8 -->
 
 
-## Chapter 10 C Functions 181  
-
-
-10.1 Fundamentals of functions 184  
-10.1.1 Calling functions 184  
-10.1.2 Functions without parameters 185  
-10.1.3 Functions calling each other 188  
-10.2 Passing parameters to functions 190  
-10.2.1 Returning integer data 192  
-10.2.2 Returning other numerical data types 194  
-10.2.3 Pointers, functions and simultaneous parameter passing 195  
-10.3 The DEF FN command 197  
-
-
-## Chapter 11 Structures 201  
-
-
-11.1 Declaring structures 203  
-11.2 Use of structure variables 204  
-11.3 Arrays and structures 206  
-
-
-## Chapter 12 An overview of C 209  
-
-
-12.1 Keywords in C 211  
-12.2 C language statements 213  
-12.2.1 The break statement 213  
-12.2.2 The case statement 213  
-12.2.3 The continue statement 214  
-12.2.4 The #define statement 214  
-12.2.5 The default statement 215  
-12.2.6 The do statement 215  
-12.2.7 The else statement 216  
-12.2.8 The else if statement 216  
-12.2.9 The for statement 216
-
 <!-- page 9 -->
 
-
-Appendix A 225  
-
-
-Appendix B 227  
-
-
-Index 229
 
 <!-- page 10 -->
 
@@ -492,8 +245,6 @@ Index 229
 <a id="page-12"></a>
 
 <!-- page 11 -->
-
-![](/images/atari/atari-st-basic-to-c/p0011_0000.jpg)
 
 <!-- page 12 -->
 
@@ -523,7 +274,7 @@ The great strength of C lies in the number and variety of functions stored in li
 
 Because C is so much closer to the machine level than COBOL, Pascal, or BASIC, many programmers have difficulty switching over to C.
 
----
+
 
 <a id="page-13"></a>
 <!-- page 13 -->
@@ -551,7 +302,7 @@ The programs you now run on your ST are therefore more likely to have a future i
 
 The power of C is demonstrated by the fact that not only GEM, but all of the Digital Research routines not written in machine code were written in C.
 
----
+
 
 <a id="page-14"></a>
 <!-- page 14 -->
@@ -561,14 +312,14 @@ This book gives you the opportunity to move from BASIC to C. Although the common
 
 The examples in this book use the Alcyon compiler that is part of the Atari Developer's Package. It was chosen because it is considered the "standard" among ST C compilers. Other C compilers such as Megamax, Lattice, and Mark Williams are very similar and can be used with very few syntax changes.
 
----
+
 
 <a id="page-15"></a>
 <!-- page 15 -->
 
 
 
----
+
 
 <a id="page-16"></a>
 <!-- page 16 -->
@@ -581,7 +332,7 @@ The examples in this book use the Alcyon compiler that is part of the Atari Deve
 
 <!-- page 17 -->
 
-\[ \text{1} \]
+
 
 <!-- page 18 -->
 
@@ -604,7 +355,7 @@ With the compact, yet precise introduction in this chapter, we'll have you writi
 
 Of course, this method also has its disadvantages. If we leave out complete details for a while, we cannot avoid repeating parts of this chapter later on. However, we believe that this ongoing review is not annoying, but helps you learn even more.
 
----
+
 
 <a id="page-19"></a>
 <!-- page 19 -->
@@ -625,7 +376,7 @@ on the screen?
 In BASIC, we do it with a simple PRINT statement:  
 
 
-``` basic
+```bbcbasic
 10 PRINT "HELLO, HOW ARE YOU?"  
 ```
 
@@ -651,7 +402,7 @@ This causes the program execution to stop until a certain key is pressed. You mu
 
 One word about compiling these C programs. Because of the powerful capabilities of the ST, compilation is often quite time- consuming. For instance, a different LINK procedure is used depending on whether the C program is a TOS application, a GEM application or a desk accessory.
 
----
+
 
 <a id="page-20"></a>
 <!-- page 20 -->
@@ -693,7 +444,7 @@ It is important to make sure that every C program contains a `main()` somewhere 
 
 The braces surrounding the program in our simple example start and end all the statements that make up a function. The last closing brace is like the END command in BASIC.
 
----
+
 
 <a id="page-21"></a>
 <!-- page 21 -->
@@ -752,7 +503,7 @@ main() {
 
 This is also possible in BASIC. The program then reads as follows:  
 
-``` basic
+``` bbcbasic
 10 PRINT "Hello, "; 
 20 PRINT "how "; 
 30 PRINT "are "; 
@@ -782,14 +533,14 @@ Take a look at the semicolons in the C program. Their job is to separate single 
 
 We have now had our first experience with program format, looked at functions, and learned how to print text on the screen. But printing numeric variables to the screen is not as easy.
 
----
+
 
 <a id="page-23"></a>
 <!-- page 23 -->
 
 Numeric output as well as simple text output is possible in BASIC using a PRINT command. Take the following BASIC program, for example:  
 
-``` basic
+```bbcbasic
 10 A=1 
 20 B=3.14 
 30 PRINT A;B 
@@ -829,7 +580,7 @@ int a;
 ```
 The variable `a` therefore represents an integer number, determined by the variable type int.
 
----
+
 
 <a id="page-24"></a>
 <!-- page 24 -->
@@ -879,14 +630,14 @@ Now we come to the program line:
 ``` c
 printf("%7d %5.1f\n", a, b);
 ```
----
+
 
 <a id="page-25"></a>
 <!-- page 25 -->
 
 This compares to the following BASIC instruction:  
 
-``` basic
+```bbcbasic
 PRINT A; B  
 ```
 
@@ -907,7 +658,7 @@ The format itself is determined by the element `5.1`. The `5.1` means that the n
 
 The letter `f`, an abbreviation of `"float"`, indicates the conversion element and instructs the ST to print out a floating- point number. Correspondingly, the d stands for an integer (whole number) value. Format statements are quite useful. Output formatting in BASIC is considerably more complicated than it is in C with the `printf` command.
 
----
+
 
 <a id="page-26"></a>
 <!-- page 26 -->
@@ -941,7 +692,7 @@ The program output looks like this:
 
 1 1 2 4 3 9 4 16 5 25 6 36 7 49 8 64 9 81 10 100 . . . 18 324 19 361 20 400
 
----
+
 
 <a id="page-27"></a>
 <!-- page 27 -->
@@ -949,7 +700,7 @@ The program output looks like this:
 The corresponding BASIC commands are clearly similar to C's for loop:  
 
 
-``` basic
+```bbcbasic
 10 FOR X=1 TO 20 STEP +1 
 20 PRINT X; X*X 
 30 NEXT X 
@@ -1009,7 +760,7 @@ x <= = 20;
 ```
 
 
----
+
 
 <a id="page-28"></a>
 <!-- page 28 -->
@@ -1057,7 +808,7 @@ You've probably noticed that we have always talked about the for loop in relatio
 
 The answer is simple: one. If we want to repeat more than one statement, we can place them in braces, making a statement block.
 
----
+
 
 <a id="page-29"></a>
 <!-- page 29 -->
@@ -1103,7 +854,7 @@ FOR-NEXT loop. For our purposes, `while` can best be expressed as
 
 
 
----
+
 
 <a id="page-30"></a>
 <!-- page 30 -->
@@ -1121,12 +872,11 @@ x = x+1`
 ```
 You can also formulate this algorithm in BASIC like this:  
 
-``` basic
+```bbcbasic
 10 X=1 
-20
-30 IF X<=20 THEN PRINT X;X\*X
-GOTO 30 
-40  
+20 REM
+30 IF X<=20 THEN PRINT X;X*X :GOTO 30 
+40 REM
 50 END  
 ```
 
@@ -1149,7 +899,7 @@ main() {
 ```
 This program prints out a value table just like our last example, which used a for loop.
 
----
+
 
 <a id="page-31"></a>
 <!-- page 31 -->
@@ -1197,10 +947,10 @@ The only thing missing now is an explanation of the first program line:
 
 This command corresponds to a REM line in BASIC. You could add the corresponding BASIC line to the previous BASIC program:  
 
-``` basic
+```bbcbasic
 5 REM Value table for X squared
 ```
----
+
 
 <a id="page-32"></a>
 <!-- page 32 -->
@@ -1233,16 +983,16 @@ To keep things simple, we'll first simulate the BASIC INPUT command with two dif
 
 The syntax of our first input option reads like this:  
 
-``` basic
+```bbcbasic
 	letter = getchar()  
 ```
 This function, which assigns a character read from the keyboard to the variable letter, makes it easy to enter a single character in a running program. It is comparable to a BASIC routine containing a GET command:
 
----
+
 
 <a id="page-33"></a>
 <!-- page 33 -->
-``` basic
+```bbcbasic
 10 LET LT$ ="" 
 20 GET LT$ 
 30 IF LT$="" THEN GOTO 20 
@@ -1309,7 +1059,7 @@ At the time this book is being published, it is not certain whether or not the f
 
 On the ST, the signal for the end of a line is Control-Z. To end the program, you must use this control character instead of RETURN.
 
----
+
 
 <a id="page-35"></a>
 <!-- page 35 -->
@@ -1336,7 +1086,7 @@ But this is not enough, obviously. We will now find ways to implement the BASIC 
 Let's translate the following BASIC program:  
 
 
-``` basic
+```bbcbasic
 10 INPUT A% : 
 REM INTEGER NUMBERS ONLY 
 20  
@@ -1355,7 +1105,7 @@ main() {
 ```
 Note the ampersand `&` in front of the a variable. This is necessary whenever numeric input is entered with the `scanf` function.
 
----
+
 
 <a id="page-36"></a>
 <!-- page 36 -->
@@ -1396,12 +1146,12 @@ Now let's explore the further use of the `&a` variables in a program.
 
 Our BASIC program, which uses the variable `A%` after input, might look like the following:
 
----
+
 
 <a id="page-37"></a>
 <!-- page 37 -->
 
-``` basic
+```bbcbasic
 10 INPUT A% 
 20 PRINT A%; A^2 
 30 END  
@@ -1445,7 +1195,7 @@ A few examples of what we've used so far are:
 4. for `(x = 1; x <= 20; x = x + 1)` 
 5. `a = 2 / (3 * 3)` ;
 
----
+
 
 <a id="page-38"></a>
 <!-- page 38 -->
@@ -1477,7 +1227,7 @@ x = -1;
   
 assigns a value to `x` , just as in BASIC.
 
----
+
 
 <a id="page-39"></a>
 <!-- page 39 -->
@@ -1503,7 +1253,7 @@ Similarly, BASIC's logical  `OR`  is represented in C with:  `||`
 The BASIC line:  
 
 
-``` basic
+```bbcbasic
 IF A=1 AND B=2 OR C=5 THEN (...)  
 ```
 
@@ -1513,7 +1263,7 @@ is translated in C as:
 ``` c
 if (a == 1 && b == 2 || c == 5) { ... }
 ```
----
+
 
 <a id="page-40"></a>
 <!-- page 40 -->
@@ -1560,7 +1310,7 @@ x = x - 1
 
 The increment and decrement operators are unusual in that they can be used either before or after the variable they modify, and have different operations in each case. Since they are operators, their result is an expression. More on this later.
 
----
+
 
 <a id="page-41"></a>
 <!-- page 41 -->
@@ -1582,9 +1332,9 @@ Now, we'll quickly cover the if and if- else control structures and make ourselv
 The following BASIC program asks you to guess a number, and prints an appropriate message if you guess the right one. It shouldn't be taken too seriously—its main purpose is to demonstrate the if structure.  
 
 
-``` basic
+```bbcbasic
 10 INPUT X% 
-20 REM 
+20 ' 
 30 IF X%=13 THEN PRINT "CORRECT!" : PRINT "THAT WAS THE ANSWER!" 
 40 END  
 ```
@@ -1603,7 +1353,7 @@ main() {
   gemdos (0x1); 
 }
 ```
----
+
 
 <a id="page-42"></a>
 <!-- page 42 -->
@@ -1626,9 +1376,9 @@ However, they can be left off if only one command is to be executed after the if
 
 Most versions of BASIC allow `IF-THEN-ELSE` control structures. If we were to add `ELSE` statement to the above program, we would get:  
 
-``` basic
+```bbcbasic
 10 INPUT X% 
-20 REM 
+20 ' 
 30 IF X%=13 THEN PRINT "VICTORY!" : 
    PRINT "THAT WAS THE ANSWER!" 
    ELSE PRINT "TOO BAD! WRONG GUESS!" 
@@ -1637,7 +1387,7 @@ Most versions of BASIC allow `IF-THEN-ELSE` control structures. If we were to ad
 
 Our extended C program then looks like this:
 
----
+
 
 <a id="page-43"></a>
 <!-- page 43 -->
@@ -1668,7 +1418,7 @@ The syntax of the `else` statement should be clear and self-explanatory now that
 
 Again, `else` causes one statement to be executed if the result of the if statement is false. If more than one statement is to be executed, they must be placed in braces.
 
----
+
 
 <a id="page-44"></a>
 <!-- page 44 -->
@@ -1707,7 +1457,7 @@ main() {
   gemdos (0x1);
 }
 ```
----
+
 
 <a id="page-45"></a>
 <!-- page 45 -->
@@ -1739,7 +1489,7 @@ Arrays in C are very much like arrays in BASIC, so there's nothing to be afraid 
 
 The BASIC dimensioning command:  
 
-``` basic
+```bbcbasic
 10 DIM S(20)  
 ```
 
@@ -1752,7 +1502,7 @@ int s[20] (or) float s[20]
 
 or any other variable type that the elements of the array are to have.
 
----
+
 
 <a id="page-46"></a>
 <!-- page 46 -->
@@ -1764,7 +1514,7 @@ An important point for BASIC programmers is that every single element in an arra
 
 
 
-``` basic
+```bbcbasic
 DIM S(20)
 ```
   
@@ -1788,19 +1538,19 @@ In this program, the variables from `s[0]` to `s[19]` in the array are initializ
 For practice, here is a short program that uses the `getchar()` function to read a character from the keyboard and put it into the array. In BASIC, it would look like this:  
 
 
-``` basic 
+```bbcbasic 
 10 DIM T (50) 
 20 I=0 
 30 A="" 
 40 GET A 
 50 IF A= "" THEN 40 
-60 REM
+60 '
 70 I=I+1 
 80 T (I)=A 
 90 IF A<>CHR(13) AND I<50 THEN GOTO 30 
 100 END
 ```
----
+
 
 <a id="page-47"></a>
 <!-- page 47 -->
@@ -1840,7 +1590,7 @@ Something new here is the string assignment section. The syntax and details of a
 
 You should not only read the above program, but also type it into the computer. You should also experiment with the C you have learned so far by changing or expanding the program. You'll learn C like any other language, through active programming and practical application—*not* by just reading! This advice applies to all of the programs in this book.
 
----
+
 
 <a id="page-48"></a>
 <!-- page 48 -->
@@ -1851,14 +1601,14 @@ Chapter 3
 
 The basic elements of C
 
----
+
 
 <a id="page-49"></a>
 <!-- page 49 -->
 
 
 
----
+
 
 <a id="page-50"></a>
 <!-- page 50 -->
@@ -1894,7 +1644,7 @@ square()
 
 The function with the title `main()` has a special position. It is always the first function to be executed and it usually calls the other functions. Each individual _statement_ within a function is separated from the others by a semicolon, in the same manner that BASIC commands on a single line can be separated by colons.
 
----
+
 
 <a id="page-51"></a>
 <!-- page 51 -->
@@ -1934,7 +1684,7 @@ Numerical output requires an indication of the variable type and follows a forma
 The most important variable type instructions are:  
 
 | type | description |
-| --- | --- |
+|  |  |
 | `d` | for integer output |
 | `f` | for floating- point output | 
 | `s` | for string output  |
@@ -1942,7 +1692,7 @@ The most important variable type instructions are:
 
 The format `7.2` in the above example of the `printf` instruction causes a number with a total of 7 digits, including two after the decimal point, to be printed out for the variable b.
 
----
+
 
 <a id="page-52"></a>
 <!-- page 52 -->
@@ -1964,7 +1714,7 @@ No semicolon follows the definition.
 Variables used within a function must be defined before they are used. The most important variable types are as follows:  
 
 | type | description |
-| --- | --- |
+|  |  |
 |int a; |definition for an integer.  |
 |float a;| definition for a floating-point number.|  
 |char a; |a represents a single character.  |
@@ -1985,7 +1735,7 @@ a = 1;
 ```
 
 
----
+
 
 <a id="page-53"></a>
 <!-- page 53 -->
@@ -2041,7 +1791,7 @@ Single characters can be read using the `getchar()` function, similar to the BAS
   int a; 
   a = getchar();
 ```
----
+
 
 <a id="page-54"></a>
 <!-- page 54 -->
@@ -2082,7 +1832,7 @@ The if-else structure has the following syntax:
     execute these commands. 
   }
 ```
----
+
 
 <a id="page-55"></a>
 <!-- page 55 -->
@@ -2101,7 +1851,7 @@ This list is certainly not complete, because C has many more elements than those
 
 Use this list to start programming. You can learn C only through practice!
 
----
+
 
 <a id="page-56"></a>
 <!-- page 56 -->
@@ -2137,7 +1887,7 @@ We have already covered text output in the previous chapters. First we'll review
 
 The BASIC line:  
 
-``` basic
+```bbcbasic
 10 PRINT "HELLO"  
 ```
 would be translated into C as follows:  
@@ -2160,7 +1910,7 @@ main() {
 
 then no new-line character is generated.
 
----
+
 
 <a id="page-59"></a>
 <!-- page 59 -->
@@ -2189,7 +1939,7 @@ In the previous chapters we saw that printing numerical values in C is more flex
 
 The BASIC routine:  
 
-``` basic
+```bbcbasic
 10 X=3.14 
 20 PRINT X  
 ```
@@ -2207,11 +1957,11 @@ main() {
 
 If we wanted to print integers instead of 3.14, we would write a BASIC program like this:  
 
-``` basic
+```bbcbasic
 10 X%=15 
 20 PRINT X%
 ```
----
+
 
 <a id="page-60"></a>
 <!-- page 60 -->
@@ -2230,7 +1980,7 @@ main() {
 
 We could use an even shorter program to get the same result:  
 
-``` basic
+```bbcbasic
 10 PRINT 15  
 ```
 
@@ -2251,7 +2001,7 @@ The complete syntax definition of the `printf` function is as follows:
 
 The format statements contain commands that determine the form of the output. In our examples, the specification %d was chosen for the integer 15, just as `%f` was chosen for the floating point value 3.14. In the next section we'll look at these conversion specifications more closely.
 
----
+
 
 <a id="page-61"></a>
 <!-- page 61 -->
@@ -2291,7 +2041,7 @@ However, C has some more type declarations that we left out of our initial overv
 
 `o` Prints the argument in base 8 (octal) without the leading zero.
 
----
+
 
 <a id="page-62"></a>
 <!-- page 62 -->
@@ -2335,7 +2085,7 @@ Some formats have default values:
 
 `%e` Sets number of digits after the decimal point to six, in exponential notation.
 
----
+
 
 <a id="page-63"></a>
 <!-- page 63 -->
@@ -2361,7 +2111,7 @@ If a minus sign directly follows the `%` sign, then the text or variable will be
 
 For the moment we'll concentrate on outputting numbers to the screen. Let's take the following BASIC program line as an example:  
 
-``` basic
+```bbcbasic
 10 PRINT 2*13  
 ```
 Translated to C, we get:  
@@ -2378,10 +2128,10 @@ Just like with BASIC, we can carry out a calculation right in the output line in
 This also applies for a succession of calculations, as in the following BASIC program:  
 
 
-``` basic
+```bbcbasic
     10 PRINT 2*13; 2/3; 3.14*2.222222; 4- 2.2
 ```
----
+
 
 <a id="page-64"></a>
 <!-- page 64 -->
@@ -2400,10 +2150,10 @@ We can so the same with variables in calculations.
 The BASIC program:  
 
 
-``` basic
+```bbcbasic
 10 A=6 
 20 B=88 
-30 REM
+30 '
 40 PRINT A/B  
 ```
 
@@ -2424,7 +2174,7 @@ Here there are really no essential differences between the two versions.
 
 Look closely at the variable declaration. You should make sure that you do not create a new format as a result of calculations. This can happen when a floating- point number results from two integer variables. When this happens, the format must be changed to `%f` to avoid an errors or incorrect output.
 
----
+
 
 <a id="page-65"></a>
 <!-- page 65 -->
@@ -2455,7 +2205,7 @@ The printed text is of type string, and contains the twelve characters of the na
 	</tr>
 	<tr>
 		<td>%20s</td>
-		<td>--------Fred Johnson</td>
+		<td>--Fred Johnson</td>
 	</tr>
 	<tr>
 		<td>%-20s</td>
@@ -2463,11 +2213,11 @@ The printed text is of type string, and contains the twelve characters of the na
 	</tr>
 	<tr>
 		<td>%20.9s</td>
-		<td>-----------Fred John</td>
+		<td>--Fred John</td>
 	</tr>
 	<tr>
 		<td>%-20.9s</td>
-		<td>Fred John-----------</td>
+		<td>Fred John--</td>
 	</tr>
 	<tr>
 		<td>%.4s</td>
@@ -2502,7 +2252,7 @@ This format can be improved with a statement like:
 ``` c
 printf("%.0f\n", a);
 ```
----
+
 
 <a id="page-66"></a>
 <!-- page 66 -->
@@ -2518,7 +2268,7 @@ printf("%.2f\n", a);
 
 You should be aware of a very common error associated with the %f format. Look at the following BASIC line:  
 
-``` basic
+```bbcbasic
 10 PRINT 2/3  
 ```
 
@@ -2547,7 +2297,7 @@ The result of this program is now correct:
 
 `0.666667`
 
----
+
 
 <a id="page-67"></a>
 <!-- page 67 -->
@@ -2558,7 +2308,7 @@ The result of this program is now correct:
 
 We have already gone into some detail about printing numeric variables. Now we'll look more closely at printing string variables. One example is the following BASIC program:  
 
-``` basic
+```bbcbasic
   10 A$="ATARI ST" 
   20 PRINT A$  
 ```
@@ -2587,13 +2337,13 @@ main() {
 
 Now we will combine two different variable types in our output. Again we start with a BASIC program:  
 
-``` basic
+```bbcbasic
 10 A%=12345 
 20 B$="THE NUMBER IS...>" 
-30 REM
+30 '
 40 PRINT B$;A%
 ```
----
+
 
 <a id="page-68"></a>
 <!-- page 68 -->
@@ -2617,7 +2367,7 @@ This program has exactly the same output as the BASIC version. The variables `a`
 Note the space between the format expressions %s and %d. Because this space is inside quotation marks, it is printed out. This means that an actual space ends up between the string and the number. In BASIC, this separation is automatically performed in the expression:  
 
 
-``` basic
+```bbcbasic
 40 PRINT A$;B  
 ```
 
@@ -2627,7 +2377,7 @@ simply because of the sequence of variables. In C this is generally accomplished
 Let's look at this more closely in another program:  
 
 
-```basic
+```bbcbasic
 10 T$="USER" 
 20 PRINT "HELLO ";T$  
 ```
@@ -2637,7 +2387,7 @@ Now the C program:
 
 main() { char \\*t; t = "user"; printf("Hello %s\n", t); gemdos(0x1); }
 
----
+
 
 <a id="page-69"></a>
 <!-- page 69 -->
@@ -2675,7 +2425,7 @@ Unlike BASIC, C distinguishes between individual characters and strings.
 
 The BASIC program:  
 
-``` basic
+```bbcbasic
 10 T$="W" 
 20 PRINT T$  
 ```
@@ -2691,7 +2441,7 @@ main() {
   gemdos(0x1); 
 }
 ```
----
+
 
 <a id="page-70"></a>
 <!-- page 70 -->
@@ -2757,7 +2507,7 @@ main()
 
 This routine prints the character with ASCII value 67 on the screen. This corresponds to the value of the letter C.
 
----
+
 
 <a id="page-71"></a>
 <!-- page 71 -->
@@ -2770,7 +2520,7 @@ We can imitate the function ASC("") in much the same way.
 
 The BASIC program:  
 
-``` basic
+```bbcbasic
 10 PRINT ASC("B")
 ```
 
@@ -2837,7 +2587,7 @@ Now let's look at the puts() function. This command stands for "output string," 
 
 An example of this is shown with the following BASIC program: 
 
-```basic
+```bbcbasic
 10 A$="FRED JOHNSON" 
 20 PRINT A$
 ```
@@ -2868,7 +2618,7 @@ main()
 }
 ```
 
-```basic
+```bbcbasic
   10 PRINT "P"
 ```
 
@@ -2898,7 +2648,7 @@ main() {
 
 The same applies to printing strings. The BASIC line: 
 
-```basic
+```bbcbasic
 10 PRINT "FRED JOHNSON" 
 ```
 is transformed into the C function: 
@@ -2941,18 +2691,18 @@ The BASIC programs below:
 
 Version with `INKEY$`: 
 
-```basic
+```bbcbasic
 10 A$=INKEY$ 
 20 IF A$="" THEN GOTO 10 
-30 REM 
+30 ' 
 40 PRINT A$
 ```
 Version with GET: 
 
-```basic
+```bbcbasic
 10 GET A$ 
 20 IF A$="" THEN GOTO 10 
-30 REM 
+30 ' 
 40 PRINT A$
 ```
 become the following program in C: 
@@ -3004,7 +2754,7 @@ There is a corresponding command for data input as well. It is:
 `gets` is an abbreviation for "get string." This function assigns an array of characters—a string—to the variable in the parentheses. 
 
 Let's look at a short example: 
-```basic 
+```bbcbasic 
 10 INPUT A$ 
 20 PRINT A$ 
 ```
@@ -3059,7 +2809,7 @@ The scanf function offers the best way to enter numeric data into a program. We 
 
 The following BASIC program reads in and prints out a string: 
 
-```basic
+```bbcbasic
 10 INPUT T$ 
 20 PRINT T$ 
 ```
@@ -3112,7 +2862,7 @@ Nevertheless, pointer structures are more flexible and use storage more efficien
 
 Now, let's look at one more small problem. The BASIC program: 
 
-```basic
+```bbcbasic
 10 INPUT "PLEASE TYPE IN THE TEXT "; X$ 
 20 PRINT X$
 ```
@@ -3139,7 +2889,7 @@ In both cases, input directly follows the text without a new- line in between.
 #### 4.5.3.3 Entering numbers via scanf 
 The BASIC program: 
 
-```basic
+```bbcbasic
 10 INPUT Z% 
 20 PRINT Z% 
 ```
@@ -3159,7 +2909,7 @@ So far nothing is new. As we have already learned, the address operator is alway
 
 Now let's write a program that allows floating- point numbers as well as integers. In BASIC this is very easy to do: 
 
-```basic
+```bbcbasic
 10 INPUT Z 
 20 PRINT Z 
 ```
@@ -3200,7 +2950,7 @@ which truncates all digits after the decimal point.
 
 In BASIC it is possible to read in values for several variables with one INPUT command: 
 
-```basic
+```bbcbasic
 10 INPUT T$, A, B% 
 20 PRINT T$; A; B% 
 ```
@@ -3233,7 +2983,7 @@ Just as in the printf function, the format expressions ("%s %f %d"), separated b
 #### 4.5.4 The GET\$/INKEY\$ function in C 
 You might complain that we have already covered this with the getchar() function. That's true, but the getchar() function does not correspond exactly to the BASIC line: 
 
-```basic
+```bbcbasic
 10 A$=INKEY$ 
 ```
 The following expression: `character = getchar();`  
@@ -3258,7 +3008,7 @@ The function `getch` corresponds exactly to the following BASIC routine:
 
 When this statement is encountered in a program, execution halts until a key is pressed. The character corresponding to this key is then returned via `getch`.
 
----
+
 
 <a id="page-83"></a>
 <!-- page 83 -->
@@ -3300,7 +3050,7 @@ The function call:  `putchar(a);` could have been replaced by this:  `printf("%c
 
 The compiler version included in the Atari development package does not include the above functions. But they are easy to simulate. The `getchar()` function was already synthesized in the introductory chapter.
 
----
+
 
 <a id="page-84"></a>
 <!-- page 84 -->
@@ -3346,14 +3096,14 @@ The function `putch()` can almost always be replaced by `putchar()` and is there
 
 It is not necessary for you to understand the makeup of these functions at this time. In all of the programs in this book, the command extensions are simple enough to be quickly and easily added to the existing programs wherever they are used.
 
----
+
 
 <a id="page-85"></a>
 <!-- page 85 -->
 
 
 
----
+
 
 <a id="page-86"></a>
 <!-- page 86 -->
@@ -3424,7 +3174,7 @@ Choose suggestive variable names, i.e., names that immediately give away the pur
 
 In BASIC you quickly learn to use short variables of one or two characters. You should try to unlearn this when programming in C, especially when working with more complex programs.
 
----
+
 
 <a id="page-90"></a>
 <!-- page 90 -->
@@ -3471,10 +3221,10 @@ As you can see, the use of these constants is identical to the use of correspond
 Characters must be enclosed in single quotes. This BASIC expression reads as follows:  
 
 
-```basic
+```bbcbasic
 10 CHAR$="D"
 ```
----
+
 
 <a id="page-91"></a>
 <!-- page 91 -->
@@ -3572,7 +3322,7 @@ The following list shows the data types which are possible in C:
 
 
 | Data type | Explanation                                          |
-|-----------|------------------------------------------------------|
+|--||
 | int       | Integer number, no fractional portion                |
 | float     | Floating-point number with normal precision          |
 | double    | Floating-point number with double precision          |
@@ -3587,7 +3337,7 @@ Integer variables can be subdivided further. A small diagram will illustrate thi
 2. long int 
 3. unsigned int
 
----
+
 
 <a id="page-93"></a>
 <!-- page 93 -->
@@ -3630,7 +3380,7 @@ In BASIC, variables are not often converted to other variable types. The situati
 In the previous chapter, we learned the C equivalent to the BASIC statement:  
 
 
-```basic
+```bbcbasic
 10 PRINT CHR$(66)
 ```
 
@@ -3673,7 +3423,7 @@ Even more impressive is the following program. It reads in uppercase letters and
 
 The Atari ST development system version of Alcyon C does not perform the conversion of character variables completely. As a result the following program will not run on this compiler. It will, however, run on all other standard compilers.
 
----
+
 
 <a id="page-95"></a>
 <!-- page 95 -->
@@ -3712,7 +3462,7 @@ Now let's sum everything up quickly:
 
 Character and integer values can be combined arbitrarily and used together in arithmetic expressions. This is not possible in BASIC. This aspect of C results in great flexibility, especially when programming character transformations.
 
----
+
 
 <a id="page-96"></a>
 <!-- page 96 -->
@@ -3742,7 +3492,7 @@ The following ground rules apply for such transformations:
 
 
 | Initial Variable Type | Converted to |
-|------------------------|---------------|
+|||
 | short, int         | int     |
 | float         | double     |
 
@@ -3753,7 +3503,7 @@ Then the other operand is also converted to the type:
 
 
 | if of type | converted to|
-|----------|----------|
+|-|-|
 | double   | double   |
 | long     | long     |
 | unsigned | unsigned |
@@ -3773,7 +3523,7 @@ float\_var = int\_var
 
 a conversion is performed. The fractional part of float_var is suppressed.
 
----
+
 
 <a id="page-97"></a>
 <!-- page 97 -->
@@ -3805,7 +3555,7 @@ The conversions shown in this section offer you a great new programming flexibil
 
 As we have already made clear, all variables must be declared and thereby given a specific variable type before they are used in a program. The declaration usually takes place in the *header* of a function. But it also may occur anywhere else in the function. The important thing is that the declaration take place before the variable is used.
 
----
+
 
 <a id="page-98"></a>
 <!-- page 98 -->
@@ -3853,7 +3603,7 @@ main()
 }
 ```
 
----
+
 
 <a id="page-99"></a>
 <!-- page 99 -->
@@ -3893,7 +3643,7 @@ Local variables, also called automatic variables, are declared in the function i
 
 These global variables in C are declared before a function, in the same place that symbolic constants are declared.
 
----
+
 
 <a id="page-100"></a>
 <!-- page 100 -->
@@ -3931,7 +3681,7 @@ You should remember everything you learned in BASIC related to arrays. Virtually
 The BASIC command:  
 
 
-```basic
+```bbcbasic
 10 DIM A% (10)
 ```  
 
@@ -3940,7 +3690,7 @@ The BASIC command:
 int c[10];
 ```
 
----
+
 
 <a id="page-101"></a>
 <!-- page 101 -->
@@ -4054,7 +3804,7 @@ main ()
 
 This program assigns the global array arr with the values from ten to zero. These values are then printed out in a for loop in main.
 
----
+
 
 <a id="page-103"></a>
 <!-- page 103 -->
@@ -4066,7 +3816,7 @@ This program assigns the global array arr with the values from ten to zero. Thes
 In BASIC we declare a five- by- five array as follows:  
 
 
-```basic
+```bbcbasic
 10 DIM A%(5,5)
 ```
 
@@ -4091,13 +3841,13 @@ Don't forget that again you must assign a value to each element before use. With
 
 
 
-{% raw %}
 ```c
-static int field[3][5] = {{1,2,3,4,5} ,
-                          {2,3,4,5,6} ,
-                          {4,5,6,7,8} } ;
+static int field[3][5] = {
+  {1,2,3,4,5} ,
+  {2,3,4,5,6} ,
+  {4,5,6,7,8} 
+} ;
 ```
-{% endraw %}
   
 
 
@@ -4116,7 +3866,7 @@ is not the same as the character:
 
 'A'
 
----
+
 
 <a id="page-104"></a>
 <!-- page 104 -->
@@ -4155,13 +3905,13 @@ main()
 
 The next chapter contains a detailed explanation of how this works and why it must be done this way.
 
----
+
 
 <a id="page-105"></a>
 <!-- page 105 -->
 
 
----
+
 
 <a id="page-106"></a>
 <!-- page 106 -->
@@ -4220,7 +3970,7 @@ addr_value1 = &value1
 
 The `&` character, called the address operator, tells the compiler that the variable addr_value1 is to be assigned the value of the address of the variable `value1` i.e. `addr_value1` is the pointer to `value1`.
 
----
+
 
 <a id="page-109"></a>
 <!-- page 109 -->
@@ -4322,7 +4072,7 @@ In this expression, the pointer `addr_value1` is assigned the address of the var
 
 The contents of the memory address to which a pointer points can be obtained using the `*` operator.
 
----
+
 
 <a id="page-111"></a>
 <!-- page 111 -->
@@ -4357,7 +4107,7 @@ string = "Hello, how are you?";
 
 We will explain this and many other details about arrays and pointers on the following pages.
 
----
+
 
 <a id="page-112"></a>
 <!-- page 112 -->
@@ -4416,7 +4166,7 @@ This is the next element of the array. `*(pointer + 1)` corresponds to the value
 
 In general terms, `*(pointer + i)` is identical to `x[i]` , provided that pointer points to the start of `x` as it does in our example.
 
----
+
 
 <a id="page-113"></a>
 <!-- page 113 -->
@@ -4490,7 +4240,7 @@ are completely identical.
 
 In other words, `x + i` represents the address of the ith element of the array x.
 
----
+
 
 <a id="page-114"></a>
 <!-- page 114 -->
@@ -4532,7 +4282,7 @@ You will need this information when we leave numeric arrays and look at characte
 
 Character arrays, or strings, still have a few differences, which we will explain next.
 
----
+
 
 <a id="page-115"></a>
 <!-- page 115 -->
@@ -4580,7 +4330,7 @@ char string[];
 
 In this example it becomes clear that the strings in our previous programs were one- dimensional arrays.
 
----
+
 
 <a id="page-116"></a>
 <!-- page 116 -->
@@ -4625,7 +4375,7 @@ At first this may seem strange to BASIC programmers. For now, we will consider i
 
 Pointers are also important for working with functions. You will learn more about this in the chapter specifically devoted to functions in C.
 
----
+
 
 <a id="page-117"></a>
 <!-- page 117 -->
@@ -4637,14 +4387,14 @@ Pointers are also important for working with functions. You will learn more abou
 <a id="sec-ch7"></a>
 ##Chapter 7  - Arithmetic Operators and Expressions
 
----
+
 
 <a id="page-119"></a>
 <!-- page 119 -->
 
 ![](/images/atari/atari-st-basic-to-c/p0119_0011.jpg)
 
----
+
 
 <a id="page-120"></a>
 <!-- page 120 -->
@@ -4664,7 +4414,7 @@ On the following pages, we will explain these and other new arithmetic propertie
 In the BASIC expression  
 
 
-```basic
+```bbcbasic
 10 PRINT 1 + 5 / 7
 ```
 
@@ -4676,14 +4426,14 @@ Look over the following list comparing BASIC and C arithmetic commands:
 
 
 | BASIC instruction    | C instruction                                      |
-|----------------------|----------------------------------------------------|
+|-|-|
 | 1. PRINT 1+5/7       | printf(&quot;%f\n&quot;, 1 + 5 / 7);               |
 | 2. PRINT 2.2+(4*2)/7 | printf(&quot;%f\n&quot;, 2.2 + (4.0 * 2.0) / 7.0); |
 | 3. A=888*3           | a = 888 * 3;                                       |
 | 4. A=5-6*2+(3*3)/2   | a = 5 - 6 * 2 + (3 * 3) / 2;                       |
 | 5. A=A+1             | a = a + 1;  or also a = ++a   |
 
----
+
 
 <a id="page-121"></a>
 <!-- page 121 -->
@@ -4699,7 +4449,7 @@ The BASIC expression
 
 
 
-```basic
+```bbcbasic
 10 A = A + 1
 ```
   
@@ -4755,7 +4505,7 @@ value_1 * = 20;
 ```
 
 
----
+
 
 <a id="page-122"></a>
 <!-- page 122 -->
@@ -4811,7 +4561,7 @@ arrwt_1e2[zz[aa]]* = 22;
 
 One advantage of this capability is that you can avoid many unnecessary errors by not having to repeat a complex variable on both sides of the equal sign.
 
----
+
 
 <a id="page-123"></a>
 <!-- page 123 -->
@@ -4841,7 +4591,7 @@ The variable remainder is assigned the remainder of the division of a by b.
 
 There is, however, one limitation to the use of modulo operator. The modulo operator cannot be used for double or float values, but only for integers (`int`) and characters (`char`).
 
----
+
 
 <a id="page-124"></a>
 <!-- page 124 -->
@@ -4928,7 +4678,7 @@ x-- ;
 
 are possible.
 
----
+
 
 <a id="page-125"></a>
 <!-- page 125 -->
@@ -4973,7 +4723,7 @@ y = x++ ;
 ```
 corresponds to 
 
-```basic
+```bbcbasic
 10 Y = X
 ```  
 
@@ -4985,14 +4735,14 @@ y = ++x;
 ```
 corresponds to 
 
-```basic
+```bbcbasic
 10 X=X+1
 ```  
 
 
 The availability of the increment and decrement operators opens up many elegant programming possibilities. You will find these operators used in almost every C program.
 
----
+
 
 <a id="page-126"></a>
 <!-- page 126 -->
@@ -5025,7 +4775,7 @@ It will be easy for you with your BASIC experience to confuse the assignment ope
 
 Now we'll briefly show you the most important uses of the comparison and equivalence operators. For the most part, they are used with control structures. We'll explain these in the next chapter. The most common control structure is the if statement.
 
----
+
 
 <a id="page-127"></a>
 <!-- page 127 -->
@@ -5033,7 +4783,7 @@ Now we'll briefly show you the most important uses of the comparison and equival
 As in this BASIC program:  
 
 
-```basic
+```bbcbasic
 10 A=2
 20 IF A=2 THEN PRINT "OK!"
 ```
@@ -5081,7 +4831,7 @@ main()
     gemdos(0x1);
 }
 ```
----
+
 
 <a id="page-128"></a>
 <!-- page 128 -->
@@ -5105,7 +4855,7 @@ The logical operations in BASIC are `AND` and `OR`. Their meanings are self- exp
 
 In spite of the different forms of the C expressions, they are used in exactly the same way.
 
----
+
 
 <a id="page-129"></a>
 <!-- page 129 -->
@@ -5113,7 +4863,7 @@ In spite of the different forms of the C expressions, they are used in exactly t
 ## The BASIC line:  
 
 
-```basic
+```bbcbasic
 10 IF A=1 AND B=2 OR B=1 THEN PRINT "Condition met!"
 ```
 is translated to C as:  
@@ -5150,7 +4900,7 @@ main()
     gemdos(0x1);
 }
 ```
----
+
 
 <a id="page-130"></a>
 <!-- page 130 -->
@@ -5211,7 +4961,7 @@ if (!value)
 
 The logical negation operator can also be used in conjunction with the other logical operators to produce NAND, NOR, and other functions.
 
----
+
 
 <a id="page-131"></a>
 <!-- page 131 -->
@@ -5271,7 +5021,7 @@ Multiple assignments allow a more compact and effective programming style which 
 
 We have now covered all of the important arithmetic operators. Now let's look at the bit operators in the next section.
 
----
+
 
 <a id="page-132"></a>
 <!-- page 132 -->
@@ -5283,7 +5033,7 @@ We have now covered all of the important arithmetic operators. Now let's look at
 Because C is a system language, it offers a whole series of special operations for the manipulation of bits. These are assembled in the following list:  
 
 | Bit operator | Function |
-|---|---|
+|||
 | `\|` | "or" operation on bits |
 | `&` | "and" operation on bits |
 | `<<` | shift bits left |
@@ -5297,7 +5047,7 @@ A chart follows, showing a few ways in which these operators can be used in arit
 
 
 | Example of use | Function accomplished |
-|---|---|
+|||
 | `x = y & 011` | Sets bits to zero. |
 | `y = y \| mask;` | Sets bits to one. |
 | `y << 4` | Shifts y four bits to the left. |
@@ -5309,7 +5059,7 @@ We will now leave our brief introduction to bit operators and their applications
 
 If, however, you have some machine language programming experience, you should now be able to use these bit operators in your programs with the help of this short introduction.
 
----
+
 
 <a id="page-133"></a>
 <!-- page 133 -->
@@ -5339,7 +5089,7 @@ x = 7 & 1;
 ```
 
 
----
+
 
 <a id="page-134"></a>
 <!-- page 134 -->
@@ -5366,7 +5116,7 @@ Control structures are the core of every programming language. They make it poss
 The following control structures are available in most common varieties of BASIC:  
 
 
-```basic
+```bbcbasic
 IF ... THEN
 FOR ... NEXT
 ON ... GOTO
@@ -5375,14 +5125,14 @@ ON ... GOTO
 Some more structured BASIC dialects also offer statements like  
 
 
-```basic
+```bbcbasic
 IF ... THEN ... ELSE
 WHILE ... WEND
 ```
 
 All of these BASIC structures are found in C, although some of the syntax is a little different. In addition, you have a whole series of powerful possibilities for the control of program execution which are not available in BASIC.
 
----
+
 
 <a id="page-137"></a>
 <!-- page 137 -->
@@ -5394,7 +5144,7 @@ All of these BASIC structures are found in C, although some of the syntax is a l
 We have already used the if statement in the previous chapters. For example, we determined that the program:  
 
 
-```basic
+```bbcbasic
 10 X=15
 20 Y=X 30
 IF X=Y THEN [Execute the following commands]
@@ -5418,7 +5168,7 @@ main()
 The syntax for the IF command in BASIC:  
 
 
-```basic
+```bbcbasic
 IF [expression] THEN [execute commands]
 ```
 is expressed as follows in C:  
@@ -5434,7 +5184,7 @@ As this statement is executed, the computer checks if the arithmetic expression 
 
 If the expression is true, then the statement following the expression is executed. Note that multiple statements can be combined into a block as a single statement with the curly braces `{}`.
 
----
+
 
 <a id="page-138"></a>
 <!-- page 138 -->
@@ -5486,7 +5236,7 @@ as well as:
 ```
 
 
----
+
 
 <a id="page-139"></a>
 <!-- page 139 -->
@@ -5497,7 +5247,7 @@ Comparison operators of the form:  `=<` and `=>` are not allowed. AND instructio
 An example: The BASIC line:  
 
 
-```basic
+```bbcbasic
 10 IF A=4 OR X>=3 AND B<>6 THEN [execute]
 ```
 
@@ -5524,7 +5274,7 @@ Here the assignment operator `=` is confused with the comparison operator `==` .
 
 As the assignment and equality operators in BASIC use the same character, you must pay close attention when translating an algorithm to C.
 
----
+
 
 <a id="page-140"></a>
 <!-- page 140 -->
@@ -5532,7 +5282,7 @@ As the assignment and equality operators in BASIC use the same character, you mu
 If we translate the following program into C:  
 
 
-```basic
+```bbcbasic
 10 INPUT Y% 
 20 IF Y%=15 THEN PRINT "THIS IS THE ANSWER": PRINT "THE NUMBER 15 IS CORRECT!"
 ```
@@ -5570,7 +5320,7 @@ This is the same as the following expression using logical AND:
 ```c
 if(a != 4 && b == 12 && x > 5) printf("All conditions fulfilled!");
 ```
----
+
 
 <a id="page-141"></a>
 <!-- page 141 -->
@@ -5582,7 +5332,7 @@ if(a != 4 && b == 12 && x > 5) printf("All conditions fulfilled!");
 Let's say that you want to adapt our previous BASIC example to C:  
 
 
-```basic
+```bbcbasic
 10 INPUT Y%
 20 IF Y%=15 THEN PRINT "THAT'S THE ANSWER!"
 30 END
@@ -5616,13 +5366,13 @@ The argument we use is not important for this application. The argument, in this
 In this C program, the call to exit() is comparable to the END command in BASIC. The statement is quite useful in a program like the following:  
 
 
-```basic
+```bbcbasic
 10 INPUT Y\$
 20 IF Y$="STOP" THEN END
 25 REM
 30 PRINT "LET'S KEEP GOING..."
 ```
----
+
 
 <a id="page-142"></a>
 <!-- page 142 -->
@@ -5659,12 +5409,12 @@ This function exits the current program and generates an error.
 
 Every normal if statement test can also have a else part added. Some versions of BASIC allow the following program which contains an ELSE statement.
 
----
+
 
 <a id="page-143"></a>
 <!-- page 143 -->
 
-```basic
+```bbcbasic
 10 INPUT A%
 20 IF A%<20 THEN PRINT A%*A% ELSE PRINT "THE NORMAL VALUE IS:";A%
 ```
@@ -5710,7 +5460,7 @@ else
 
 This construction can be expanded with any number of if and else statements. This leads to a problem.
 
----
+
 
 <a id="page-144"></a>
 <!-- page 144 -->
@@ -5736,7 +5486,7 @@ If the else is supposed to belong to the first if, you have to indicate this by 
 Old version: New version:   
 
 | if(a == 2)  | if(a == 2)  |
-|-------------|-------------|
+|-|-|
 | {           |             |
 | if(b != 15) | if(b != 15) |
 | a = a * 2;  | a = a * 2;  |
@@ -5758,7 +5508,7 @@ if(condition 1 fulfilled) execute command block 1
     else if(condition n- 1 fulfilled) execute command block n- 1 
       else execute command block n
 ```
----
+
 
 <a id="page-145"></a>
 <!-- page 145 -->
@@ -5804,7 +5554,7 @@ As we determined, the C statement
     loop contents to be repeated 
   }
 ```
----
+
 
 <a id="page-146"></a>
 <!-- page 146 -->
@@ -5812,7 +5562,7 @@ As we determined, the C statement
 is identical to the familiar BASIC FOR- NEXT loop  
 
 
-```basic
+```bbcbasic
 FOR x = 1 TO 20 STEP +2 loop contents to be repeated NEXT X
 ```
 
@@ -5852,7 +5602,7 @@ The statement immediately following the for loop in C is always repeated. If mor
 
 If you leave the three parts—the initial value, the end value, and the increment size—out of a for loop, the result is an infinite loop and it looks like this:
 
----
+
 
 <a id="page-147"></a>
 <!-- page 147 -->
@@ -5880,14 +5630,14 @@ main()
 It is also possible to write infinite loops in BASIC, such as with the instruction:  
 
 
-```basic
+```bbcbasic
 FOR X=Y TO Z STEP 0
 ```
 
 The STEP 0 causes the loop to be repeated indefinitely. Our example C program would look like this in BASIC:  
 
 
-```basic
+```bbcbasic
 10 FOR X=1 TO 2 STEP 0 
 20 PRINT "H"; 
 30 NEXT X
@@ -5896,14 +5646,14 @@ The STEP 0 causes the loop to be repeated indefinitely. Our example C program wo
 Here, however, you must make sure that there is a difference between the lower and upper bounds.  
 
 
-```basic
+```bbcbasic
 10 FOR X=1 TO 1 STEP 0
 ```
 
 does not cause an endless loop, but these will:  
 
 
-```basic
+```bbcbasic
 10 FOR X=1 TO 4 STEP 0
 
 10 FOR X=1 TO -30 STEP 0  
@@ -5953,7 +5703,7 @@ main()
 It is not the same as the BASIC program:  
 
 
-```basic
+```bbcbasic
 10 FOR A=1 TO 20
 20     PRINT A*A
 30 NEXT A
@@ -5961,12 +5711,12 @@ It is not the same as the BASIC program:
 
 but much more like the following version in which the incrementation also takes place within the loop:
 
----
+
 
 <a id="page-149"></a>
 <!-- page 149 -->
 
-```basic
+```bbcbasic
 10 FOR A=1 TO 20 STEP 0
 20 PRINT A*A;
 30 A=A+1
@@ -6011,7 +5761,7 @@ for(a = 1,c = 15;c<30;a--,c++)
 ```
 
 
----
+
 
 <a id="page-150"></a>
 <!-- page 150 -->
@@ -6060,7 +5810,7 @@ main()
 
 The curly braces can be omitted here because the for loop consists of just one line.
 
----
+
 
 <a id="page-151"></a>
 <!-- page 151 -->
@@ -6088,7 +5838,7 @@ You must also use these brackets if you want to call additional functions betwee
 
 In translating this program to C you must use brackets to build statement blocks as follows:
 
----
+
 
 <a id="page-152"></a>
 <!-- page 152 -->
@@ -6122,7 +5872,7 @@ As we know, it is generally shorter and more efficient to declare a step size us
 
 should be used instead of the old form:
 
----
+
 
 <a id="page-153"></a>
 <!-- page 153 -->
@@ -6169,7 +5919,7 @@ x + = 2;
 ```
 
 
----
+
 
 <a id="page-154"></a>
 <!-- page 154 -->
@@ -6184,21 +5934,22 @@ Now that we have covered the more common for loops, its time to turn to a discus
 Don't worry if you've never used while loops before. The syntax is easy to understand and it is also easy to see where you might want to use them. Let's take the following Microsoft BASIC program as an example:  
 
 
-10 REM COUNT FROM 1 TO 10 20 ' 30 WHILE A%<10 40 A%=A%+1 50 PRINT A% 60 WEND  
+```bbcbasic
+10 REM COUNT FROM 1 TO 10 
+20 ' 
+30 WHILE A%<10 
+40 A%=A%+1 
+50 PRINT A% 
+60 WEND
+```
 
 
 As you can see, the WHILE construction forms a block beginning with the WHILE statement itself and ending with WEND, which is short for "WHILE END".  
 
 
-The commands inside this block are repeated for as long as the WHILE condition, in our case,  
+The commands inside this block are repeated for as long as the WHILE condition, in our case, `A%<10 ` is true. The command can be read "While the value of the variable A is less than 10, do the following." The variable A, initialized to zero by the RUN command, is incremented from 1 to 10, and each value is printed on the screen.
 
 
-A%<10  
-
-
-is true. The command can be read "While the value of the variable A is less than 10, do the following." The variable A, initialized to zero by the RUN command, is incremented from 1 to 10, and each value is printed on the screen.
-
----
 
 <a id="page-155"></a>
 <!-- page 155 -->
@@ -6206,7 +5957,19 @@ is true. The command can be read "While the value of the variable A is less than
 How does this look in C? This is the program corresponding to our BASIC example:  
 
 
-main() { int a; a = 0; while (a < 10) { ++a; printf("%d\n", a); } gemdos (0x1); }  
+```c
+main()
+{
+    int a;
+    a = 0;
+    while (a < 10)
+    {
+        ++a;
+        printf("%d\n", a);
+    }
+    gemdos (0x1);
+}
+```
 
 
 The syntax of the while statement in C is almost exactly the same as that of the BASIC WHILE command:  
@@ -6220,13 +5983,11 @@ Again, the statements in the command block are executed "so long as the value of
 
 In C, however, both the declaration:  
 
-
-int a;  
-
+```c
+int a;
+```
 
 and the value assignment:  
-
-
 
 ```c
 a = 0;
@@ -6246,7 +6007,7 @@ int a = 0;
 
 Note also that the incrementation, which in our example is `+ + a` , must always be specified explicitly within the loop.
 
----
+
 
 <a id="page-156"></a>
 <!-- page 156 -->
@@ -6258,21 +6019,41 @@ Note also that the incrementation, which in our example is `+ + a` , must always
 You can arbitrarily combine these two types of loops in both BASIC and C. The following program shows how we might do this in BASIC:  
 
 
-10 WHILE A%<20 20 A%=A%+1 30 PRINT "PASS NUMBER";A% 40 ' 50 FOR B%=1 TO 15 60 PRINT B%; 70 NEXT B% 80 WEND  
-
+```bbcbasic
+10 WHILE A%<20 
+20 A%=A%+1 
+30 PRINT "PASS NUMBER";A% 
+40 ' 
+50 FOR B%=1 TO 15 
+60 PRINT B%; 
+70 NEXT B% 
+80 WEND
+```
 
 And here is the corresponding C version:  
 
 
-main() { int a = 0; int b; while (a < 20) { ++a; for(b = 1; b <= 15; ++b); printf("%d\n", b); } gemdos(0x1); }  
-
+```c
+main()
+{
+    int a = 0;
+    int b;
+    while (a < 20)
+    {
+        ++a;
+        for(b = 1; b <= 15; ++b);
+        printf("%d\n", b);
+    }
+    gemdos(0x1);
+}
+```
 
 Both of the programs fill twenty screen lines with the numbers from one to fifteen.  
 
 
 This example shows you how simply the two types of loop can be combined in whatever ways you like.
 
----
+
 
 <a id="page-157"></a>
 <!-- page 157 -->
@@ -6287,15 +6068,42 @@ while loops can be nested as easily as for loops. We have here a program to demo
 First the BASIC version:  
 
 
-10 WHILE A%<8 20 WHILE B%<2 30 B%=B%+1 40 PRINT A%, B% 50 WEND 55 ' 60 B%=0 70 A%=A%+2 80 PRINT "OUTER LOOP" 90 WEND  
-
+```bbcbasic
+10 WHILE A%<8 
+20 WHILE B%<2 
+30 B%=B%+1 
+40 PRINT A%, B% 
+50 WEND 
+55 ' 
+60 B%=0 
+70 A%=A%+2 
+80 PRINT "OUTER LOOP" 
+90 WEND
+```
 
 Now the C version:  
 
 
-main() { int a, b; a = b = 0; while(a < 8) { while(b < 2) { ++b; printf("%d %d\n", a, b); } b = 0; a = a + 2; printf("Outer loop\n"); } gemdos(0x1); }
+```c
+main()
+{
+    int a, b;
+    a = b = 0;
+    while(a < 8)
+    {
+        while(b < 2)
+        {
+            ++b;
+            printf("%d %d\n", a, b);
+        }
+        b = 0;
+        a = a + 2;
+        printf("Outer loop\n");
+    }
+    gemdos(0x1);
+}
+```
 
----
 
 <a id="page-158"></a>
 <!-- page 158 -->
@@ -6310,10 +6118,15 @@ The do- while loop is a special form of the normal while loop. With this constru
 A BASIC program would simulate this as follows:  
 
 
-10 FOR A=1 TO 2 STEP 0 20 B=B+1 30 PRINT B 40 IF B=100 THEN END 50 NEXT A  
+```bbcbasic
+10 FOR A=1 TO 2 STEP 0 
+20 B=B+1 
+30 PRINT B 
+40 IF B=100 THEN END 
+50 NEXT A
+```
 
-
-BASIC does not have the option of a do- while loop. It was therefore simulated in this program using an infinite loop. In this loop, the variable a "counts" from 1 to infinity.  
+BASIC does not have the option of a do-while loop. It was therefore simulated in this program using an infinite loop. In this loop, the variable a "counts" from 1 to infinity.  
 
 
 The end of the loop is tested in the simulated do- while loop with the IF line. This statement ends the program when the value of the variable B reaches 100.  
@@ -6322,12 +6135,24 @@ The end of the loop is tested in the simulated do- while loop with the IF line. 
 Now we come to the C version of the do- while loop. The above BASIC program can be written quite simply as follows:  
 
 
-main() { int a = 0; do { ++a; printf("%d\n", a); } while (a <= 100); gemdos (0x1); }  
+```c
+main()
+{
+    int a = 0;
+    do
+    {
+        ++a;
+        printf("%d\n", a);
+    }
+    while (a <= 100);
+    gemdos (0x1);
+}
+``` 
 
 
 Here the while condition is found at the end of the statement block which was introduced with do. The do statements are repeated as long as the while condition is true. When the while condition becomes false, the compiler leaves the loop and continues with the program.
 
----
+
 
 <a id="page-159"></a>
 <!-- page 159 -->
@@ -6348,15 +6173,25 @@ This leads directly to our next C control structure, the break statement.
 Let's say we have written the following short C program:  
 
 
-main() { int b; for `(b = 1;;` { ++b; printf("%d\n", b); } gemdos (0x1); }  
-
+```c
+main()
+{
+    int b;
+    for (b = 1;;)
+    {  
+        ++b; 
+        printf("%d\n", b); 
+    } 
+    gemdos (0x1);
+}
+```
 
 As we already know from the section on for loops, this program contains an infinite loop. It counts from one on up using the variable b.  
 
 
 How do you get out of loops like this? If you have looked at the title of this section, you might guess that the break statement will be of some help. break is very easy to implement in our example.
 
----
+
 
 <a id="page-160"></a>
 <!-- page 160 -->
@@ -6364,8 +6199,20 @@ How do you get out of loops like this? If you have looked at the title of this s
 Now let's look at the modified program:  
 
 
-main() { int b; for `b = 1` ;; { ++b; printf("%d\n", b); if `b = = 100` break; } printf("Loop broken\n"); gemdos (0x1); }  
-
+```c
+main()
+{
+    int b;
+    for `b = 1` ;;
+{
+    ++b;
+    printf("%d\n", b);
+        if `b = = 100` break;
+}
+printf("Loop broken\n");
+    gemdos (0x1);
+}
+```
 
 This program, expanded with if and break statements, counts to 100. When this value is reached the break statement interrupts the loop and the compiler leaves it and executes the statements which follow.  
 
@@ -6385,9 +6232,16 @@ The break statement does not, therefore, correspond to an END command in BASIC, 
 In BASIC, we could simulate the C program as follows:  
 
 
-10 FOR `A = 1` TO 2 STEP 0 20 `B = B + 1` 30 PRINT B 40 IF `B = 100` THEN GOTO 60 50 NEXT A 55 60 PRINT "LOOP BROKEN"
+```bbcbasic
+10 FOR A = 1 TO 2 STEP 0 
+20 B = B + 
+30 PRINT B 
+40 IF B = 100 THEN GOTO 60 
+50 NEXT A 
+55 
+60 PRINT "LOOP BROKEN"
+```
 
----
 
 <a id="page-161"></a>
 <!-- page 161 -->
@@ -6408,9 +6262,29 @@ This means that if the compiler encounters the continue statement inside a loop,
 Let's take a look at a C program:  
 
 
-main() { int a[5]; int i; a[0] = 15; a[1] = - 2; a[2] = 0; a[3] = 12; a[4] = - 14; for(i = 0; i <= 4; ++i) { if(a[i] <= 0) { printf("Value is negative!\n"); continue; } printf("Value is positive!\n"); } gemdos(0x1); }
+```c
+main()
+{
+    int a[5];
+    int i;
+    a[0] = 15;
+    a[1] = - 2;
+    a[2] = 0;
+    a[3] = 12;
+    a[4] = - 14;
+    for(i = 0; i <= 4; ++i)
+    {
+        if(a[i] <= 0)
+        {
+            printf("Value is negative!\n");
+            continue;
+        }
+        printf("Value is positive!\n");
+    }
+    gemdos(0x1);
+}
+```
 
----
 
 <a id="page-162"></a>
 <!-- page 162 -->
@@ -6427,13 +6301,7 @@ printf("Value is negative.\n");
 we can go right on to check the next element of the array.  
 
 
-The statement  
-
-
-continue;  
-
-
-causes execution to start back at the top of the for loop.  
+The statement  `continue;`  causes execution to start back at the top of the for loop.  
 
 
 The statement following the continue, or  
@@ -6451,9 +6319,18 @@ In BASIC the direct NEXT instruction corresponds roughly to the C continue state
 Compare the C program with the following BASIC version:  
 
 
-10 DIM A(5) 20 ' 30 FOR `I = 1` TO 5 STEP 1 40 IF A(I)<=0 THEN PRINT "VALUE IS NEGATIVE!" : NEXT A: REM "CONTINUE" 50 PRINT "VALUE IS POSITIVE!" 60 NEXT A
+```bbcbasic
+10 DIM A(5) 
+20 ' 
+30 FOR `I = 1` TO 5 STEP 1 
+40      IF A(I)<=0 THEN PRINT "VALUE IS NEGATIVE!" : 
+        NEXT A: 
+        REM "CONTINUE" 
+50 PRINT "VALUE IS POSITIVE!" 
+60 NEXT A
+```
 
----
+
 
 <a id="page-163"></a>
 <!-- page 163 -->
@@ -6484,9 +6361,12 @@ The ST's Alcyon C development system does not have this statement yet, but the f
 As usual, we will start with a BASIC example:  
 
 
-10 A%=10 20 PRINT A% 30 A%=A%-1 40 IF A%>0 THEN GOTO 20
-
----
+```bbcbasic
+10 A%=10 
+20 PRINT A% 
+30 A%=A%-1 
+40 IF A%>0 THEN GOTO 20
+```
 
 <a id="page-164"></a>
 <!-- page 164 -->
@@ -6494,19 +6374,32 @@ As usual, we will start with a BASIC example:
 Translation to C produces the following program:  
 
 
-main() { int a = 10; 20: printf("%d\n", a); - - a; if(a > 0) goto 20; gemdos(0x1); }  
-
+```c
+main()
+{
+    int a = 10;
+20:
+    printf("%d\n", a);
+    --a;
+    if(a > 0) goto 20;
+    gemdos(0x1);
+}
+```
 
 Both programs are constructed the same way and both count down from ten to one. As you can see, the goto statement in this example works just like the BASIC GOTO statement. The command  
 
 
-goto 20;  
+```bbcbasic
+goto 20;
+```  
 
 
 causes a direct jump to line 20, which is wherever the label  
 
 
-20:  
+```c
+20:
+```
 
 
 is located in our program.  
@@ -6518,9 +6411,18 @@ In C, the goto labels are seen as names and not as BASIC- like line numbers. You
 In the following program, the name IBegin, short for "If Begin" has replaced 20 as the beginning label of the loop. The program then looks like this:  
 
 
-main() { int a = 10; IBegin: printf("%d\n", a); - - a; if(a > 0) goto IBegin; gemdos(0x1); }
+```c
+main()
+{
+    int a = 10;
+IBegin:
+    printf("%d\n", a);
+    --a;
+    if(a > 0) goto IBegin;
+    gemdos(0x1);
+}
+```
 
----
 
 <a id="page-165"></a>
 <!-- page 165 -->
@@ -6532,8 +6434,18 @@ main() { int a = 10; IBegin: printf("%d\n", a); - - a; if(a > 0) goto IBegin; ge
 This example also shows why goto jumps are extremely rare in C. Our program can be written more effectively and compactly using a while loop.  
 
 
-main() { int a = 10; while(a > 0) { printf("%d\n", a); - - a; } gemdos(0x1); }  
-
+```c
+main()
+{
+    int a = 10;
+    while(a > 0)
+    {
+        printf("%d\n", a);
+        --a;
+    }
+    gemdos(0x1);
+}
+```
 
 Here it is clear that goto jumps can almost always be replaced by another loop construction or by functions. Essentially, any program can be written without goto statements.  
 
@@ -6553,7 +6465,7 @@ You could use break, of course, but remember that break leaves only the current 
 
 In using goto, it is important to note that the jump can take place only within a function. This means that you cannot use goto to jump out of a function or from one function to another.
 
----
+
 
 <a id="page-166"></a>
 <!-- page 166 -->
@@ -6565,7 +6477,7 @@ In using goto, it is important to note that the jump can take place only within 
 The switch statement checks an expression to see if it matches one of several constants. It therefore allows the computer to select one of a number of alteratives based on the value of an expression.  
 
 
-This control structure corresponds roughly to the ON- GOTO or ON- GOSUB structures in BASIC. Both branching structures are much less flexible than C's switch construction. Let's look at this in more detail with an example.  
+This control structure corresponds roughly to the ON-GOTO or ON-GOSUB structures in BASIC. Both branching structures are much less flexible than C's switch construction. Let's look at this in more detail with an example.  
 
 
 <a id="sec-8-8-1"></a>
@@ -6575,9 +6487,33 @@ This control structure corresponds roughly to the ON- GOTO or ON- GOSUB structur
 First the BASIC program, then the C version, which uses switch:  
 
 
-10 INPUT A 20 ON A GOTO 40, 50 30 PRINT "DEFAULT, VALUE IS NOT 1 OR 2": END 40 PRINT "A IS 1": END 50 PRINT "A IS 2": END main() { int a; scanf("%d", &a); switch(a) { case 1: printf("Value is 1\n"); break; case 2: printf("Value is 2\n"); break; default: printf("Default, value is not 1 or 2\n"); } gemdos (0x1); }
+```bbcbasic
+10 INPUT A 
+20 ON A GOTO 40, 50 
+30 PRINT "DEFAULT, VALUE IS NOT 1 OR 2": END 
+40 PRINT "A IS 1": END 
+50 PRINT "A IS 2": END
+```
+```c
+main()
+{
+    int a;
+    scanf("%d", &a);
+    switch(a)
+    {
+    case 1:
+        printf("Value is 1\n");
+        break;
+    case 2:
+        printf("Value is 2\n");
+        break;
+    default:
+        printf("Default, value is not 1 or 2\n");
+    }
+    gemdos (0x1);
+}
+```
 
----
 
 <a id="page-167"></a>
 <!-- page 167 -->
@@ -6588,7 +6524,11 @@ Both of these programs read in a number from the keyboard and then determine if 
 In C, the switch statement takes the following form:  
 
 
-switch(x) (initialization) case y; (case test) default (default case)  
+switch(x) (initialization) 
+
+case y; (case test) 
+
+default (default case)  
 
 
 <a id="sec-8-8-2"></a>
@@ -6597,8 +6537,9 @@ switch(x) (initialization) case y; (case test) default (default case)
 
 The switch control structure is introduced with the command:  
 
-
-switch(a);  
+```c
+switch(a);
+``` 
 
 
 This determines the expression to be evaluated. Note that the variable or expression inside the parentheses must represent an integer value.  
@@ -6610,8 +6551,10 @@ The conditional statements which follow are then assembled into a statement bloc
 The individual cases are assigned using a format like:  
 
 
-case 1: printf("Value is l\n");  
-
+```c
+case 1:
+    printf("Value is l\n");
+```
 
 If the value of the switch expression is 1 then the statements after case 1: are executed. Groups of statements following a single case statement need not be assembled into statements blocks with curly braces; the statements themselves serve as separators.  
 
@@ -6619,34 +6562,75 @@ If the value of the switch expression is 1 then the statements after case 1: are
 If none of the case constants match the variable, then the statements after:  
 
 
-default:  
+```bbcbasic
+default:
+``` 
 
 
 are executed. default is optional. If there is no default statement and no matching case constant in the switch structure, then no action at all is taken.
 
----
+
 
 <a id="page-168"></a>
 <!-- page 168 -->
 
 case conditions, by the way, do not have to follow in numeric order (1, 2, ..., default) as they do in BASIC. The following unordered sequence of 2, 3, 1, and default is also possible:  
 
+```c
 
-main() { int a; scanf("%d", &a); switch(a) { case 2: printf("Value is 2\n"); break; case 3: printf("Value is 3\n"); break; case 1: printf("Value is 1\n"); break; default: printf("Value is not 2, 3, or 1\n"); } gemdos(0x1); }  
+main()
+{
+    int a;
+    scanf("%d", &a);
+    switch(a)
+    {
+    case 2:
+        printf("Value is 2\n");
+        break;
+    case 3:
+        printf("Value is 3\n");
+        break;
+    case 1:
+        printf("Value is 1\n");
+        break;
+    default:
+        printf("Value is not 2, 3, or 1\n");
+    }
+    gemdos(0x1);
+}
+```
 
 
 The switch command is not limited to numbers, as in the examples so far, but can work with any integer type, like character values.
 
----
+
 
 <a id="page-169"></a>
 <!-- page 169 -->
 
 This is demonstrated in the following program:  
 
+```c
 
-main() { char c; c = 'h'; switch(c) { case 'y': printf("Character y\n"); break; case 'a': printf("Character a\n"); break; case 'h': printf("Character h\n"); break; } gemdos(0x1); }  
-
+main()
+{
+    char c;
+    c = 'h';
+    switch(c)
+    {
+    case 'y':
+        printf("Character y\n");
+        break;
+    case 'a':
+        printf("Character a\n");
+        break;
+    case 'h':
+        printf("Character h\n");
+        break;
+    }
+    gemdos(0x1);
+}
+```
 
 The only real difference between this switch structure and the previous ones is that the form of the case statements is  
 
@@ -6662,78 +6646,38 @@ One additional function of switch which cannot be accomplished with BASIC's ON- 
 
 This can be done more efficiently using the ASCII values of the input (see the chapter on screen input/output operations), but the program below serves as a demonstration of this use of the switch structure.
 
----
+
 
 <a id="page-170"></a>
 <!-- page 170 -->
 
-main()  
+```c
+main()
 
 
-{  
-
-
-char a;  
-
-
-a = 6;  
-
-
-switch (a)  
-
-
-{  
-
-
-case '0':  
-
-
-case '1':  
-
-
-case '2':  
-
-
-case '3':  
-
-
-case '4':  
-
-
-case '5':  
-
-
-case '6':  
-
-
-case '7':  
-
-
-case '8':  
-
-
-case '9':  
-
-
-printf("Character is a digit!\n");  
-
-
-break;  
-
-
-default:  
-
-
-printf("Character is a not a digit!\n");  
-
-
-}  
-
-
-gemdos (0x1);  
-
-
-}  
+{
+    char a;
+    a = 6;
+    switch (a)
+    {
+        case '0':
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+        case '5':
+        case '6':
+        case '7':
+        case '8':
+        case '9':
+            printf("Character is a digit!\n");
+            break;
+        default:
+            printf("Character is a not a digit!\n");
+    }
+    gemdos (0x1);
+}
+```
 
 
 In this program, there is no break between the alternatives so the program passes immediately from one to the other.  
@@ -6742,50 +6686,34 @@ In this program, there is no break between the alternatives so the program passe
 In general, this can be sketched as follows:  
 
 
-switch (x)  
-
-
-{  
-
-
-case a:  
-
-
-case b:  
-
-
-case c:  
-
-
-Execute commands when x matches a, b, or c  
-
-
-}  
-
+```c
+switch (x)
+{
+case a:
+case b:
+case c:
+    Execute commands when x matches a, b, or c
+}
+```
 
 Take careful note of the use of break statement. Its role in the switch structure is very important. If one case is found to be true, it doesn't usually make sense to examine the rest of the cases. The break statement is used here in order to avoid this wasteful procedure. Our previous examples are all optimized using break.
 
----
 
 <a id="page-171"></a>
 <!-- page 171 -->
-
-![](/images/atari/atari-st-basic-to-c/p0171_0013.jpg)
-
----
 
 <a id="page-172"></a>
 <!-- page 172 -->
 
 <a id="sec-ch9"></a>
-Chapter 9
+## Chapter 9 - Common Mistakes of BASIC Programmers 
 
----
+
 
 <a id="page-173"></a>
 <!-- page 173 -->
 
----
+
 
 <a id="page-174"></a>
 <!-- page 174 -->
@@ -6809,15 +6737,22 @@ Don't read the explanation right away if the answer does not come to you immedia
 ### 9.1 Error # 1  
 
 
-main() { int x; x = 15; print("%d", x); gemdos (0x1); }  
-
+```c
+main()
+{
+    int x;
+    x = 15;
+    print("%d", x);
+    gemdos (0x1);
+}
+```
 
 Have you found the error yet? No? At first sight this program seems to be completely in order. This is a typical mistake which can really be made only by someone who has programmed in BASIC. Nobody learning C as his first programming language would make this error (except as a typo).  
 
 
 In case you still haven't noticed, the print() function is certainly familiar from BASIC as the PRINT statement, but the actual name of the C function is printf() and not print(). This type of mistake is especially frustrating because it is so difficult to find.
 
----
+
 
 <a id="page-175"></a>
 <!-- page 175 -->
@@ -6826,7 +6761,20 @@ In case you still haven't noticed, the print() function is certainly familiar fr
 ### 9.2 Error # 2  
 
 
-main() { int integer; while(integer < 10) { printf("Value x^2 value\n"); printf("%d %d\n", integer, integer \* integer); ++integer; } } gemdos(0x1); }  
+```c
+main()
+{
+    int integer;
+    while(integer < 10)
+    {
+        printf("Value x^2 value\n");
+        printf("%d %d\n", integer, integer \* integer);
+        ++integer;
+    }
+}
+gemdos(0x1);
+}
+``` 
 
 
 This program uses a while loop to create a table of the squares of the integers from one to ten. The mistake is again one typical of BASIC programmers.  
@@ -6852,7 +6800,7 @@ This can be done with the combined declaration/assignment statement, as you know
 
 int integer = 0;
 
----
+
 
 <a id="page-176"></a>
 <!-- page 176 -->
@@ -6861,8 +6809,18 @@ int integer = 0;
 ### 9.3 Error # 3  
 
 
-main() { int integer; for (integer `= 0` ; integer `< = 10` ; ++integer); { printf("Value x^2 value\n"); printf("%d %d\n", integer, integer \* integer); } gemdos (0x1); }  
-
+```c
+main()
+{
+    int integer;
+    for (integer `= 0` ; integer `< = 10` ; ++integer);
+    {
+        printf("Value x^2 value\n");
+        printf("%d %d\n", integer, integer \* integer);
+    }
+    gemdos (0x1);
+}
+```
 
 This program corresponds exactly to the previous one, except that the loop is created using for instead of while.  
 
@@ -6872,7 +6830,7 @@ Have you found the mistake yet? You might guess that there would be a problem be
 
 Again, the error is rather subtle. Remember that a semicolon in C separates statements, so that when the compiler sees a semicolon it thinks that the statement is over and goes on to the next one. The for statement in C is viewed by the compiler as exactly one statement even though the for loop may contain hundreds of other statements. The curly braces make the compiler treat the whole loop as one statement. So the problem here is that the for loop is really over before we get to the statements that it is supposed to repeat. The instructions between the braces after the for statement are not repeated but are executed only once. To fix this, remove the semicolon after the for loop declaration.
 
----
+
 
 <a id="page-177"></a>
 <!-- page 177 -->
@@ -6881,8 +6839,13 @@ Again, the error is rather subtle. Remember that a semicolon in C separates stat
 ### 9.4 Error #4  
 
 
-main() { int value; scanf("%d", &value); if(value `= 15` ) printf("15 is the answer!\n); else printf("That's not it!\n"); gemdos(0x1); }  
-
+```c
+main()
+{
+    int value;
+    scanf("%d", &value);
+    if(value `= 15` ) printf("15 is the answer!\n); else printf("That's not it!\n"); gemdos(0x1); }
+```
 
 This one may also have been difficult for you. It really looks completely normal to a BASIC programmer.  
 
@@ -6894,15 +6857,23 @@ Look more carefully at the if statement. In the previous chapters we said that t
 ### 9.5 Error #5  
 
 
-main() { int value_1, value_2; value_1 `= 15` ; value_2 `= 3.5` ; printf("%d\n", value_1 \* value_2); gemdos(0x1); }  
-
+```c
+main()
+{
+    int value_1, value_2;
+    value_1 = 15;
+    value_2 = 3.5;
+    printf("%d\n", value_1 * value_2);
+    gemdos(0x1);
+}
+```
 
 Here the variables value_1 and value_2 are declared, assigned values, and multiplied together. Their product is then printed on the screen.  
 
 
 Have you noticed where the mistake is?
 
----
+
 
 <a id="page-178"></a>
 <!-- page 178 -->
@@ -6919,9 +6890,15 @@ If, however, you want the value 3.5 to be used, you must first declare value_2 a
 <a id="sec-9-6"></a>
 ### 9.6 Error #6  
 
+```c
 
-main() { a = 15; printf("%d\n", a); gemdos (0x1); }  
-
+main()
+{
+    a = 15;
+    printf("%d\n", a);
+    gemdos (0x1);
+}
+```
 
 Here we see another typical BASIC error. At first glance, the program looks correct. There are no errors in the printf call and the braces around the function main() are placed correctly. The value assignment of the variable a is also in order.  
 
@@ -6934,7 +6911,7 @@ or
 
 depending on whether the variable a should be treated as an integer or a floating- point number, and the program is complete.
 
----
+
 
 <a id="page-179"></a>
 <!-- page 179 -->
@@ -6943,8 +6920,13 @@ depending on whether the variable a should be treated as an integer or a floatin
 ### 9.7 Error #7  
 
 
-main() { printf("%f\n", 1 / 3); gemdos (0x1); }  
-
+```c
+main()
+{
+    printf("%f\n", 1 / 3);
+    gemdos (0x1);
+}
+```
 
 What? This program is wrong? Are you trying to trick me?  
 
@@ -6969,7 +6951,7 @@ The correct program looks like this:
 
 main() { printf("%f\n", 1.0 / 3.0); gemdos (0x1); }
 
----
+
 
 <a id="page-180"></a>
 <!-- page 180 -->
@@ -6978,8 +6960,16 @@ main() { printf("%f\n", 1.0 / 3.0); gemdos (0x1); }
 ### 9.8 Error #8  
 
 
-main() int a, b, c, d; scanf("%d", &a); b = a + 6; c = b \* 4; d = b - c; printf("%d %d %d %d\n", a, b, c, d); gemdos (0x1); }  
-
+```c
+main() int a, b, c, d;
+scanf("%d", &a);
+b = a + 6;
+c = b * 4;
+d = b - c;
+printf("%d %d %d %d\n", a, b, c, d);
+gemdos (0x1);
+}
+```
 
 Many of you probably noticed this error right away. The problem with this error is that the compiler will generate several different error messages, none of which give the specific reason for the error.  
 
@@ -6992,7 +6982,7 @@ When you think about it, a large program would not consist of a single block of 
 
 When you suspect that you have left a brace off a block somewhere deep in a confusing series of nested loops you'll have to decide yourself where you should look, because the compiler is not going to give you very helpful error messages.
 
----
+
 
 <a id="page-181"></a>
 <!-- page 181 -->
@@ -7001,8 +6991,17 @@ When you suspect that you have left a brace off a block somewhere deep in a conf
 ### 9.9 Error #9  
 
 
-main() { int loop; for(loop `= 1` ; loop `= < 10` ; ++loop) { printf("%d %d\n", loop, loop \* 2); } gemdos(0x1); }  
-
+```c
+main()
+{
+    int loop;
+    for(loop `= 1` ; loop `= < 10` ; ++loop)
+    {
+        printf("%d %d\n", loop, loop \* 2);
+    }
+    gemdos(0x1);
+}
+```
 
 Granted, the error is hard to find.  
 
@@ -7020,12 +7019,19 @@ Just remember that the equals sign always comes last in the "less than or equal 
 ### 9.10 Error #10  
 
 
-main() { int x; scanf("%d", x); printf("%d %d\n", x, x \* x); gemdos(0x1); }  
-
+```c
+main()
+{
+    int x;
+    scanf("%d", x);
+    printf("%d %d\n", x, x * x);
+    gemdos(0x1);
+}
+```
 
 Again, at first glance there seems to be no mistake hidden in this program... or is there? How did that go with the scanf function again?
 
----
+
 
 <a id="page-182"></a>
 <!-- page 182 -->
@@ -7043,40 +7049,19 @@ scanf("%d", &x);
 ### 9.11 Error #11  
 
 
-main()  
-
-
-{  
-
-
-int a, b, c, d;  
-
-
-a = b = 15;  
-
-
-for(c = a, d = c \* 2; a < 5; a++, d++)  
-
-
-{  
-
-
-printf("%d\n", a);  
-
-
-c = a \* 12;  
-
-
-b = c - a;  
-
-
-printf("%d %d\n", c, b);  
-
-
-gemdos (0x1);  
-
-
-}  
+```c
+main()
+{
+    int a, b, c, d;
+    a = b = 15;
+    for(c = a, d = c * 2; a < 5; a++, d++)
+    {
+        printf("%d\n", a);
+        c = a \* 12;
+        b = c - a;
+        printf("%d %d\n", c, b);
+        gemdos (0x1);
+```
 
 
 Don't let this program confuse you. The nature of this error is very simple. It does not lie in the for statement, although this is extended with the comma operator.  
@@ -7084,7 +7069,7 @@ Don't let this program confuse you. The nature of this error is very simple. It 
 
 You will find the error immediately if you again look at the information given on the brace structure in error number 8. To be precise, the bracket at the end of the for loop has been left out. This must be inserted after the last printf statement.
 
----
+
 
 <a id="page-183"></a>
 <!-- page 183 -->
@@ -7093,7 +7078,15 @@ You will find the error immediately if you again look at the information given o
 ### 9.12 Error #12  
 
 
-main() { int a, d; float b; char \\*c; scanf("%d %f %s", &a, &b, &c); for(d = 1; d < a; ++d) printf("%s\n", c); gemdos(0x1); }  
+```c
+main()
+{
+    int a, d;
+    float b;
+    char *c;
+    scanf("%d %f %s", &a, &b, &c);
+    for(d =
+``` 1; d < a; ++d) printf("%s\n", c); gemdos(0x1); }  
 
 
 This program reads in a string, an integer, and a floating- point number, and uses a for loop to print out the string a times on the screen.  
@@ -7108,10 +7101,11 @@ scanf("%d %f %s", &a, &b, c);
 <a id="sec-9-13"></a>
 ### 9.13 Error #13  
 
+```bbcbasic
 
 main() { char \\*string; string `=` "|"; printf(%s "Error", string); gemdos(0x1); }
+```
 
----
 
 <a id="page-184"></a>
 <!-- page 184 -->
@@ -7138,7 +7132,13 @@ printf("%s Error", string);
 ### 9.14 Error #14  
 
 
-main() { printf("There is a future\n in programming\n in C!\n"); gemdos (0x1); }  
+```c
+main()
+{
+    printf("There is a future\n in programming\n in C!\n");
+    gemdos (0x1);
+}
+```
 
 
 Does this program have an error or not? Try it out!  
@@ -7147,7 +7147,11 @@ Does this program have an error or not? Try it out!
 Although this looks strange, it runs without a problem. It prints three lines:  
 
 
-There is a future in programming in C!  
+There is a future 
+
+in programming 
+
+in C!  
 
 
 one after the other on the screen.  
@@ -7155,7 +7159,7 @@ one after the other on the screen.
 
 The new line marker \n, which represents the end of a line, can be put anywhere in a string, not just at the end of a line.
 
----
+
 
 <a id="page-185"></a>
 <!-- page 185 -->
@@ -7164,8 +7168,15 @@ The new line marker \n, which represents the end of a line, can be put anywhere 
 ### 9.15 Error #15  
 
 
-main() { int x; for `(x = 10;x > 0; - x)` printf("%d\n", x) gemdos(0x1); }  
-
+```c
+main()
+{
+    int x;
+    for (x = 10; x > 0; --x) 
+        printf("%d\n", x) 
+    gemdos(0x1);
+}
+```
 
 Have you found the error yet? If not, you will probably kick yourself when you finally discover it.  
 
@@ -7182,13 +7193,21 @@ In BASIC, we would not have to use a statement separator here. You must always r
 <a id="sec-9-16"></a>
 ### 9.16 Error #16  
 
+```c
 
-main() { int `x = 10` while `(x > 0)` { printf("The number is %d\n,x); - - x; } gemdos(0x1); }  
-
+main()
+{
+    int x = 10 
+    while (x > 0) { 
+        printf("The number is %d\n,x); --x; 
+    } 
+    gemdos(0x1); 
+    }
+```
 
 This program counts down from ten to one.
 
----
+
 
 <a id="page-186"></a>
 <!-- page 186 -->
@@ -7209,8 +7228,15 @@ This example also shows how to print out strings and numeric variables together,
 ### 9.17 Error #17  
 
 
-main() { int x; scanf("%d\n", &x); printf("%d %d\n", x, x\*x\*x); gemdos(0x1); }  
-
+```c
+main()
+{
+    int x;
+    scanf("%d\n", &x);
+    printf("%d %d\n", x, x*x*x);
+    gemdos(0x1);
+}
+```
 
 Here we have a logical error in the scanf input call. Take another look at this statement.  
 
@@ -7224,12 +7250,13 @@ This error can occur because scanf and printf are almost identical in their synt
 The correct line must read:  
 
 
-scanf("%d", &x);  
-
+```c
+scanf("%d", &x);
+```
 
 Some compilers, like Alcyon C, ignore the misplaced new- line character and therefore produce no error.
 
----
+
 
 <a id="page-187"></a>
 <!-- page 187 -->
@@ -7238,11 +7265,17 @@ Some compilers, like Alcyon C, ignore the misplaced new- line character and ther
 ### 9.18 Error #18  
 
 
-main() { int a, b; char \\*c; `{ a = b = 15;}
-{ c = "DIGITAL GEM";}
-{ p r i n t f ("\%d \%s \%d\ n", a, b, c) ;}
-{ g e m d o s (0x1);}
-)` printf("%d %s %d\n", a, b, c);  
+```c
+main()
+{
+    int a, b;
+    char *c;
+    a = b = 15;
+     c = "DIGITAL GEM";
+     printf ("\%d \%s \%d\ n", a, b, c) ;
+     gemdos (0x1);
+    )` printf("%d %s %d\n", a, b, c);
+```
 
 
 The error in this program is a difficult one to find. Again, it is in the printf call. If you compare the data type control characters with the corresponding variables, you will quickly see that the variable b is of type integer, but that it will be printed out as a string. Likewise, the printf function tries to print the string variable c as %d, an integer.  
@@ -7253,10 +7286,10 @@ It is important to avoid these mistakes because they don't usually generate erro
 
 The correct printf call must read:  
 
-
+```c
 printf("%d %d %s\n", a, b, c);
+```
 
----
 
 <a id="page-188"></a>
 <!-- page 188 -->
@@ -7265,38 +7298,20 @@ printf("%d %d %s\n", a, b, c);
 ### 9.19 Error #19  
 
 
-main()  
+```c
+main()
+{
+    int x, y;
+    scanf("%d", &x);
+    y = 14;
+    if (x <> y)
 
-
-{  
-
-
-int x, y;  
-
-
-scanf("%d", &x);  
-
-
-y = 14;  
-
-
-if (x <> y)  
-
-
-printf("The x- value is not equal to the y- value!\n");  
-
-
-else  
-
-
-printf("The x- value is equal to the y- value\n");  
-
-
-gendos (0x1);  
-
-
-}  
-
+        printf("The x- value is not equal to the y- value!\n");
+    else
+        printf("The x- value is equal to the y- value\n");
+    gemdos (0x1);
+}
+```
 
 The error here is very typical of BASIC programmers, but you have enough C experience that you should find it right away.  
 
@@ -7307,9 +7322,10 @@ The mistake is in the if statement if (x <> y). The BASIC inequality symbol is i
 The if statement is written correctly as  
 
 
+```c
 if(x != y)
+```
 
----
 
 <a id="page-189"></a>
 <!-- page 189 -->
@@ -7320,40 +7336,27 @@ if(x != y)
 ```
 
 
----
+
 
 <a id="page-190"></a>
 <!-- page 190 -->
 
 <a id="sec-ch10"></a>
-## Chapter 10  
+## Chapter 10 - C Functions
 
-
-C Functions
-
----
 
 <a id="page-191"></a>
 <!-- page 191 -->
 
-
-```c
-1
-```
-
-
----
-
 <a id="page-192"></a>
 <!-- page 192 -->
 
-## C Functions  
 
 
-As we said before, most C programs consist of a set of individual functions. A function is a subprogram, comparable to subroutines in BASIC which are called with GOSUB and ended with RETURN.  
+As we said before, most C programs consist of a set of individual functions. A function is a subprogram, comparable to subroutines in `BASIC` which are called with `GOSUB` and ended with `RETURN`.  
 
 
-Even though C does not require you to use functions, it is not good programming style to put all of your commands in one procedure (that is, in the main () function) as is often the case in BASIC. Instead, you should divide your program into separate functions which are called from main ().  
+Even though C does not require you to use functions, it is not good programming style to put all of your commands in one procedure (that is, in the `main()` function) as is often the case in BASIC. Instead, you should divide your program into separate functions which are called from main ().  
 
 
 You will soon get used to this new programming style. Forget your BASIC programming structure. Your C programs will be much easier to read and understand if you build them up out of individual functions. Also, it is much less complicated to change a program that is divided into functions than one which is just a mass of statements.  
@@ -7373,7 +7376,7 @@ Naturally this raises some questions: How are these functions constructed? How a
 
 We will answer these and other questions in the following pages, using many BASIC and C examples.
 
----
+
 
 <a id="page-193"></a>
 <!-- page 193 -->
@@ -7385,42 +7388,58 @@ We will answer these and other questions in the following pages, using many BASI
 Any C program can contain an arbitrary number of functions. At least one function is required in every program. This is the function  
 
 
-main()  
+```c
+main()
+```
 
-
-This function represents the program head; and it is always the first function called when the program is executed. The general procedure is then to call all of the other functions from main() so that the program is not actually located in this main function, but the operations take place in the individual subroutines. The function main() is therefore used primarily to manage and call the other functions.  
+This function represents the program head; and it is always the first function called when the program is executed. The general procedure is then to call all of the other functions from `main()`so that the program is not actually located in this main function, but the operations take place in the individual subroutines. The function `main()` is therefore used primarily to manage and call the other functions.  
 
 
 <a id="sec-10-1-1"></a>
 ## 10.1.1 Calling functions  
 
 
-Take a look at the following example. In this example, the function main() calls itself again.  
+Take a look at the following example. In this example, the function `main()` calls itself again.  
 
+```c
 
-main() { printf("Hello, how are you?\n"); main(); }  
-
+main()
+{
+    printf("Hello, how are you?\n");
+    main();
+}
+```
 
 This program prints the following output:  
 
 
-Hello, how are you? Hello, how are you? Hello, how are you? Hello, how are you? Hello,how are you? Hello, how are you? Hello, how are you? Hello, how are  
-
+``` c
+Hello, how are you? 
+Hello, how are you? 
+Hello, how are you? 
+Hello, how are you? 
+Hello, how are you? 
+Hello, how are you? 
+Hello, how are you? 
+Hello, how are you?
+```
 
 The text is printed on the screen over and over again.
 
----
+
 
 <a id="page-194"></a>
 <!-- page 194 -->
 
-Press <CTRL> C to end the program and return to C again.  
+Press `CTRL-C` to end the program and return to C again.  
 
 
 In this example, the function main() calls itself with:  
 
 
-main();  
+```c
+main();
+``` 
 
 
 A function is generally called by placing its name in the program. Parameters can be passed to the function by enclosing them in parentheses after the function name. Since main doesn't take any parameters here, there is nothing between them. The parentheses themselves must be included, however.  
@@ -7433,9 +7452,32 @@ A function is generally called by placing its name in the program. Parameters ca
 Now let's use the facts we have mentioned in a demonstration program. Here is a BASIC example:  
 
 
-10 PRINT "BASIC" 20 GOSUB 1000 30 ' 40 PRINT "FORTH" 50 GOSUB 1000 60 ' 70 PRINT "LISP" 80 GOSUB 1000 90 ' 100 PRINT "PROLOG" 110 GOSUB 1000 120 ' 130 PRINT "C" 140 GOSUB 1000 150 END 160 ' 1000 REM SUBROUTINE "KEYSTOP" 1005 ' 1010 PRINT "PRESS A KEY..." 1020 GET A\$ 1030 IF A\$=""" THEN 1020 1035 ' 1040 RETURN
+```bbcbasic
+10 PRINT "BASIC" 
+20 GOSUB 1000 
+30 ' 
+40 PRINT "FORTH" 
+50 GOSUB 1000 
+60 ' 
+70 PRINT "LISP" 
+80 GOSUB 1000 
+90 ' 
+100 PRINT "PROLOG" 
+110 GOSUB 1000 
+120 ' 130 PRINT "C" 
+140 GOSUB 1000 
+150 END 
+160 
+' 1000 REM SUBROUTINE "KEYSTOP" 
+1005 ' 
+1010 PRINT "PRESS A KEY..." 
+1020 GET A$ 
+1030 IF A$="" THEN 1020 
+1035 ' 
+1040 RETURN
+```
 
----
+
 
 <a id="page-195"></a>
 <!-- page 195 -->
@@ -7452,24 +7494,46 @@ appears on the screen and the computer waits for a keystroke. When a key is pres
 Now compare the BASIC program with the following C version:  
 
 
-include "stdio.h" #define getchar() getc(stdin) main() { printf("BASIC\n"); keystop(); printf("FORTH\n"); keystop(); printf("LISP\n"); keystop(); printf("PROLOG\n"); keystop(); printf("C\n"); keystop(); gemdos(0x1); } keystop() { int a; printf("Press a key...\n"); getch(a); } char bf[100]; int b = 0; getch() { return((b > 0) ? bf[- - b] : getchar()); }
+```c
+#include "stdio.h"
+#define getchar() getc(stdin)
+main()
+{
+    printf("BASIC\n");
+    keystop();
+    printf("FORTH\n");
+    keystop();
+    printf("LISP\n");
+    keystop();
+    printf("PROLOG\n");
+    keystop();
+    printf("C\n");
+    keystop();
+    gemdos(0x1);
+}
+keystop()
+{
+    int a;
+    printf("Press a key...\n");
+    getch(a);
+}
+char bf[100];
+int b = 0;
+getch()
+{
+    return((b > 0) ? bf[--b] : getchar());
+}
+```
 
----
 
 <a id="page-196"></a>
 <!-- page 196 -->
 
-In this program, you see the function keystop called from the main program main() with the statement:  
-
-
-keystop();  
-
+In this program, you see the function keystop called from the main program main() with the statement: `keystop();`  
 
 The first thing this function does is to define a local variable of type integer. Next, the message:  
 
-
 Press a key...  
-
 
 is printed out and the program then uses the call getch(a) to wait for a key to be pressed on the keyboard. The return of control to the calling program is then automatic. In Digital C, however, return must be specified explicitly.  
 
@@ -7486,15 +7550,20 @@ We could have formulated the function keystop in a number of different ways. We 
 The BASIC example would then read:  
 
 
-1000 REM PAUSE SUBROUTINE "KEYSTOP" 1005 : 1010 PAUSE 1000 1020 RETURN  
+1000 REM PAUSE SUBROUTINE "KEYSTOP" 
+1005 : 
+1010 PAUSE 1000 
+1020 RETURN  
 
 
 or, if your BASIC does not include the PAUSE n command, as follows:  
 
 
-1000 REM PAUSE SUBROUTINE "KEYSTOP" 1006 : 1010 FOR A=1 TO 10000: NEXT A 1020 RETURN
+1000 REM PAUSE SUBROUTINE "KEYSTOP" 
+1006 : 
+1010 FOR A=1 TO 10000: NEXT A 1020 RETURN
 
----
+
 
 <a id="page-197"></a>
 <!-- page 197 -->
@@ -7505,8 +7574,14 @@ Both subprograms produce a certain time delay before the next programming langua
 In C, the corresponding function would look like this:  
 
 
-keystop() { int x; for `(x = 1;x< 30000; + + x)` 1 }  
-
+```c
+keystop()
+{
+    int x;
+    for (x = 1; x< 30000; + + x) 
+    ;
+    }
+```
 
 This pause routine, as well as the previous keystroke function, can be put to use in your own programs.  
 
@@ -7518,9 +7593,29 @@ This pause routine, as well as the previous keystroke function, can be put to us
 Look at the following C program:  
 
 
-main() { M(); gemdos(0x1); } e() { putchar('e'); s(); putchar('!'); } M() { putchar('M'); e(); } s() { printf("ss"); }
+```c
+main()
+{
+    M();
+    gemdos(0x1);
+}
+e()
+{
+    putchar('e');
+    s();
+    putchar('!');
+}
+M()
+{
+    putchar('M');
+    e();
+}
+s()
+{
+    printf("ss");
+}
+```
 
----
 
 <a id="page-198"></a>
 <!-- page 198 -->
@@ -7531,8 +7626,22 @@ In this example, it becomes clear how functions in C can call each other.
 This can also be done in BASIC. The above C program looks something like this in BASIC:  
 
 
-10 GOSUB 100 20 END 30 100 PRINT "M"; 110 GOSUB 200 120 RETURN 130 200 PRINT "E"; 210 GOSUB 300 220 PRINT "!"; 230 RETURN 240 300 PRINT "SS"; 310 RETURN  
-
+```c
+10 GOSUB 100 
+20 END 
+30 
+100 PRINT "M";
+110 GOSUB 200 
+120 RETURN 
+130 
+200 PRINT "E";
+210 GOSUB 300 
+220 PRINT "!";
+230 RETURN 
+240 
+300 PRINT "SS";
+310 RETURN
+```
 
 Have you figured out what these programs do? Consistent with the nature of the programs and their function calls, the outputs of the C and BASIC programs are:  
 
@@ -7548,7 +7657,7 @@ MESS!
 
 respectively. In this example you can see how C functions can be called by and nested within each another.
 
----
+
 
 <a id="page-199"></a>
 <!-- page 199 -->
@@ -7560,13 +7669,15 @@ respectively. In this example you can see how C functions can be called by and n
 Up to now, C functions have not seemed much different from subroutines in BASIC. This is only because we have not started passing parameters yet.  
 
 
-This case was shown in the examples on the previous pages. The function keystop(), called from main(), generates only a fixed time delay.  
+This case was shown in the examples on the previous pages. The function `keystop()`, called from `main()`, generates only a fixed time delay.  
 
 
 Assume, for example, that you want to simulate a  
 
 
-PAUSE n  
+```bbcbasic
+PAUSE n
+```
 
 
 command like the one already found in BASIC.  
@@ -7578,21 +7689,24 @@ To accomplish this in C, the parameter n must be passed to the function.
 The function then looks like this:  
 
 
-pause(n); int n; { int a; for(a = 1; a < n; ++a) ; }  
-
+```c
+pause(n);
+int n;
+{
+    int a;
+    for(a = 1; a < n; ++a) ;
+}
+```
 
 The n in the parentheses after pause tells it that it should accept a parameter passed to it and call it n.  
 
 
-The function is called with a statement like  
-
-
-or  
+The function is called with a statement like `pause(10000)` or `pause(40000)`.  
 
 
 or pause(n) with any other number. This makes the for loop longer or shorter, corresponding exactly to the BASIC command.
 
----
+
 
 <a id="page-200"></a>
 <!-- page 200 -->
@@ -7600,8 +7714,23 @@ or pause(n) with any other number. This makes the for loop longer or shorter, co
 Let's look at our new pause (n) function more closely in an example program:  
 
 
-main() { printf("Hello,"); pause(30000); printf("how"); pause(20000); printf(" are you?\n"); gemdos(0x1); } pause(n); int n; { int a; for `(a = 1; a< n; + + a)` ; }  
-
+```c
+main()
+{
+    printf("Hello,");
+    pause(30000);
+    printf("how");
+    pause(20000);
+    printf(" are you?\n");
+    gemdos(0x1);
+}
+pause(n);
+int n;
+{
+    int a;
+    for `(a = 1; a< n; + + a)` ;
+}
+```
 
 As another opportunity for comparison, here is the corresponding program in BASIC.  
 
@@ -7609,12 +7738,25 @@ As another opportunity for comparison, here is the corresponding program in BASI
 We will assume here that the version of BASIC we are using does not include the PAUSE n command and must therefore be written as follows:  
 
 
-10 PRINT "HELLO,"; 20 N=3000: GOSUB 1000 25 ' 30 PRINT "HOW"; 40 N=2000: GOSUB 1000 45 ' 50 PRINT " ARE YOU?" 60 END 65 ' 1000 REM PAUSE N 1010 FOR A=1 TO N: NEXT A 1020 RETURN  
-
+```bbcbasic
+10 PRINT "HELLO,"; 
+20 N=3000: GOSUB 1000 
+25 ' 
+30 PRINT "HOW"; 
+40 N=2000: 
+GOSUB 1000 
+45 ' 
+50 PRINT " ARE YOU?" 
+60 END 
+65 ' 
+1000 REM PAUSE N 
+1010 FOR A=1 TO N: NEXT A 
+1020 RETURN
+```
 
 In BASIC it is not possible to pass parameters directly. As in this example, they must be passed indirectly using global variables.
 
----
+
 
 <a id="page-201"></a>
 <!-- page 201 -->
@@ -7635,15 +7777,33 @@ If, however, you want the function to return a value to the calling function, yo
 Let's take the following program, which computes the cube of a number, as an example:  
 
 
-10 INPUT X% 20 GOSUB 100 30 PRINT Y% 40 END 50 100 Y% = X% \* X% \* X% 110 RETURN  
+10 INPUT X% 
+20 GOSUB 100 
+30 PRINT Y% 
+40 END 
+50 
+100 Y% = X% * X% * X% 
+110 RETURN  
 
 
 We write a corresponding C program using two functions:  
 
+```c
+main()
+{
+    int x, y;
+    scanf("%d", &x);
+    y = cube(x);
+    printf("The cube of X is %d\n", y);
+    gemdos(0x1);
+}
+cube(z) int z;
+{
+    return(z * z * z);
+}
+```
 
-main() { int x, y; scanf("%d", &x); y = cube(x); printf("The cube of X is %d\n", y); gemdos(0x1); } cube(z) int z; { return(z \* z \* z); }
 
----
 
 <a id="page-202"></a>
 <!-- page 202 -->
@@ -7666,8 +7826,21 @@ assigns to y the exact value which appears between the parentheses in the return
 
 For comparison, let me show you an example of how functions may not be used:  
 
+```c
 
-main() { int x, y; scanf("%d", &x); y = square(x); printf("%d\n", y); gemdos(0x1); } square(q) int q; { q = q \* q; }  
+main()
+{
+    int x, y;
+    scanf("%d", &x);
+    y = square(x);
+    printf("%d\n", y);
+    gemdos(0x1);
+}
+square(q) int q;
+{
+    q = q * q;
+}
+``` 
 
 
 This program illustrates an error very typical of BASIC programmers. In BASIC, a subroutine structured like this would run without a problem, but not in C. Why?  
@@ -7678,7 +7851,7 @@ The procedure changes only the value of a variable, but does not permanently ass
 
 In this book we have learned another way to assign variable values to specific memory addresses. This is done with pointer variables. In a few pages we will explain how you can use pointers to arbitrarily exchange values between functions without using the return statement.
 
----
+
 
 <a id="page-203"></a>
 <!-- page 203 -->
@@ -7690,14 +7863,32 @@ In this book we have learned another way to assign variable values to specific m
 When we want a function to return a variable type other than integer, we have to make a change. To explain this, let's change our previous BASIC program so that the number to be cubed doesn't have to be an integer, but can also be a floating- point variable.  
 
 
-10 INPUT X 20 GOSUB 100 30 PRINT Y 40 END 50 ' 100 Y = X \* X \* X 110 RETURN  
+10 INPUT X 
+20 GOSUB 100 
+30 PRINT Y 
+40 END 
+50 ' 
+100 Y = X * X * X 
+110 RETURN  
 
 
 The C version would then read:  
 
 
-main() { float x, y, cube(); scanf("%d", &x); y = cube(x); printf("The cube of X is %d\n", y); gemdos (0x1); } float cube(z) float z; { return(z \* z \* z); }  
-
+```c
+main()
+{
+    float x, y, cube();
+    scanf("%d", &x);
+    y = cube(x);
+    printf("The cube of X is %d\n", y);
+    gemdos (0x1);
+}
+float cube(z) float z;
+{
+    return(z * z * z);
+}
+```
 
 As you can see, the function name must be declared as float at the beginning of the function main() if it is to return a floating- point number.  
 
@@ -7705,12 +7896,14 @@ As you can see, the function name must be declared as float at the beginning of 
 This is done with the declaration statement  
 
 
-float cube();  
+```c
+float cube();
+```
 
 
 This variable type must then be declared in the function cube(). Again, this is not necessary for integer values.
 
----
+
 
 <a id="page-204"></a>
 <!-- page 204 -->
@@ -7718,14 +7911,16 @@ This variable type must then be declared in the function cube(). Again, this is 
 Notice that the function was no longer introduced with just the simple function name  
 
 
-cube(z)  
-
+```c
+cube(z)
+```
 
 but with the function header  
 
 
-float cube(z)  
-
+```c
+float cube(z)
+```
 
 You must therefore declare the variable type again before the function name. In practice, however, you will find or actually use very few float functions in C programs. Instead, most functions which do not return integer values will be declared as "double" functions in order to take advantage of the increased accuracy of this variable type.  
 
@@ -7737,12 +7932,22 @@ You must therefore declare the variable type again before the function name. In 
 Pointers play a very important role in transferring data between functions. Let's look at how pointers are used, starting with a BASIC program.  
 
 
-10 INPUT A 20 INPUT B 30 GOSUB 1000 40 PRINT A;B 50 END 100 1000 REM SWAP 1010 HI=A 1020 A=B 1030 B=HI 1040 RETURN  
+10 INPUT A 
+20 INPUT B 
+30 GOSUB 1000 
+40 PRINT A;B 
+50 END 
+100 '
+1000 REM SWAP 
+1010 HI=A 
+1020 A=B 
+1030 B=HI 
+1040 RETURN  
 
 
 Here, the subroutine SWAP exchanges the values of the variables A and B. Some versions of BASIC include a special SWAP command for this purpose. This, if it is offered, corresponds exactly to the subroutine above. A command like this is very useful, and is used in sorting routines, among others.
 
----
+
 
 <a id="page-205"></a>
 <!-- page 205 -->
@@ -7750,8 +7955,24 @@ Here, the subroutine SWAP exchanges the values of the variables A and B. Some ve
 Now we come to the C version, which uses pointers:  
 
 
-main() { int a, b; scanf("%d %d", &a, &b); swap(&a, &b); printf("%d %d\n", a, b); gemdos(0x1); } swap(c, d) int \*c, \*d; { int temp; temp = \*c; \*c = \*d; \*d = temp; }  
-
+```c
+main()
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    swap(&a, &b);
+    printf("%d %d\n", a, b);
+    gemdos(0x1);
+}
+swap(c, d) 
+int *c, *d;
+{
+    int temp;
+    temp = *c;
+    *c = *d;
+    *d = temp;
+}
+```
 
 A comparison between the C and BASIC subroutines quickly reveals how much alike they are. Using pointers, you can write subroutines in C in almost the same way you would in BASIC.  
 
@@ -7765,20 +7986,22 @@ Pointers have already been thoroughly explained in this book. To avoid repeating
 First, let's look at the call to the swap function in the line  
 
 
-swap(&a, &b);  
+```c
+swap(&a, &b);
+``` 
 
 
-The variables a and b must always be preceded by the address operator & because the values in the function swap() are to be changed using memory addresses. The memory addresses of the variables are passed to swap via &a and &b.
+The variables a and b must always be preceded by the address operator & because the values in the function `swap()` are to be changed using memory addresses. The memory addresses of the variables are passed to swap via `&a` and `&b`.
 
----
+
 
 <a id="page-206"></a>
 <!-- page 206 -->
 
-Inside the called function, the variables c and d must be declared as integer pointers so that they can receive the contents of the pointers &a and &b from main(). The values in the two pointer addresses are then exchanged. The variable temp which is used for this purpose need not be a pointer.  
+Inside the called function, the variables c and d must be declared as integer pointers so that they can receive the contents of the pointers `&a` and `&b` from `main()`. The values in the two pointer addresses are then exchanged. The variable temp which is used for this purpose need not be a pointer.  
 
 
-The two altered variables are then returned to the function main() as integer pointers. The contents of the variables a and b are thus swapped.  
+The two altered variables are then returned to the function `main()` as integer pointers. The contents of the variables `a` and `b` are thus swapped.  
 
 
 In this example, we passed two parameters to a function and got two values back as well. return can pass back only one value. Only the use of pointers allows us to return more than one value.  
@@ -7797,9 +8020,13 @@ The non- standard pointer operations are the biggest fault of this compiler, and
 In BASIC it is possible to define functions using DEF FN. The following example program defines and performs a cube function.  
 
 
-10 DEF FNCUBE(X) = X\*X\*X 20 ' 30 INPUT X: 40 Y=FNCUBE(X): PRINT Y 50 END
+10 DEF FNCUBE(X) = X*X*X 
+20 ' 
+30 INPUT X: 
+40 Y=FNCUBE(X): PRINT Y 
+50 END
 
----
+
 
 <a id="page-207"></a>
 <!-- page 207 -->
@@ -7807,13 +8034,24 @@ In BASIC it is possible to define functions using DEF FN. The following example 
 In C, we can define a function using the #define construction, which we have already used to create symbolic constants. Our BASIC program is then changed in C to:  
 
 
-```c#define cube(x) x * x * xmain(){    int x, y;    scanf("%d", &x);    y = cube(x);    printf("The cube of X is %d\n", y);    gemdos(0x1);}```  
-
+```c
+#define cube(x) x * x * x
+main()
+{
+    int x, y;
+    scanf("%d", &x);
+    y = cube(x);
+    printf("The cube of X is %d\n", y);
+    gemdos(0x1);
+}
+```
 
 Here the statement:  
 
 
-```c#define cube(x) x * x * x```  
+```c
+#define cube(x) x * x * x
+```  
 
 
 is what is called a macro. Macros are quick and easy to write. Their biggest advantages are their flexibility and uncomplicated structure.  
@@ -7822,15 +8060,21 @@ is what is called a macro. Macros are quick and easy to write. Their biggest adv
 Compare the cube macro with the corresponding conventional function:  
 
 
-```cubezint z;{    return(z * z * z);}```  
+```c
+cube(z)
+int z;
+{    
+  return(z * z * z);
+}
+```  
 
 
 As you can see, this function is larger and less efficient than the macro. Because of this, macros are found quite often in C programs.  
 
 
-How does a macro work? This method of constructing functions is identical to the symbolic constants described earlier in this book. There, we said that the compiler substitutes the contents of the #define expression wherever the corresponding name appears.
+How does a macro work? This method of constructing functions is identical to the symbolic constants described earlier in this book. There, we said that the compiler substitutes the contents of the `#define` expression wherever the corresponding name appears.
 
----
+
 
 <a id="page-208"></a>
 <!-- page 208 -->
@@ -7838,46 +8082,41 @@ How does a macro work? This method of constructing functions is identical to the
 This allows us to write anything as a macro, not just functions. This includes statements and function calls, as is shown in the following example:  
 
 
-#define printf(x) printf("%s\n", x); main() { char \*a; a = "Input...>"; printf(a); gemdos(0x1); }
+```c
+#define printfs(x) printf("%s\n", x);
+main()
+{
+    char *a;
+    a = "Input...>";
+    printfs(a);
+    gemdos(0x1);
+}
+```
 
----
 
 <a id="page-209"></a>
 <!-- page 209 -->
 
-( )
 
----
 
 <a id="page-210"></a>
 <!-- page 210 -->
 
 <a id="sec-ch11"></a>
-## Chapter 11  
+## Chapter 11 -Structures
 
-
-# Structures
-
----
 
 <a id="page-211"></a>
 <!-- page 211 -->
 
 
-```c
-1
-```
 
-
----
 
 <a id="page-212"></a>
 <!-- page 212 -->
 
-## Structures  
 
-
-Structures are not available in BASIC, but they are available in many other programming languages. In Pascal, for example, this variable type is called a record.  
+Structures are not available in BASIC, but they are available in many other programming languages. In Pascal, for example, this variable type is called a `record`.  
 
 
 In the following pages, we will describe everything important for you to know as a BASIC programmer—the syntax of structures and how they are used in programs.  
@@ -7899,9 +8138,16 @@ What are structures? Structures allow us to group together several variables of 
 The declaration takes place in its own routine. Take a look at the following example:  
 
 
-struct item { int quantity; char \*description; float price; };
+```c
+struct item
+{
+    int quantity;
+    char *description;
+    float price;
+};
+```
 
----
+
 
 <a id="page-213"></a>
 <!-- page 213 -->
@@ -7934,7 +8180,7 @@ The number of items you want and exactly how they should be addressed as variabl
 
 struct item no_1, no_2, no_3;
 
----
+
 
 <a id="page-214"></a>
 <!-- page 214 -->
@@ -7942,14 +8188,19 @@ struct item no_1, no_2, no_3;
 This table shows how the individual variables are addressed later in the program:  
 
 
-number(int) description(\*char) price(float) no_1. quantity no_1. description no_1. price no_2. quantity no_2. description no_2. price no_3. quantity no_3. description no_3. price  
+| number(int)   |  description(*char) | price(float) |
+| - | - | - |
+| no_1.quantity |  no_1.description  |  no_1.price |
+| no_2.quantity |  no_2.description  |  no_2.price |
+| no_3.quantity |  no_3.description  |  no_3.price |
 
 
 Here you can see how the individual elements of the structure item are accessed. The general form is  
 
 
-structure_variable_name.element_name  
-
+```c
+structure_variable_name.element_name
+```
 
 First you must give the structure variable name, in this case, no_1, no_2, or no_3, followed by a period and the name of the element from the structure declaration must be included. In our example, these elements are quantity, description, and price.  
 
@@ -7957,34 +8208,55 @@ First you must give the structure variable name, in this case, no_1, no_2, or no
 Structure variables formulated in this manner can be used just like normal variables. For example:  
 
 
-no_2. quantity = 125;  
-
+```c
+no_2.quantity = 125;
+```
 
 or  
 
 
-no_1. description = "ATARI 520ST";  
-
+```c
+no_1.description = "ATARI 520ST";
+```
 
 This short example program demonstrates how structure elements are used in a program:  
 
 
-struct item { int quantity; char \*description; float price; }; main() { struct item no_1, no_2, no_3; no_1. quantity = 125; no_1. description = "ATARI 520ST"; no_1. price = 699.0; no_2. quantity = 15;
+```c
+struct item
+{
+    int quantity;
+    char *description;
+    float price;
+};
+main()
+{
+    struct item no_1, no_2, no_3;
+    no_1.quantity = 125;
+    no_1.description = "ATARI 520ST";
+    no_1.price = 699.0;
 
----
+    no_2.quantity = 15;
+    no_2.description = "Commodore C- 128";
+    no_2.price = 279.0;
+
+    no_3.quantity = 548;
+    no_3.description = "Amiga";
+    no_3.price = 1295.0;
+
+    printf("The quantity of the first item is %d\n", no_1.quantity);
+    printf("The second item is a %s\n", no_2.description);
+    printf("The price of the first item is %f\n", no_1.price);
+    gemdos (0x1);
+}
+```
+
 
 <a id="page-215"></a>
 <!-- page 215 -->
 
-no_2.description = "Commodore C- 128"; no_2.price = 279.0;  
-
-
-no_3. quantity = 548; no_3. description = "Amiga"; no_3. price = 1295.0;  
-
-
-printf("The quantity of the first item is %d\n", no_1. quantity); printf("The second item is a %s\n", no_2. description); printf("The price of the first item is %f\n", no_1. price); gemdos (0x1); }  
-
-
+```c
+```
 Two things are shown in the main() function of this program. First, we once again show how structure variable are declared, and second, we show how elements of structures are used in a program.  
 
 
@@ -7992,21 +8264,26 @@ Two things are shown in the main() function of this program. First, we once agai
 ## 11.3 Arrays and structures  
 
 
-You can now use structures and structure variables in your programs without problems. In this section, you will learn how to simplify working with structure variables. In the previous example, the structure variable names were labeled no_1, no_2, and no_3.  
+You can now use structures and structure variables in your programs without problems. In this section, you will learn how to simplify working with structure variables. In the previous example, the structure variable names were labeled `no_1`, `no_2`, and `no_3`.  
 
 
 In practice, things are almost never done this way. The articles can be addressed more efficiently using arrays.  
 
 
-The structure variable declaration in the main() function looks like this with an array:  
+The structure variable declaration in the `main()` function looks like this with an array:  
 
+```c
+struct item no[3]
+```
 
 instead of the original  
 
+```c
+struct item no_1, no_2, no_3;
+```
 
 Arrays make it much easier to access structure variables from a large group of them.
 
----
 
 <a id="page-216"></a>
 <!-- page 216 -->
@@ -8020,12 +8297,38 @@ quantity(int) description(\*char) price(float) no[1].quantity no[1].description 
 Now let's extend our previous program using an array:  
 
 
-struct item { int quantity; char \\*description float price; }; main() { int n; struct item no[3]; no[1].quantity `=` 125; no[1].description `=` "ATARI 520ST"; no[1].price `=` 699.0; no[2].quantity `=` 15; no[2].description `=` "Commodore C- 128"; no[2].price `=` 279.0; no[3].quantity `=` 548; no[3].description `=` "Amiga"; no[3].price `=` 1295.0; printf("Quantity Description Price\n"); for(n=0; n < 3; ++n) { printf("%d %s %f\n", no[n].quantity, no[n].description, no[n].price); } gemdos(0x1); }  
+```c
+struct item
+{
+    int quantity;
+    char \\*description float price;
+};
+main()
+{
+    int n;
+    struct item no[3];
+    no[1].quantity = 125;
+    no[1].description = "ATARI 520ST";
+    no[1].price = 699.0;
+    no[2].quantity = 15;
+    no[2].description = "Commodore C- 128";
+    no[2].price = 279.0;
+    no[3].quantity = 548;
+    no[3].description = "Amiga";
+    no[3].price = 1295.0;
+    printf("Quantity Description Price\n");
+    for(n=0; n < 3; ++n)
+    {
+        printf("%d %s %f\n", no[n].quantity, no[n].description, no[n].price);
+    }
+    gemdos(0x1);
+}
+```
 
 
 In this example it becomes clear why nearly all structures are defined as arrays.
 
----
+
 
 <a id="page-217"></a>
 <!-- page 217 -->
@@ -8033,17 +8336,19 @@ In this example it becomes clear why nearly all structures are defined as arrays
 The for loop, which prints out all of the elements of a structure, can be used only with the help of arrays. This makes possible the generalized calls:  
 
 
-no[n].number  
+```c
+no[n].number
+```
 
-
-no[n].description  
-
+```c
+no[n].description
+```
 
 and  
 
-
+```c
 no[n].price  
-
+```
 
 Using arrays of structures also makes it easier to change the program later. For example, if you want to change the number of items in our program from 3 to 100, all you have to do is change the number in the declaration.  
 
@@ -8051,41 +8356,37 @@ Using arrays of structures also makes it easier to change the program later. For
 The declaration:  
 
 
-struct item no[3];  
-
+```c
+struct item no[3];
+```
 
 would then be changed to:  
 
 
-struct item no[100];  
-
+```c
+struct item no[100];
+```
 
 After you have tried out the example programs, experiment with structures in your own programs to reinforce your knowledge.
 
----
+
 
 <a id="page-218"></a>
 <!-- page 218 -->
 
 <a id="sec-ch12"></a>
-Chapter 12  
+## Chapter 12  - An Overview of C
 
 
-An Overview of C
-
----
 
 <a id="page-219"></a>
 <!-- page 219 -->
 
-![](/images/atari/atari-st-basic-to-c/p0219_0014.jpg)
 
----
+
 
 <a id="page-220"></a>
 <!-- page 220 -->
-
-## A C overview  
 
 
 <a id="sec-12-1"></a>
@@ -8095,44 +8396,24 @@ An Overview of C
 The following pages contain a brief summary of the most important C language elements.  
 
 
-## LOOP INSTRUCTIONS  
+- LOOP INSTRUCTIONS  
+  - `for` `do` `while`  
+- DECISION INSTRUCTIONS  
+  - `if` `else` `switch` `case` `default`  
+- JUMP INSTRUCTIONS  
+  - `break` `continue` `goto`  
+- STORAGE CLASSES  
+  - `auto` `extern` `static`
+- DATA TYPES  
+  - `int` `short` `long` `unsigned` `float` `double` `char` `struct`  
+- OTHER EXPRESSIONS  
+  - `return` `exit` `type` `define` `include` `printf` `scanf`  
 
 
-for do while  
-
-
-## DECISION INSTRUCTIONS  
-
-
-if else switch case default  
-
-
-## JUMP INSTRUCTIONS  
-
-
-break continue goto  
-
-
-## STORAGE CLASSES  
-
-
-auto extern static
-
----
 
 <a id="page-221"></a>
 <!-- page 221 -->
 
-## DATA TYPES  
-
-
-int short long unsigned float double char struct  
-
-
-## OTHER EXPRESSIONS  
-
-
-return exit type define include printf scanf  
 
 
 These key words, especially important for those learning C, represent the language's core vocabulary. You can see that this fundamental vocabulary is considerably smaller than that of BASIC.  
@@ -8140,7 +8421,7 @@ These key words, especially important for those learning C, represent the langua
 
 In the following sections we discuss the core statements of the language.
 
----
+
 
 <a id="page-222"></a>
 <!-- page 222 -->
@@ -8157,9 +8438,9 @@ In this summary you will get one last look at the important language elements an
 
 
 Syntax:  
-
-
-break;  
+```c
+break;
+``` 
 
 
 The break statement is used whenever a do, for, switch, or while statement should be stopped immediately. After the break jump, the program resumes running after the loop or switch statement, as the case may be.  
@@ -8168,16 +8449,16 @@ The break statement is used whenever a do, for, switch, or while statement shoul
 <a id="sec-12-2-2"></a>
 ## 12.2.2 The case statement  
 
-
 Syntax:  
-
-
-case constant: statement 1; statement 2;  
-
+```c
+case constant:
+statement 1;
+statement 2;
+```
 
 The case statement is a component element of the switch branching structure. If the constant in the case statement matches the switch expression, then the statements within the case block are executed.
 
----
+
 
 <a id="page-223"></a>
 <!-- page 223 -->
@@ -8189,8 +8470,9 @@ The case statement is a component element of the switch branching structure. If 
 Syntax:  
 
 
-continue;  
-
+```c
+continue;
+```
 
 The continue statement is used inside a loop. If this statement is encountered, none of the statements which follow it in the loop are executed. Instead, the next pass through the loop is begun.  
 
@@ -8202,8 +8484,9 @@ The continue statement is used inside a loop. If this statement is encountered, 
 Syntax 1:  
 
 
-#define name replacement_text  
-
+```c
+#define name replacement_text
+```
 
 When this statement is used at the beginning of a C program, name will be replaced by the replacement text wherever name is encountered after the definition in program.  
 
@@ -8211,31 +8494,32 @@ When this statement is used at the beginning of a C program, name will be replac
 Syntax 2:  
 
 
-#define name(paran_1, param_2, ...param_n) text  
-
+```c
+#define name(paran_1, param_2, ...param_n) text
+```
 
 The macro name is defined and places the n parameters in the text statement, which is substituted for name in the program. One example is the macro  
 
 
-#define square(x) x \* x  
-
+```c
+#define square(x) x * x
+```
 
 The macro is called with a statement like  
 
 
-x = square(value_1 \* 2);  
-
+```c
+x = square(value_1 * 2);
+```
 
 which is replaced with  
 
-
-
 ```c
-x = (value\_1 * 2) * (value\_1 * 2);
+x = (value_1 * 2) * (value_1 * 2);
 ```
 
 
----
+
 
 <a id="page-224"></a>
 <!-- page 224 -->
@@ -8247,8 +8531,10 @@ x = (value\_1 * 2) * (value\_1 * 2);
 Syntax:  
 
 
-default: program expression;  
-
+```c
+default:
+  program expression;
+```
 
 the default statement causes the statements following it to be carried out within a switch structure when none of the preceding case statements match the switch expression.  
 
@@ -8263,15 +8549,20 @@ If a switch structure contains no default statement and none of the case conditi
 Syntax:  
 
 
-do { statements } while (condition)  
-
+```c
+do
+{
+    statements
+}
+while (condition)
+```
 
 The program statements within the do loop are executed as long as the condition in the while statement is true.  
 
 
 It should be noted that statements within the do loop are executed at least once because the while condition is not checked until the end of the loop.
 
----
+
 
 <a id="page-225"></a>
 <!-- page 225 -->
@@ -8283,7 +8574,9 @@ It should be noted that statements within the do loop are executed at least once
 Syntax:  
 
 
-else statement;  
+```c
+else statement;
+```
 
 
 The else statement is a component of the if structure. The else statement (which may also be a statement block) is executed when the if condition is false, or logically equal to zero.  
@@ -8296,8 +8589,9 @@ The else statement is a component of the if structure. The else statement (which
 Syntax:  
 
 
-else if (condition) statement;  
-
+```c
+else if (condition) statement;
+```
 
 The else if statement follows an if statement or another else if. If the else if condition is true, or logically unequal to zero, the statement (block) following it will be executed.  
 
@@ -8309,15 +8603,16 @@ The else if statement follows an if statement or another else if. If the else if
 Syntax:  
 
 
-for (first interval bound, second bound, step size) statement;  
-
+```c
+for (first interval bound, second bound, step size) statement;
+```
 
 The first interval bound initializes a loop variable. This value determines the lower boundary of the loop. The second bound sets the condition for the end of the for loop.  
 
 
 The step size determines the change made in the loop variable each time the loop is executed. The statement is repeated within the loop.
 
----
+
 
 <a id="page-226"></a>
 <!-- page 226 -->
@@ -8329,14 +8624,17 @@ The step size determines the change made in the loop variable each time the loop
 Syntax:  
 
 
-goto label;  
-
+```c
+goto label;
+```
 
 The execution of the goto statement causes a direct jump to the position within the program which is identified by  
 
 
-label: statement  
-
+```c
+label:
+statement
+```
 
 <a id="sec-12-2-11"></a>
 ## 12.2.11 The if statement  
@@ -8358,7 +8656,9 @@ If the condition is true, or logically unequal to zero, the statement will be ex
 Syntax:  
 
 
-;  
+```c
+;
+``` 
 
 
 This expression does absolutely nothing while the program is running. It must often be used, however, to fill in the requirements of the specific syntax of some statements (for example, in do, for, and while loops).  
@@ -8367,9 +8667,10 @@ This expression does absolutely nothing while the program is running. It must of
 An example of its use is a delay loop like the following:  
 
 
+```c
 for(a = 1; a < 1000; ++a) ;
+```
 
----
 
 <a id="page-227"></a>
 <!-- page 227 -->
@@ -8381,13 +8682,19 @@ for(a = 1; a < 1000; ++a) ;
 Syntax 1:  
 
 
-return;  
+```c
+return;
+``` 
 
 
-The return statement causes an immediate jump from the function in which it is located back to the calling function. This instruction is not necessary if the function is to end when the last statement is executed. Syntax 2:  
+The return statement causes an immediate jump from the function in which it is located back to the calling function. This instruction is not necessary if the function is to end when the last statement is executed. 
+
+Syntax 2:  
 
 
-return (expression);  
+```c
+return (expression);
+```  
 
 
 The value of the expression is returned to the function name.  
@@ -8400,14 +8707,17 @@ The value of the expression is returned to the function name.
 Syntax:  
 
 
-struct name  
+```c
+struct name
+{
+    variable declaration 1 variable declaration 2 variable declaration n
+};
+``` 
 
 
-{ variable declaration 1 variable declaration 2 variable declaration n };  
-
-
-struct name variable 1, variable 2, ..., variable n;  
-
+```c
+struct name variable 1, variable 2, ..., variable n;
+```
 
 First, the structure variable name is declared with n variables. The variables may be of any type. Before it can be used in a program, variable names must be assigned the structure's form.  
 
@@ -8417,7 +8727,7 @@ Structure elements are accessed in a program as follows:
 
 First the name of the structure is entered, followed by a period and the name of the element declared within the structure.
 
----
+
 
 <a id="page-228"></a>
 <!-- page 228 -->
@@ -8429,15 +8739,26 @@ First the name of the structure is entered, followed by a period and the name of
 Syntax:  
 
 
-switch(expression) { case constant 1: statement 1; statement 2; break; case constant 2: statement 1; statement 2; break; default:  
-
+```c
+switch(expression)
+{
+case constant 1:
+    statement 1;
+    statement 2;
+    break;
+case constant 2:
+    statement 1;
+    statement 2;
+    break;
+default:
+```
 
 The value of the expression in switch is compared with the constants in the case expressions. When a match is found, the corresponding block of commands is executed.  
 
 
 It is wise to end a case block with break. The default statement, which we have already discussed, can be included in the switch construction if you choose. The commands following the default statement are carried out if none of the case conditions are fulfilled.
 
----
+
 
 <a id="page-229"></a>
 <!-- page 229 -->
@@ -8449,12 +8770,13 @@ It is wise to end a case block with break. The default statement, which we have 
 Syntax:  
 
 
-while (expression) statement;  
-
+```c
+while (expression) statement;
+```
 
 The statement (block) in the loop body is repeated as long as the while expression is true, that is, as long as the logical value of the expression is not zero. The expression can be replaced by a condition.
 
----
+
 
 <a id="page-230"></a>
 <!-- page 230 -->
@@ -8469,17 +8791,27 @@ The variable types can be divided into two parts: integral and floating- point v
 <a id="sec-12-3-1"></a>
 ## 12.3.1 Integer variables  
 
-
-char Single character value. int Integer value. short int Small integer value. long int Large integer value. unsigned int Positive integer, twice as large as regular int. unsigned short Positive int, twice as large as regular short int. unsigned long Positive int, twice as large as regular long int.  
+| TYPE | DESC |
+| - | - |
+|char            |Single character value. |
+|int             |Integer value. |
+|short int       |Small integer value. |
+|long int        |Large integer value. |
+|unsigned int    |Positive integer, twice as large as regular int. |
+|unsigned short  |Positive int, twice as large as regular short int. |
+|unsigned long   |Positive int, twice as large as regular long int.  |
 
 
 <a id="sec-12-3-2"></a>
 ## 12.3.2 Floating-point variables  
 
+| type | description|
+|-|-|
+|float         |Floating- point number. |
+|double float  |Floating- point number with double precision. |
+|long float    |Treated like double.|
 
-float Floating- point number. double float Floating- point number with double precision. long float Treated like double.
 
----
 
 <a id="page-231"></a>
 <!-- page 231 -->
@@ -8491,95 +8823,125 @@ float Floating- point number. double float Floating- point number with double pr
 C has a wealth of operators in comparison to BASIC. The following list includes the most important operators. The list is ordered according to execution priority, each level having lower priority than the last.  
 
 
-## PRIORITY LEVEL 1  
+##### PRIORITY LEVEL 1  
 
 
-( ) Parentheses, function call  [] Array element  - > Structure pointer operator  . Structure variable operator  
+`( )` Parentheses, function call  
+
+`[]` Array element  
+
+`->` Structure pointer operator  
+
+`.` Structure variable operator  
 
 
-## PRIORITY LEVEL 2  
+##### PRIORITY LEVEL 2  
 
 
-- Negative operator  ++ Increment operator  -- Decrement operator  ! Logical negation operator  * Pointer operator  & Address operator  
+`-` Negative operator  
+
+`++` Increment operator  
+
+`--` Decrement operator  
+
+`!` Logical negation operator  
+
+`*` Pointer operator  
+
+`&` Address operator  
 
 
-## PRIORITY LEVEL 3  
+##### PRIORITY LEVEL 3  
 
 
-\* Multiplication operator  / Division operator  % Modulo operator  
+`*` Multiplication operator  
+
+`/` Division operator  
+
+`%` Modulo operator  
 
 
-## PRIORITY LEVEL 4  
+##### PRIORITY LEVEL 4  
 
 
-+ Addition operator  - Subtraction operator  
+`+` Addition operator  
+
+`-` Subtraction operator  
 
 
-## PRIORITY LEVEL 5  
+##### PRIORITY LEVEL 5  
 
 
-<< Left- shift operator  >> Right- shift operator
+`<<` Left-shift operator 
 
----
+`>>` Right- shift operator
+
+
 
 <a id="page-232"></a>
 <!-- page 232 -->
 
-## PRIORITY LEVEL 6  
+##### PRIORITY LEVEL 6  
 
 
-< Less than relation `<= =` Less than or equal relation `>` Greater than relation `> =` Greater than or equal relation  
+`<` Less than relation 
+
+`<=` Less than or equal relation 
+
+`>` Greater than relation 
+
+`>=` Greater than or equal relation  
 
 
-## PRIORITY LEVEL 7  
+##### PRIORITY LEVEL 7  
 
 
-`= =` Equality relation `! =` Inequality relation  
+`==` Equality relation 
+
+`!=` Inequality relation  
 
 
-## PRIORITY LEVEL 8  
+##### PRIORITY LEVEL 8  
 
 
-& Bitwise AND operator  
+`&` Bitwise AND operator  
 
 
-## PRIORITY LEVEL 9  
+##### PRIORITY LEVEL 9  
 
 
 `^` Bitwise exclusive OR operator  
 
 
-## PRIORITY LEVEL 10  
+##### PRIORITY LEVEL 10  
 
 
-| Bitwise inclusive OR operator  
+`|` Bitwise inclusive OR operator  
 
 
-## PRIORITY LEVEL 11  
+##### PRIORITY LEVEL 11  
 
 
-&& Logical AND operator  
+`&&` Logical AND operator  
 
 
-## PRIORITY LEVEL 12  
+##### PRIORITY LEVEL 12  
 
 
-| | Logical OR operator  
+`||` Logical OR operator  
 
 
-## PRIORITY LEVEL 13  
+##### PRIORITY LEVEL 13  
 
 
-? Conditional assignment
+`?` Conditional assignment
 
----
+
 
 <a id="page-233"></a>
 <!-- page 233 -->
 
-1. 1. 1. 1. 1. 1. 1. 1
 
----
 
 <a id="page-234"></a>
 <!-- page 234 -->
@@ -8595,14 +8957,10 @@ First it would be a good idea to strengthen your C programming skills, and the b
 
 You have no doubt noticed that this book is just an introduction to C, although it is also a good reference work for programmers with experience in BASIC. Once you have strengthened your knowledge, you need more information about C. C is a relatively complex language and we didn't have enough room in this book to explain all of its features. The bibliography contains a number of books which will tell you more about C.
 
----
+
 
 <a id="page-235"></a>
 <!-- page 235 -->
-
-![](/images/atari/atari-st-basic-to-c/p0235_0015.jpg)
-
----
 
 <a id="page-236"></a>
 <!-- page 236 -->
@@ -8613,9 +8971,43 @@ You have no doubt noticed that this book is just an introduction to C, although 
 ## More books on C  
 
 
-AT & T/Bell Laboratories, C Programmer's Handbook, Prentice- Hall, 1985.Bean, The Illustrated C Programming Book, Prentice- Hall, 1985.  Birns, Brown, Muster, UNIX for People, Prentice- Hall, 1984.  Cooper, Graphics Programming in C, Sybex, 1985.  Costales, C: From A to Z, Prentice- Hall, 1985.  Hendrix, The small C Handbook, Prentice- Hall, 1985.  Harbison, Steele, C: A Reference Manual, Prentice- Hall, 1985.  Hogan, The C Programmer's Handbook, Brady, 1984.  Hunter, Understanding C, Sybex, 1985.  Joyce, C by Example, Addison- Wesley, 1985.  Kelley, A Book on C, Addison- Wesley, 1985.  Kernighan, Ritchie, The C Programming Language, Prentice- Hall, 1978.  Kochan, Programming in C, Hayden, 1983.  Moore, Programming in C With a Bit of Unix, Prentice- Hall, 1985.  Plum, C Programming Guide Lines, Prentice- Hall, 1984.  Plum, Learning to Program in C, Prentice- Hall, 1983.  Tondo, Gimpel, The C Answer Book, Prentice- Hall, 1985.  Traister, Programming in C, Prentice- Hall, 1985.
+AT & T/Bell Laboratories, C Programmer's Handbook, Prentice- Hall, 1985.
 
----
+Bean, The Illustrated C Programming Book, Prentice- Hall, 1985.  
+
+Birns, Brown, Muster, UNIX for People, Prentice- Hall, 1984.  
+
+Cooper, Graphics Programming in C, Sybex, 1985.  
+
+Costales, C: From A to Z, Prentice- Hall, 1985.  
+
+Hendrix, The small C Handbook, Prentice- Hall, 1985.  
+
+Harbison, Steele, C: A Reference Manual, Prentice- Hall, 1985.  
+
+Hogan, The C Programmer's Handbook, Brady, 1984.  
+
+Hunter, Understanding C, Sybex, 1985.  
+
+Joyce, C by Example, Addison- Wesley, 1985.  
+
+Kelley, A Book on C, Addison- Wesley, 1985.  
+
+Kernighan, Ritchie, The C Programming Language, Prentice- Hall, 1978.  
+
+Kochan, Programming in C, Hayden, 1983.  
+
+Moore, Programming in C With a Bit of Unix, Prentice- Hall, 1985.  
+
+Plum, C Programming Guide Lines, Prentice- Hall, 1984.  
+
+Plum, Learning to Program in C, Prentice- Hall, 1983.  
+
+Tondo, Gimpel, The C Answer Book, Prentice- Hall, 1985.  
+
+Traister, Programming in C, Prentice- Hall, 1985.
+
+
 
 <a id="page-237"></a>
 <!-- page 237 -->
@@ -8634,42 +9026,34 @@ Wotman, Sidebottom, The C Programming Tutor, Brady, 1984.
 
 Zahn, C Notes: A Guide to the C Programming Language, Yourdon Press, 1979.
 
----
+
 
 <a id="page-238"></a>
 <!-- page 238 -->
 
-## Index  
 
 
-#define 81- 82, 198- 199, 214 &a variables 27 abort(0) 133 address operator 28, 45, 71, 99, 101, 104, 173, 174, 196, 222 Alcyon C 5, 13, 25- 27, 74- 75 arithmetic operators 111- 124 arrays 36- 38, 43, 91- 95, 99, 203, 206, 208 ASCII 24, 27, 61, 62, 74, 85, 86, 160 bit operators 123- 124 break 211, 213 case 213 char 80, 203- 205, 207, 212, 221 COBOL 3 comma 140- 141 command extensions 75 comments 22- 23, 42 comparison operators 116- 119, 129- 130 constants 81- 83 continue 211, 214 control structures 31- 34, 117, 127- 158 conversion elements 52 data input 23, 38, 44, 49, 65, 67 data types 35, 79, 80, 83, 84, 91, 105, 193, 212 dBASE III 3 declaration headers 79 decrement operators 115- 116, 144, 222 default 215 define 212, 214 DEF FN 197 Digital Research 4 do 215, 217, 221 do- while loop 148- 149, 151- 152 double 87, 212, 221 else 211, 216 else if 135- 136, 216 End Of File(EQF) 24, 25, 38, 66, 75 equality operator 25, 29, 45, 130 exit() 131- 133, 212
 
----
 
 <a id="page-239"></a>
 <!-- page 239 -->
 
-exponential notation 53  extern 211  float 87, 212, 221  for 17- 19, 136- 144, 147, 211, 216  FOR- NEXT 17- 20, 137, 191  format instructions 15, 16, 52, 56  format specifiers 52, 53  functions 11, 41, 184- 197  GEMDOS 10  getchar() 23- 25, 37, 38, 44, 63, 65- 68, 73- 75, 86, 186  global variables 79, 90, 91, 93, 191  goto 154- 157, 160, 211, 216, 217  header 79, 88, 195  hexadecimal 52  if 32- 33,128- 130, 211, 213, 217, 222  if- else 32, 33, 45, 133- 135  IF- THEN- ELSE 33  increment operator 31, 45, 115- 116, 144, 222  indirection operator 58  inequality operator 25, 29, 45  infinite loop 137- 140, 149, 150  input functions 65  integer constants 81, 82  integer data types 84  jump instructions 211  justification 54  keywords 211- 212  Lattice 5  libraries 3, 183  local variables 90, 93- 95, 196, 204  logical AND 45, 131, 223  loops 44, 138  macro 75, 198, 199, 214  main() 10- 14  MC68000 4  Megamax compiler 5  Microsoft Corporation 145  mistakes 82, 165, 178  modulo operator 114, 222  NAND 121  negation operator 120, 121, 129, 222  nested for loops 141- 144
 
----
+
+
 
 <a id="page-240"></a>
 <!-- page 240 -->
 
-nested while loops 148  new- line character 49, 177  null 217  octal 52  offset 104  operands 87  operators 31, 111, 112, 115- 124, 129, 130, 172, 197, 222  outer interval limit 18  outputting numbers 54  Pascal 3, 11, 13, 203  pointer 26, 69, 70, 79, 95, 99- 105, 107, 173, 174, 193, 195- 197, 222  pointers and arrays 99- 102  printf 12- 18  putchar() 63, 65- 68, 74, 75  puts() 27, 63, 65, 67, 68, 86, 118  record 203  return 218  Ritchie, Dennis 3, 154  scanf 68- 72, 86, 131- 134, 157, 159, 168, 171- 174, 177, 179, 192- 194, 196, 198, 212  scientific notation- - see exponential notation  standard functions 25, 183  static 94, 95, 211  stdio.h 70, 74, 86, 118, 139, 186  string assignment 38  string variables 58- 59, 82, 102  struct 203- 208, 211- 213, 215, 216, 218, 219, 222  SWAP 195- 197  switch 3, 9, 80, 156- 161, 211, 213, 215, 218, 219  symbolic constants. 35, 36, 80, 81, 90, 91, 198  text formatting 12- 14, 56- 57  unsigned 52, 83, 84, 87, 212, 221  value assignment 112- 114, 146, 166, 169  variable type 88- 90, 203  variables 14- 15, 79- 80, 203- 206, 218, 221  while 211, 213, 215, 217, 220  while loop 20- 22, 145- 150, 211, 220
 
----
 
 <a id="page-241"></a>
 <!-- page 241 -->
 
 
-```c
-1
-```
 
 
----
+
 
 <a id="page-242"></a>
 <!-- page 242 -->
@@ -8683,7 +9067,7 @@ nested while loops 148  new- line character 49, 177  null 217  octal 52  offset 
 For your convenience, the 'C' program listings contained in this book are available on an SF354 formatted floppy disk. Due to diskette directory limitations the BASIC programs were not included. You should order the diskette if you want to use the programs, but don't want to type them in from the listings in the book.  
 
 
-All programs on the diskette have been fully tested. You can change the programs for your particular needs. The diskette is available for `14.95 plus` 2.00 (\$5.00 foreign) for postage and handling.  
+All programs on the diskette have been fully tested. You can change the programs for your particular needs. The diskette is available for $14.95 plus $2.00 ($5.00 foreign) for postage and handling.  
 
 
 When ordering, please give your name and shipping address. Enclose a check, money order or credit card information. Mail your order to:  
@@ -8694,7 +9078,7 @@ Abacus Software  5370 52nd. Street SE  Grand Rapids, MI 49508
 
 Or for fast service, call 616/698- 0330.
 
----
+
 
 <a id="page-243"></a>
 <!-- page 243 -->
@@ -8746,7 +9130,7 @@ Indispensable handbook for beginning BASIC programmers. Learn fundamentals of pr
 
 Optional diskettes are available for all book titles at  14.95\$ Call now for the name of your nearest dealer. Or order directly from ABACUS with your MasterCard, VISA, or Amex card. Add  4.00\$ per order for postage and handling. Foreign add  10.00\$ per book. Other software and books coming soon. Call or write for your free catalog. Dealer inquiries welcome- over 1400 dealers nationwide.
 
----
+
 
 <a id="page-244"></a>
 <!-- page 244 -->
@@ -8820,7 +9204,7 @@ Other software and books also available. Call or write for your free catalog or 
 
 Abacus Software • 5370 52nd Street SE Grand Rapids, MI 49508 • Phone (616) 698- 0330
 
----
+
 
 <a id="page-245"></a>
 <!-- page 245 -->
@@ -8866,7 +9250,7 @@ DataRetrieve Suggested Retail Price: \$49.95
 
 - Easily define your files using drop-down menus- Design screen mask size to 5000 by 5000 pixels- Choose from six font sizes and six text styles- Add circles, boxes and lines to screen masks- Fast search and sort capabilities- Handles records up to 64,000 characters in length- Organize files with up to 20 indexes- Access up to four files simultaneously- Cut, past and copy data to other files- Change file definitions and format- Create subsets of files- Interfaces with TextPro files- Complete built-in reporting capabilities- Change setup to support virtually any printer- Add header, footer and page number to reports- Define printer masks for all reporting needs- Send output to screen, printer, disk or modem- Includes and supports RAM disk for high-speed 1040ST operation- Capacities: max. 2 billion characters per file max. 64,000 records per file max. 64,000 characters per record max. fields: limited only by record size max. 32,000 text characters per field max. 20 index fields per file- Index precision: 3 to 20 characters- Numeric precision: to 15 digits- Numeric range ±10-308 ti ±10-308
 
----
+
 
 <a id="page-246"></a>
 <!-- page 246 -->
@@ -8898,7 +9282,7 @@ Two of TextPro's advanced features are automatic table of contents generation an
 The user can write form letters using the convenient Mail Merge option. TextPro also supports GEM- oriented fonts and type styles—text can be bold, underlined, italic, superscript, outlined, etc., and in a number of point sizes. TextPro even has advanced features for the programmer for development with its Non- document and C- sourcecode modes.  
 
 
-TextPro Suggested Retail Price: \$49.95  
+TextPro Suggested Retail Price: $49.95  
 
 ![](/images/atari/atari-st-basic-to-c/p0246_0027.jpg)
   
@@ -8918,7 +9302,7 @@ TextPro works with Atari ST systems with one or more single- or double- sided di
 
 TextPro allows for flexible printer configurations with most popular dot- matrix printers.
 
----
+
 
 <a id="page-247"></a>
 <!-- page 247 -->
@@ -8960,7 +9344,7 @@ Suggested Retail Price: \$49.95
 
 ![](/images/atari/atari-st-basic-to-c/p0247_0032.jpg)
 
----
+
 
 <a id="page-248"></a>
 <!-- page 248 -->
@@ -9002,7 +9386,7 @@ Chartpak ST Suggested Retail Price: \$49.95
 
 ![](/images/atari/atari-st-basic-to-c/p0248_0036.jpg)
 
----
+
 
 <a id="page-249"></a>
 <!-- page 249 -->
@@ -9056,7 +9440,7 @@ AssemPro Suggested retail price: \$59.95
 
 ![](/images/atari/atari-st-basic-to-c/p0249_0040.jpg)
 
----
+
 
 <a id="page-250"></a>
 <!-- page 250 -->
