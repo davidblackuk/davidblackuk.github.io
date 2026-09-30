@@ -1,0 +1,76 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "layout",
+          "name": "layout",
+          "type": "string"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "location",
+          "name": "location",
+          "type": "string"
+        },
+        {
+          "title": "excerpt",
+          "name": "excerpt",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "comments",
+          "name": "comments",
+          "type": "boolean"
+        },
+        {
+          "title": "share",
+          "name": "share",
+          "type": "boolean"
+        },
+        {
+          "title": "thumbnail",
+          "name": "thumbnail",
+          "type": "string"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "jekyll",
+  "frontMatter.content.publicFolder": "assets",
+  "frontMatter.preview.host": "http://localhost:4000",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "drafts",
+      "path": "[[workspace]]/_drafts"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/_posts"
+    }
+  ],
+  "frontMatter.git.enabled": true
+}
