@@ -46,7 +46,8 @@ highlighter:  rouge
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+#permalink:   /:categories/:title/
+permalink:   /:slug/
 
 kramdown:
   auto_ids: true
