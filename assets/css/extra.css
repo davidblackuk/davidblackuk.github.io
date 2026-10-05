@@ -186,3 +186,15 @@ table .t-comment {
 	width: 1.0rem;
 	height: 1rem;
 }
+
+.giscus {
+	display: flex;
+	justify-content: center;
+}
+
+.giscus-frame {
+  max-width: 640px;
+  width: 100%;
+  padding: 0 1em;
+  box-sizing: border-box;
+}

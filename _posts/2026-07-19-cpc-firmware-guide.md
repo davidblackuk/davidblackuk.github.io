@@ -1,9 +1,14 @@
 ---
 layout: post
-title: "cpc firmware guide"
-tags: [atari, atari-scanned-doc, retro]
+title: cpc firmware guide
+tags:
+    - atari
+    - atari-scanned-doc
+    - retro
 description: "Scanned and OCR'd: cpc firmware guide"
 date: 2026-07-19
+slug: cpc-firmware-guide
+
 ---
 
 <!-- page 1 -->
